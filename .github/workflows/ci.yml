@@ -1,0 +1,26 @@
+name: basic ci
+
+on:
+  - push
+
+jobs:
+  basic:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["18", "20", "latest"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: true
+      - name: run test
+        run: pnpm test
