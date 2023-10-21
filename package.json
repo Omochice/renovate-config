@@ -9,7 +9,9 @@
   "license": "zlib",
   "author": "Omochice",
   "scripts": {
-    "test": "renovate-config-validator --strict default.json deno.json",
+    "test": "npm-run-all test:validate test:regex",
+    "test:validate": "renovate-config-validator --strict default.json deno.json",
+    "test:regex": "vitest run",
     "fmt": "npm-run-all fmt:package fmt:json",
     "fmt:package": "sort-package-json",
     "fmt:json": "biome format ./ --write"
@@ -18,6 +20,7 @@
     "@biomejs/biome": "^1.2.2",
     "npm-run-all": "^4.1.5",
     "renovate": "^37.27.0",
-    "sort-package-json": "^2.6.0"
+    "sort-package-json": "^2.6.0",
+    "vitest": "^0.34.6"
   }
 }
