@@ -195,3 +195,102 @@ describe("4: npm for js file", () => {
     });
   }
 });
+
+describe("5: github tag for import_map", () => {
+  const file = `
+  {
+    "imports": {
+      "sample": "https://raw.githubusercontent.com/user/repo/1.0.0/mod.ts",
+      "sample": "https://pax.deno.dev/user/repo@1.0.0/mod.ts",
+      "sample": "https://pax.deno.dev/user/repo@1.0.0",
+      "sample": "https://raw.githubusercontent.com/user/repo/someversion/mod.ts"
+    }
+  }`;
+
+  const expects = [
+    {
+      title: "should accept raw.githubusercontent.com",
+      currentValue: "1.0.0",
+      depName: "user/repo",
+    },
+    {
+      title: "should accept pax.deno.dev",
+      currentValue: "1.0.0",
+      depName: "user/repo",
+    },
+    {
+      title: "should accept omit 'mod.ts' when specify pax.deno.dev",
+      currentValue: "1.0.0",
+      depName: "user/repo",
+    },
+    {
+      title: "should accept un-semver version",
+      currentValue: "someversion",
+      depName: "user/repo",
+    }
+  ];
+
+  const matches = regexps[4]
+    .map((re) =>
+      Array.from(file.matchAll(new RegExp(re, "gm"))).map((e) => e.groups),
+    )
+    .flat();
+  it(`should be match ${expects.length} object`, () => {
+    expect(matches.length).toBe(expects.length);
+  });
+
+  for (let i = 0; i < expects.length; i++) {
+    it(expects[i].title, () => {
+      expect(matches[i]?.currentValue).toBe(expects[i].currentValue);
+      expect(matches[i]?.depName).toBe(expects[i].depName);
+    });
+  }
+});
+
+describe("6: github tag for js file", () => {
+  const file = `
+  import { sample } from "https://raw.githubusercontent.com/user/repo/1.0.0/mod.ts",
+  import { sample } from "https://pax.deno.dev/user/repo@1.0.0/mod.ts",
+  import { sample } from "https://pax.deno.dev/user/repo@1.0.0",
+  import { sample } from "https://raw.githubusercontent.com/user/repo/someversion/mod.ts"
+  `;
+
+  const expects = [
+    {
+      title: "should accept raw.githubusercontent.com",
+      currentValue: "1.0.0",
+      depName: "user/repo",
+    },
+    {
+      title: "should accept pax.deno.dev",
+      currentValue: "1.0.0",
+      depName: "user/repo",
+    },
+    {
+      title: "should accept omit 'mod.ts' when specify pax.deno.dev",
+      currentValue: "1.0.0",
+      depName: "user/repo",
+    },
+    {
+      title: "should accept un-semver version",
+      currentValue: "someversion",
+      depName: "user/repo",
+    }
+  ];
+
+  const matches = regexps[5]
+    .map((re) =>
+      Array.from(file.matchAll(new RegExp(re, "gm"))).map((e) => e.groups),
+    )
+    .flat();
+  it(`should be match ${expects.length} object`, () => {
+    expect(matches.length).toBe(expects.length);
+  });
+
+  for (let i = 0; i < expects.length; i++) {
+    it(expects[i].title, () => {
+      expect(matches[i]?.currentValue).toBe(expects[i].currentValue);
+      expect(matches[i]?.depName).toBe(expects[i].depName);
+    });
+  }
+});
