@@ -71,6 +71,8 @@ describe("2: npm for import map", () => {
       "chalk": "npm:chalk@5.0.1",
       "chalk": "https://esm.sh/chalk@5.0.1",
       "chalk": "npm:chalk@5",
+      "foo": "https://unpkg.com/@bar/foo@0.1.0/foo.ts",
+      "foo": "https://unpkg.com/foo@0.1.0/umd/foo.production.min.js",
     }
   }`;
   const expects = [
@@ -88,6 +90,16 @@ describe("2: npm for import map", () => {
       title: "should accept only major version",
       currentValue: "5",
       depName: "chalk",
+    },
+    {
+      title: "should accept unpkg.com specifier",
+      currentValue: "0.1.0",
+      depName: "@bar/foo",
+    },
+    {
+      title: "should accept unpkg.com specifier without @scope",
+      currentValue: "0.1.0",
+      depName: "foo",
     },
   ];
   const matches = regexps[1]
@@ -159,6 +171,8 @@ describe("4: npm for js file", () => {
   import chalk from "npm:chalk@5.0.1";
   export chalk from "https://esm.sh/chalk@5.0.1";
   import chalk from "npm:chalk@5";
+  import foo from "https://unpkg.com/@bar/foo@0.1.0/foo.ts";
+  import foo from "https://unpkg.com/foo@0.1.0/umd/foo.production.min.js";
   `;
 
   const expects = [
@@ -176,6 +190,16 @@ describe("4: npm for js file", () => {
       title: "should accept only major version",
       currentValue: "5",
       depName: "chalk",
+    },
+    {
+      title: "should accept unpkg.com specifier",
+      currentValue: "0.1.0",
+      depName: "@bar/foo",
+    },
+    {
+      title: "should accept unpkg.com specifier without @scope",
+      currentValue: "0.1.0",
+      depName: "foo",
     },
   ];
 
@@ -227,7 +251,7 @@ describe("5: github tag for import_map", () => {
       title: "should accept un-semver version",
       currentValue: "someversion",
       depName: "user/repo",
-    }
+    },
   ];
 
   const matches = regexps[4]
@@ -275,7 +299,7 @@ describe("6: github tag for js file", () => {
       title: "should accept un-semver version",
       currentValue: "someversion",
       depName: "user/repo",
-    }
+    },
   ];
 
   const matches = regexps[5]
