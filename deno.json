@@ -15,7 +15,8 @@
       "fileMatch": ["^import_map.json$", "^deno.jsonc?$"],
       "matchStrings": [
         "['\"].+?['\"]\\s*:\\s*['\"]https://esm.sh/(?<depName>.+?)@v?(?<currentValue>\\d+?(?:\\.\\d+?){0,2}).*?['\"]",
-        "['\"].+?['\"]\\s*:\\s*['\"]npm:(?<depName>.+?)@(?<currentValue>\\d+?(?:\\.\\d+?){0,2}).*?['\"]"
+        "['\"].+?['\"]\\s*:\\s*['\"]npm:(?<depName>.+?)@(?<currentValue>\\d+?(?:\\.\\d+?){0,2}).*?['\"]",
+        "['\"].+?['\"]\\s*:\\s*['\"]https?://unpkg.com/(?<depName>(?:@[^/\"']*/)?[^/\"']*?)@(?<currentValue>[^'\"]*?)[/'\"]"
       ],
       "datasourceTemplate": "npm"
     },
@@ -32,16 +33,14 @@
       "fileMatch": ["\\.[jt]sx?$"],
       "matchStrings": [
         "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]https://esm.sh/(?<depName>.+?)@v?(?<currentValue>\\d+?(?:\\.\\d+?){0,2}).*?['\"]",
-        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]npm:(?<depName>.+?)@(?<currentValue>\\d+?(?:\\.\\d+?){0,2}).*?['\"]"
+        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]npm:(?<depName>.+?)@(?<currentValue>\\d+?(?:\\.\\d+?){0,2}).*?['\"]",
+        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]https?://unpkg.com/(?<depName>(?:@[^/\"']*/)?[^/\"']*?)@(?<currentValue>[^'\"]*?)[/'\"]"
       ],
       "datasourceTemplate": "npm"
     },
     {
       "customType": "regex",
-      "fileMatch": [
-        "^import_map.json$",
-        "^deno.jsonc?$"
-      ],
+      "fileMatch": ["^import_map.json$", "^deno.jsonc?$"],
       "matchStrings": [
         "\".+?\"\\s*:\\s*['\"]https://pax.deno.dev/(?<depName>.+?/.+?)@(?<currentValue>.+?)[/'\"]",
         "\".+?\"\\s*:\\s*['\"]https://raw.githubusercontent.com/(?<depName>.+?/.+?)/(?<currentValue>.+?)[/'\"]"
@@ -50,9 +49,7 @@
     },
     {
       "customType": "regex",
-      "fileMatch": [
-        "\\.[jt]sx?$"
-      ],
+      "fileMatch": ["\\.[jt]sx?$"],
       "matchStrings": [
         "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]https://pax.deno.dev/(?<depName>.+?/.+?)@(?<currentValue>.+?)[/'\"]",
         "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]https://raw.githubusercontent.com/(?<depName>.+?/.+?)/(?<currentValue>.+?)[/'\"]"
