@@ -37,6 +37,7 @@ Currently, there are following limitions on Deno project:
   - https://esm.sh
   - https://pax.deno.dev
   - https://raw.githubusercontent.com
+  - https://unpkg.com
   - See [test case](./test/deno.test.ts) for supported syntax
 - Dynamic import is not followed
 - Cannot detect tag when "/" is included in it (github-tag source(pax.deno.dev and raw.githubusercontent.com))
