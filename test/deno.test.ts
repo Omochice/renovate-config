@@ -120,6 +120,26 @@ describe("2: npm for import map", () => {
       currentValue: "0.1.0",
       depName: "foo",
     },
+    {
+      title: "should accept skypack.dev specifier",
+      input: `{
+        "imports": {
+          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5",
+        }
+      }`,
+      currentValue: "10.5.5",
+      depName: "@scope/package",
+    },
+    {
+      title: "should accept skypack.dev with query",
+      input: `{
+        "imports": {
+          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5?min",
+        }
+      }`,
+      currentValue: "10.5.5",
+      depName: "@scope/package",
+    },
   ] as const;
 
   for (const testCase of testCases) {
@@ -210,6 +230,18 @@ describe("4: npm for js file", () => {
       input: `import foo from "https://unpkg.com/foo@0.1.0/umd/foo.production.min.js";`,
       currentValue: "0.1.0",
       depName: "foo",
+    },
+    {
+      title: "should accept skypack.dev specifier",
+      input: `import foo from "https://cdn.skypack.dev/@scope/package@10.5.5";`,
+      currentValue: "10.5.5",
+      depName: "@scope/package",
+    },
+    {
+      title: "should accept skypack.dev with query",
+      input: `import foo from "https://cdn.skypack.dev/@scope/package@10.5.5?min";`,
+      currentValue: "10.5.5",
+      depName: "@scope/package",
     },
   ] as const;
 
