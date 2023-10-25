@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/Omochice/renovate-config/compare/v1.1.0...v1.2.0) (2023-10-25)
+
+
+### Features
+
+* add skypack ([#15](https://github.com/Omochice/renovate-config/issues/15)) ([7489b4d](https://github.com/Omochice/renovate-config/commit/7489b4d390a9a51f5c0674650041f3adc0432c7c))
+* Support unpkg ([#11](https://github.com/Omochice/renovate-config/issues/11)) ([88d9973](https://github.com/Omochice/renovate-config/commit/88d99739721842307f105419ae06ee4c47bc2f8c))
+
 ## [1.1.0](https://github.com/Omochice/renovate-config/compare/v1.0.0...v1.1.0) (2023-10-23)
 
 
