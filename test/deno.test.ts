@@ -91,6 +91,16 @@ describe("2: npm for import map", () => {
       depName: "chalk",
     },
     {
+      title: "should accept esm.sh specifier with query",
+      input: `{
+        "imports": {
+          "tslib": "https://esm.sh/tslib@2.6.2?exports=__await,__rest",
+        }
+      }`,
+      currentValue: "2.6.2",
+      depName: "tslib",
+    },
+    {
       title: "should accept only major version",
       input: `{
         "imports": {
@@ -211,6 +221,12 @@ describe("4: npm for js file", () => {
       input: `export chalk from "https://esm.sh/chalk@5.0.1";`,
       currentValue: "5.0.1",
       depName: "chalk",
+    },
+    {
+      title: "should accept esm.sh specifier with query",
+      input: `import { __await, __rest } from "https://esm.sh/tslib@2.6.2?exports=__await,__rest";`,
+      currentValue: "2.6.2",
+      depName: "tslib",
     },
     {
       title: "should accept only major version",
