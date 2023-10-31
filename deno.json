@@ -2,8 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>Omochice/renovate-config",
-    "github>Omochice/renevate-config//deno/deno-land",
-    "github>Omochice/renevate-config//deno/npm",
-    "github>Omochice/renevate-config//deno/github-tag"
+    "github>Omochice/renovate-config//deno/deno-land",
+    "github>Omochice/renovate-config//deno/npm",
+    "github>Omochice/renovate-config//deno/github-tag"
   ]
 }
