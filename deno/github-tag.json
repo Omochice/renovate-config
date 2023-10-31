@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^import_map.json$", "^deno.jsonc?$"],
+      "matchStrings": [
+        "['\"].+?['\"]\\s*:\\s*['\"]https://pax.deno.dev/(?<depName>.+?/.+?)@(?<currentValue>[^'\"]+?)[/'\"]",
+        "\".+?\"\\s*:\\s*['\"]https://raw.githubusercontent.com/(?<depName>.+?/.+?)/(?<currentValue>[^'\"]+?)[/'\"]"
+      ],
+      "datasourceTemplate": "github-tags"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["\\.[jt]sx?$"],
+      "matchStrings": [
+        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]https://pax.deno.dev/(?<depName>.+?/.+?)@(?<currentValue>[^/\"']+?)[/\"']",
+        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]https://raw.githubusercontent.com/(?<depName>.+?/.+?)/(?<currentValue>[^'\"]+?)[/'\"]"
+      ],
+      "datasourceTemplate": "github-tags"
+    }
+  ]
+}
