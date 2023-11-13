@@ -43,7 +43,7 @@ describe("deno.land for import map", () => {
           "path": "https://deno.land/std@v0.204.0/path/mod.ts",
         }
       }`,
-      currentValue: "0.204.0",
+      currentValue: "v0.204.0",
       depName: "https://deno.land/std",
     },
     {
@@ -53,7 +53,7 @@ describe("deno.land for import map", () => {
           "some": "https://deno.land/x/some_module@v0.1.0",
         }
       }`,
-      currentValue: "0.1.0",
+      currentValue: "v0.1.0",
       depName: "https://deno.land/x/some_module",
     },
   ] as const;
@@ -89,7 +89,7 @@ describe("deno.land for import map", () => {
     {
       title: "should accept if 'v' in version",
       input: `import { someFuncion } from "https://deno.land/std@v1.0.0/some/mod.ts";`,
-      currentValue: "1.0.0",
+      currentValue: "v1.0.0",
       depName: "https://deno.land/std",
     },
     {
