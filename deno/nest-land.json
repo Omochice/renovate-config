@@ -1,0 +1,30 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^import_map.json$", "^deno.jsonc?$"],
+      "matchStrings": [
+        "['\"].+?['\"]\\s*:\\s*['\"]https://x.nest.land/(?<depName>.+?)@(?<currentValue>v?(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]"
+      ],
+      "datasourceTemplate": "custom.nest-land"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["\\.[jt]sx?$"],
+      "matchStrings": [
+        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]https://x.nest.land/(?<depName>.+?)@(?<currentValue>v?(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]"
+      ],
+      "datasourceTemplate": "custom.nest-land"
+    }
+  ],
+  "customDatasources": {
+    "nest-land": {
+      "defaultRegistryUrlTemplate": "https://x.nest.land/api/package/{{packageName}}",
+      "format": "json",
+      "transformTemplates": [
+        "{ \"releases\": [{ \"version\": $split($string($.latestVersion), \"@\")[1], \"releaseTimestamp\": $.updatedAt, \"sourceUrl\": \"https://nest.land/package/\" & $.normalizedName  }], \"sourceUrl\": \"https://nest.land/package/\" & $.normalizedName, \"homepage\": $.repository }"
+      ]
+    }
+  }
+}

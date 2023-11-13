@@ -4,6 +4,7 @@
     "github>Omochice/renovate-config",
     "github>Omochice/renovate-config//deno/deno-land",
     "github>Omochice/renovate-config//deno/npm",
-    "github>Omochice/renovate-config//deno/github-tag"
+    "github>Omochice/renovate-config//deno/github-tag",
+    "github>Omochice/renovate-config//deno/nest-land"
   ]
 }
