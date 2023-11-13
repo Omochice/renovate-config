@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.0](https://github.com/Omochice/renovate-config/compare/v1.2.0...v1.3.0) (2023-11-13)
+
+
+### Features
+
+* add support `nest.land` ([#21](https://github.com/Omochice/renovate-config/issues/21)) ([2d4a858](https://github.com/Omochice/renovate-config/commit/2d4a85857cda7e2dcf8bea888b4a96e1391831f4))
+* esm.sh with query ([#17](https://github.com/Omochice/renovate-config/issues/17)) ([07bd5fa](https://github.com/Omochice/renovate-config/commit/07bd5fa6fdfc83dca8851720fd3b3be22e77adcf))
+
+
+### Bug Fixes
+
+* s/renenate/renovate/g ([#20](https://github.com/Omochice/renovate-config/issues/20)) ([496f355](https://github.com/Omochice/renovate-config/commit/496f355b5fc3ab161a5356e9280a5fb70f234421))
+* specify x|std ([#23](https://github.com/Omochice/renovate-config/issues/23)) ([f34c242](https://github.com/Omochice/renovate-config/commit/f34c2422372635c8d6f9deda91c92fea354ee153))
+
 ## [1.2.0](https://github.com/Omochice/renovate-config/compare/v1.1.0...v1.2.0) (2023-10-25)
 
 
