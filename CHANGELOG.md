@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/Omochice/renovate-config/compare/v1.3.0...v2.0.0) (2023-12-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* only deno config ([#24](https://github.com/Omochice/renovate-config/issues/24))
+
+### Features
+
+* only deno config ([#24](https://github.com/Omochice/renovate-config/issues/24)) ([c311706](https://github.com/Omochice/renovate-config/commit/c3117068d2d0192ecd47e5f7d57a48a24a66df74))
+
 ## [1.3.0](https://github.com/Omochice/renovate-config/compare/v1.2.0...v1.3.0) (2023-11-13)
 
 
