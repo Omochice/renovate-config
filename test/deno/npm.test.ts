@@ -142,7 +142,6 @@ describe("npm for js file", () => {
     },
     {
       title: "should accept only major version",
-
       input: `import chalk from "npm:chalk@5";`,
       currentValue: "5",
       depName: "chalk",
@@ -168,6 +167,49 @@ describe("npm for js file", () => {
     {
       title: "should accept skypack.dev with query",
       input: `import foo from "https://cdn.skypack.dev/@scope/package@10.5.5?min";`,
+      currentValue: "10.5.5",
+      depName: "@scope/package",
+    },
+    {
+      title: "should accept npm specifier in //@deno-types",
+      input: `// @deno-types="npm:chalk@5.0.1";`,
+      currentValue: "5.0.1",
+      depName: "chalk",
+    },
+    {
+      title: "should accept esm.sh specifier with query in //@deno-types",
+      input: `// @deno-types="https://esm.sh/tslib@2.6.2?exports=__await,__rest";`,
+      currentValue: "2.6.2",
+      depName: "tslib",
+    },
+    {
+      title: "should accept only major version in //@deno-types",
+      input: `// @deno-types="npm:chalk@5";`,
+      currentValue: "5",
+      depName: "chalk",
+    },
+    {
+      title: "should accept unpkg.com specifier in //@deno-types",
+      input: `// @deno-types="https://unpkg.com/@bar/foo@0.1.0/foo.ts";`,
+      currentValue: "0.1.0",
+      depName: "@bar/foo",
+    },
+    {
+      title:
+        "should accept unpkg.com specifier without @scope in //@deno-types",
+      input: `// @deno-types="https://unpkg.com/foo@0.1.0/umd/foo.production.min.js";`,
+      currentValue: "0.1.0",
+      depName: "foo",
+    },
+    {
+      title: "should accept skypack.dev specifier in //@deno-types",
+      input: `// @deno-types="https://cdn.skypack.dev/@scope/package@10.5.5";`,
+      currentValue: "10.5.5",
+      depName: "@scope/package",
+    },
+    {
+      title: "should accept skypack.dev with query in //@deno-types",
+      input: `// @deno-types="https://cdn.skypack.dev/@scope/package@10.5.5?min";`,
       currentValue: "10.5.5",
       depName: "@scope/package",
     },

@@ -14,8 +14,8 @@
       "customType": "regex",
       "fileMatch": ["\\.[jt]sx?$"],
       "matchStrings": [
-        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]https://pax.deno.dev/(?<depName>.+?/.+?)@(?<currentValue>[^/\"']+?)[/\"']",
-        "(?:im|ex)port(?:.|\\s)+?from\\s*['\"]https://raw.githubusercontent.com/(?<depName>.+?/.+?)/(?<currentValue>[^'\"]+?)[/'\"]"
+        "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=)['\"]https://pax.deno.dev/(?<depName>.+?/.+?)@(?<currentValue>[^/\"']+?)[/\"']",
+        "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=)['\"]https://raw.githubusercontent.com/(?<depName>.+?/.+?)/(?<currentValue>[^'\"]+?)[/'\"]"
       ],
       "datasourceTemplate": "github-tags"
     }
