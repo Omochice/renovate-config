@@ -2,6 +2,7 @@ name: basic ci
 
 on:
   - push
+  - pull_request
 
 jobs:
   basic:
