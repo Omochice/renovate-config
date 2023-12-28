@@ -135,6 +135,12 @@ describe("npm for js file", () => {
       depName: "chalk",
     },
     {
+      title: "should accept esm.sh specifier with prefix",
+      input: `export chalk from "https://esm.sh/v135/chalk@5.0.1";`,
+      currentValue: "5.0.1",
+      depName: "chalk",
+    },
+    {
       title: "should accept esm.sh specifier with query",
       input: `import { __await, __rest } from "https://esm.sh/tslib@2.6.2?exports=__await,__rest";`,
       currentValue: "2.6.2",
