@@ -96,19 +96,19 @@ describe("github tag for js file", () => {
   const testCases = [
     {
       title: "should accept raw.githubusercontent.com",
-      input: `import { sample } from "https://raw.githubusercontent.com/user/repo/1.0.0/mod.ts",`,
+      input: `import { sample } from "https://raw.githubusercontent.com/user/repo/1.0.0/mod.ts"`,
       currentValue: "1.0.0",
       depName: "user/repo",
     },
     {
       title: "should accept pax.deno.dev",
-      input: `import { sample } from "https://pax.deno.dev/user/repo@1.0.0/mod.ts",`,
+      input: `import { sample } from "https://pax.deno.dev/user/repo@1.0.0/mod.ts"`,
       currentValue: "1.0.0",
       depName: "user/repo",
     },
     {
       title: "should accept omit 'mod.ts' when specify pax.deno.dev",
-      input: `import { sample } from "https://pax.deno.dev/user/repo@1.0.0",`,
+      input: `import { sample } from "https://pax.deno.dev/user/repo@1.0.0"`,
       currentValue: "1.0.0",
       depName: "user/repo",
     },
@@ -126,20 +126,20 @@ describe("github tag for js file", () => {
     },
     {
       title: "should accept raw.githubusercontent.com in //@deno-types",
-      input: `// @deno-types="https://raw.githubusercontent.com/user/repo/1.0.0/mod.ts",`,
+      input: `// @deno-types="https://raw.githubusercontent.com/user/repo/1.0.0/mod.ts"`,
       currentValue: "1.0.0",
       depName: "user/repo",
     },
     {
       title: "should accept pax.deno.dev in //@deno-types",
-      input: `// @deno-types="https://pax.deno.dev/user/repo@1.0.0/mod.ts",`,
+      input: `// @deno-types="https://pax.deno.dev/user/repo@1.0.0/mod.ts"`,
       currentValue: "1.0.0",
       depName: "user/repo",
     },
     {
       title:
         "should accept omit 'mod.ts' when specify pax.deno.dev in //@deno-types",
-      input: `// @deno-types="https://pax.deno.dev/user/repo@1.0.0",`,
+      input: `// @deno-types="https://pax.deno.dev/user/repo@1.0.0"`,
       currentValue: "1.0.0",
       depName: "user/repo",
     },
