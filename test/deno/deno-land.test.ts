@@ -98,6 +98,24 @@ describe("deno.land for import map", () => {
       currentValue: "0.1.0",
       depName: "https://deno.land/x/some_module",
     },
+    {
+      title: "should accept deno.land/std in //@deno-types",
+      input: `// @deno-types="https://deno.land/std@0.204.0/path/mod.ts";`,
+      currentValue: "0.204.0",
+      depName: "https://deno.land/std",
+    },
+    {
+      title: "should accept if 'v' in version in //@deno-types",
+      input: `// @deno-types="https://deno.land/std@v1.0.0/some/mod.ts";`,
+      currentValue: "v1.0.0",
+      depName: "https://deno.land/std",
+    },
+    {
+      title: "should accept deno.land/x in //@deno-types",
+      input: `// @deno-types="https://deno.land/x/some_module@0.1.0/some/mod.ts";`,
+      currentValue: "0.1.0",
+      depName: "https://deno.land/x/some_module",
+    },
   ] as const;
 
   for (const testCase of testCases) {
