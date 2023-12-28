@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.0](https://github.com/Omochice/renovate-config/compare/v2.0.0...v2.1.0) (2023-12-28)
+
+
+### Features
+
+* add `//[@deno-types](https://github.com/deno-types)` support ([#31](https://github.com/Omochice/renovate-config/issues/31)) ([a416fb0](https://github.com/Omochice/renovate-config/commit/a416fb093d018fa05bf16c72d61ef1bbb894bb06))
+
+
+### Bug Fixes
+
+* esm.sh prefix pinning ([#30](https://github.com/Omochice/renovate-config/issues/30)) ([6663258](https://github.com/Omochice/renovate-config/commit/6663258a206cb20275fcb548512cdecd35013db3)), closes [#29](https://github.com/Omochice/renovate-config/issues/29)
+
 ## [2.0.0](https://github.com/Omochice/renovate-config/compare/v1.3.0...v2.0.0) (2023-12-07)
 
 
