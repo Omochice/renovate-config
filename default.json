@@ -1,4 +1,18 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", ":timezone(Asia/Tokyo)", ":semanticCommits"]
+  "extends": [
+    "config:recommended",
+    ":timezone(Asia/Tokyo)",
+    ":semanticCommits"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    }
+  ]
 }
