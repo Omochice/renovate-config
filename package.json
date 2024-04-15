@@ -3,9 +3,7 @@
   "version": "2.1.0",
   "private": true,
   "description": "renovate configuration for me",
-  "keywords": [
-    "renovate"
-  ],
+  "keywords": ["renovate"],
   "license": "zlib",
   "author": "Omochice",
   "scripts": {
