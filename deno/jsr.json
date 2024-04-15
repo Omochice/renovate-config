@@ -7,7 +7,8 @@
       "matchStrings": [
         "['\"].+?['\"]\\s*:\\s*['\"]jsr:(?<depName>@(?<namespace>.+?)/(?<package>.+?))@[\\^~]?(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/\"']"
       ],
-      "datasourceTemplate": "npm"
+      "datasourceTemplate": "npm",
+      "packageNameTemplate": "@jsr/{{namespace}}__{{package}}"
     },
     {
       "customType": "regex",
