@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/Omochice/renovate-config/compare/v2.2.0...v2.2.1) (2024-04-15)
+
+
+### Bug Fixes
+
+* add missing packageNameTemplate ([#43](https://github.com/Omochice/renovate-config/issues/43)) ([7a2b8b3](https://github.com/Omochice/renovate-config/commit/7a2b8b345f16878cfc9be2be6fb6f7ad21d4df5b))
+
 ## [2.2.0](https://github.com/Omochice/renovate-config/compare/v2.1.0...v2.2.0) (2024-04-15)
 
 
