@@ -39,9 +39,11 @@ Currently, there are following limitions on Deno project:
   - https://raw.githubusercontent.com
   - https://unpkg.com
   - https://cdn.skypack.dev
+  - `jsr:` specifier
   - See [test case](./test/deno/) for supported syntax
 - Dynamic import is not followed
 - Cannot detect tag when "/" is included in it (github-tag source(pax.deno.dev and raw.githubusercontent.com))
+- Cannot update `deno.lock`
 
 ## License
 
