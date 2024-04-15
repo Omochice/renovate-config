@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/Omochice/renovate-config/compare/v2.1.0...v2.2.0) (2024-04-15)
+
+
+### Features
+
+* support jsr ([#40](https://github.com/Omochice/renovate-config/issues/40)) ([1edac09](https://github.com/Omochice/renovate-config/commit/1edac09d34587e997992a06b4235a4cfff3d64f2))
+
 ## [2.1.0](https://github.com/Omochice/renovate-config/compare/v2.0.0...v2.1.0) (2023-12-28)
 
 
