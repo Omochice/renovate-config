@@ -1,4 +1,4 @@
-import { expect, expectTypeOf, describe, it } from "vitest";
+import { expect, expectTypeOf, describe, it, test } from "vitest";
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
@@ -118,6 +118,32 @@ describe("npm for import map", () => {
       expect(matches[0]?.depName).toBe(testCase.depName);
     });
   }
+});
+
+// NOTE: This feature is not required in the imports field in deno.json and source files.
+// https://github.com/denoland/deno/pull/22087
+// https://deno.com/blog/v1.40#simpler-imports-in-denojson
+test("should accept npm specifier with subpath exports in import map", () => {
+  const testCase = {
+    title: "should accept npm specifier with subpath exports in import map",
+    input: `{
+        "imports": {
+          "preact": "npm:preact@10.5.13",
+          "preact/": "npm:/preact@10.5.13/"
+        }
+      }`,
+    currentValue: "10.5.13",
+    depName: "preact",
+  } as const;
+
+  const re = regexps[0].map((r) => new RegExp(r, "gm"));
+  const matches = re
+    .map((r) => Array.from(testCase.input.matchAll(r)).map((e) => e.groups))
+    .filter((match) => match.length !== 0)
+    .flat();
+  expect(matches.length).toBe(2);
+  expect(matches[0]?.currentValue).toBe(testCase.currentValue);
+  expect(matches[0]?.depName).toBe(testCase.depName);
 });
 
 describe("npm for js file", () => {
