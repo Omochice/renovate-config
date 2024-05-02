@@ -8,7 +8,7 @@
   "author": "Omochice",
   "scripts": {
     "test": "npm-run-all test:validate test:regex",
-    "test:validate": "renovate-config-validator --strict default.json deno.json deno/*.json",
+    "test:validate": "renovate-config-validator --strict deno.json deno/*.json",
     "test:regex": "vitest run",
     "fmt": "npm-run-all fmt:package fmt:json",
     "fmt:package": "sort-package-json",
