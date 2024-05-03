@@ -8,7 +8,7 @@ A configuration for Renovate.
 
 Extends this configuration using by `extends` field.
 
-If you use Renovate in Deno project.
+If you use Renovate in a Deno project.
 
 ```json
 {
