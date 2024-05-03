@@ -1,4 +1,4 @@
-import { expect, expectTypeOf, describe, it, test } from "vitest";
+import { expect, expectTypeOf, describe, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
