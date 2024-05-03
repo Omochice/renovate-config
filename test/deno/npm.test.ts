@@ -142,8 +142,10 @@ test("should accept npm specifier with subpath exports in import map", () => {
     .filter((match) => match.length !== 0)
     .flat();
   expect(matches.length).toBe(2);
-  expect(matches[0]?.currentValue).toBe(testCase.currentValue);
-  expect(matches[0]?.depName).toBe(testCase.depName);
+  for (const match of matches) {
+    expect(match?.currentValue).toBe(testCase.currentValue);
+    expect(match?.depName).toBe(testCase.depName);
+  }
 });
 
 describe("npm for js file", () => {
