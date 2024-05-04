@@ -120,6 +120,35 @@ describe("npm for import map", () => {
   }
 });
 
+// NOTE: This feature is not required in the imports field in deno.json and source files.
+// https://github.com/denoland/deno/pull/22087
+// https://deno.com/blog/v1.40#simpler-imports-in-denojson
+describe("should accept npm specifier with subpath exports in import map", () => {
+  it("should match all exports of preact", () => {
+    const testCase = {
+      input: `{
+        "imports": {
+          "preact": "npm:preact@10.5.13",
+          "preact/": "npm:/preact@10.5.13/"
+        }
+      }`,
+      currentValue: "10.5.13",
+      depName: "preact",
+    } as const;
+
+    const re = regexps[0].map((r) => new RegExp(r, "gm"));
+    const matches = re
+      .map((r) => Array.from(testCase.input.matchAll(r)).map((e) => e.groups))
+      .filter((match) => match.length !== 0)
+      .flat();
+    expect(matches.length).toBe(2);
+    for (const match of matches) {
+      expect(match?.currentValue).toBe(testCase.currentValue);
+      expect(match?.depName).toBe(testCase.depName);
+    }
+  });
+});
+
 describe("npm for js file", () => {
   const testCases = [
     {
