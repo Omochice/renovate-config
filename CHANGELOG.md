@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/Omochice/renovate-config/compare/v2.2.1...v2.3.0) (2024-05-04)
+
+
+### Features
+
+* match all config for workspace and to test `npm:` specifier with subpath exports in import map ([#45](https://github.com/Omochice/renovate-config/issues/45)) ([aa5b7b5](https://github.com/Omochice/renovate-config/commit/aa5b7b56f0ed6548e3ed6fd5b8c7d339b007bde4))
+
 ## [2.2.1](https://github.com/Omochice/renovate-config/compare/v2.2.0...v2.2.1) (2024-04-15)
 
 
