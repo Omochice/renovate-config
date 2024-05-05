@@ -48,18 +48,16 @@ describe("x.nest.land for import_map", () => {
     },
   ];
 
-  for (const testCase of testCases) {
-    it(testCase.title, () => {
-      const re = regexps[0].map((r) => new RegExp(r, "gm"));
-      const matches = re
-        .map((r) => Array.from(testCase.input.matchAll(r)).map((e) => e.groups))
-        .filter((match) => match.length !== 0)
-        .flat();
-      expect(matches.length).toBe(1);
-      expect(matches[0]?.currentValue).toBe(testCase.currentValue);
-      expect(matches[0]?.depName).toBe(testCase.depName);
-    });
-  }
+  it.each(testCases)("$title", ({ input, currentValue, depName }) => {
+    const re = regexps[0].map((r) => new RegExp(r, "gm"));
+    const matches = re
+      .map((r) => Array.from(input.matchAll(r)).map((e) => e.groups))
+      .filter((match) => match.length !== 0)
+      .flat();
+    expect(matches.length).toBe(1);
+    expect(matches[0]?.currentValue).toBe(currentValue);
+    expect(matches[0]?.depName).toBe(depName);
+  });
 });
 
 describe("x.nest.land for js file", () => {
@@ -90,16 +88,14 @@ describe("x.nest.land for js file", () => {
     },
   ];
 
-  for (const testCase of testCases) {
-    it(testCase.title, () => {
-      const re = regexps[1].map((r) => new RegExp(r, "gm"));
-      const matches = re
-        .map((r) => Array.from(testCase.input.matchAll(r)).map((e) => e.groups))
-        .filter((match) => match.length !== 0)
-        .flat();
-      expect(matches.length).toBe(1);
-      expect(matches[0]?.currentValue).toBe(testCase.currentValue);
-      expect(matches[0]?.depName).toBe(testCase.depName);
-    });
-  }
+  it.each(testCases)("$title", ({ input, currentValue, depName }) => {
+    const re = regexps[1].map((r) => new RegExp(r, "gm"));
+    const matches = re
+      .map((r) => Array.from(input.matchAll(r)).map((e) => e.groups))
+      .filter((match) => match.length !== 0)
+      .flat();
+    expect(matches.length).toBe(1);
+    expect(matches[0]?.currentValue).toBe(currentValue);
+    expect(matches[0]?.depName).toBe(depName);
+  });
 });
