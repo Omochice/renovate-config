@@ -8,15 +8,7 @@ A configuration for Renovate.
 
 Extends this configuration using by `extends` field.
 
-```json
-{
-  "extends": [
-    "github>Omochice/renovate-config"
-  ]
-}
-```
-
-If you use Renovate in Deno project.
+If you use Renovate in a Deno project.
 
 ```json
 {
