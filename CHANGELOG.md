@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/Omochice/renovate-config/compare/v2.3.0...v3.0.0) (2024-05-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* delete my personal configuration ([#47](https://github.com/Omochice/renovate-config/issues/47))
+
+### Miscellaneous Chores
+
+* delete my personal configuration ([#47](https://github.com/Omochice/renovate-config/issues/47)) ([5d4b411](https://github.com/Omochice/renovate-config/commit/5d4b411224e24b7c9827cd5b18326169b5051510))
+
 ## [2.3.0](https://github.com/Omochice/renovate-config/compare/v2.2.1...v2.3.0) (2024-05-04)
 
 

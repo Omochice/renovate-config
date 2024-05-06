@@ -1,9 +1,11 @@
 {
   "name": "@Omochice/renovate-config",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "private": true,
   "description": "renovate configuration for me",
-  "keywords": ["renovate"],
+  "keywords": [
+    "renovate"
+  ],
   "license": "zlib",
   "author": "Omochice",
   "scripts": {
