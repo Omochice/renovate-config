@@ -1,0 +1,19 @@
+name: Enable auto merge
+
+on:
+  - pull_request
+
+jobs:
+  enable-auto-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    if: |
+      ! failure() && ! cancelled() && github.event.pull_request.user.login == 'renovate[bot]' && contains(github.event.pull_request.body, ' **Automerge**: Enabled.')
+    steps:
+      - uses: suzuki-shunsuke/enable-auto-merge-action@fc3173c4dac9254ee191d89f1f8b257bbefc4e31 # main
+        with:
+          pr_number: ${{github.event.pull_request.number}}
+          merge_method: squash
+          github_token: ${{github.token}}
