@@ -1,0 +1,50 @@
+name: Checks for pull requests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  path-filter:
+    outputs:
+      actions: ${{steps.changes.outputs.actions}}
+      code: ${{steps.changes.outputs.code}}
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+        id: changes
+        with:
+          filters: |
+            actions:
+              - .github/workflows/*.yml
+              - .github/workflows/*.yaml
+              - aqua.yaml
+            code:
+              - package.json
+              - renovate.json5
+              - ./**/*.json
+              - test/**/*.ts
+              - .github/workflows/_validate-code.yml
+  check-actions:
+    needs: path-filter
+    if: needs.path-filter.outputs.actions == 'true'
+    uses: ./.github/workflows/_action-check.yml
+    permissions:
+      contents: read
+  check-code:
+    needs: path-filter
+    if: needs.path-filter.outputs.code == 'true'
+    uses: ./.github/workflows/_validate-code.yml
+    permissions:
+      contents: read
+  status-check:
+    runs-on: ubuntu-latest
+    needs:
+      - check-actions
+      - check-code
+    permissions: {}
+    if: failure()
+    steps:
+      - run: exit 1

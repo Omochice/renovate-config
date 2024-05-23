@@ -1,8 +1,6 @@
-name: basic ci
+name: Validate code
 
-on:
-  - push
-  - pull_request
+on: workflow_call
 
 jobs:
   basic:

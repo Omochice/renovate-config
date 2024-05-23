@@ -1,0 +1,40 @@
+name: Checks for pull requests
+
+on: push
+
+jobs:
+  path-filter:
+    outputs:
+      actions: ${{steps.changes.outputs.actions}}
+      code: ${{steps.changes.outputs.code}}
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+        id: changes
+        with:
+          filters: |
+            actions:
+              - .github/workflows/*.yml
+              - .github/workflows/*.yaml
+              - aqua.yaml
+            code:
+              - package.json
+              - renovate.json5
+              - ./**/*.json
+              - test/**/*.ts
+              - .github/workflows/_validate-code.yml
+  check-actions:
+    needs: path-filter
+    if: needs.path-filter.outputs.actions == 'true'
+    uses: ./.github/workflows/_action-check.yml
+    permissions:
+      contents: read
+  check-code:
+    needs: path-filter
+    if: needs.path-filter.outputs.code == 'true'
+    uses: ./.github/workflows/_validate-code.yml
+    permissions:
+      contents: read
