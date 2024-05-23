@@ -1,0 +1,37 @@
+name: Check GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-actions:
+    name: Check GitHub Actions
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: checkout
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - name: Check Changed Files
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+        id: filter
+        with:
+          filters: |
+            actions:
+              - ".github/workflows/*.yml"
+              - ".github/workflows/*.yaml"
+      - uses: aquaproj/aqua-installer@6ce1f8848ec8e61f14d57bd5d7597057a6dd187c # v3.0.1
+        if: steps.filter.outputs.actions == 'true'
+        with:
+          aqua_version: v2.28.0
+      - name: Linting
+        if: steps.filter.outputs.actions == 'true'
+        run: |
+          shellcheck --version
+          ghalint run
+          actionlint -color
