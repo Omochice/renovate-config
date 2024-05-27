@@ -2,6 +2,9 @@ name: Checks for push
 
 on: push
 
+permissions:
+  contents: read
+
 jobs:
   path-filter:
     outputs:

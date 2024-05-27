@@ -3,6 +3,9 @@ name: Enable auto merge
 on:
   - pull_request
 
+permissions:
+  contents: read
+
 jobs:
   enable-auto-merge:
     runs-on: ubuntu-latest

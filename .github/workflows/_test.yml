@@ -2,6 +2,9 @@ name: Test the sharable configure
 
 on: workflow_call
 
+permissions:
+  contents: read
+
 jobs:
   basic:
     runs-on: ubuntu-latest
