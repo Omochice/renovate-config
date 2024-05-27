@@ -1,8 +1,6 @@
-name: basic ci
+name: Test the sharable configure
 
-on:
-  - push
-  - pull_request
+on: workflow_call
 
 jobs:
   basic:
@@ -10,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: ["18", "20", "latest"]
+        node: ["20", "lts/*", "current"]
     permissions:
       contents: read
     steps:
