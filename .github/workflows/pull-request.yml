@@ -25,13 +25,11 @@ jobs:
     needs: path-filter
     if: needs.path-filter.outputs.actions == 'true'
     uses: ./.github/workflows/_check-actions.yml
-    permissions:
-      contents: read
+    permissions: {}
   test-code:
     needs: path-filter
     uses: ./.github/workflows/_test.yml
-    permissions:
-      contents: read
+    permissions: {}
   status-check:
     runs-on: ubuntu-latest
     needs:
