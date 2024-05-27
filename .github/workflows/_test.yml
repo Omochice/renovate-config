@@ -2,6 +2,8 @@ name: Test the sharable configure
 
 on: workflow_call
 
+permissions: {}
+
 jobs:
   basic:
     runs-on: ubuntu-latest
@@ -9,8 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         node: ["20", "lts/*", "current"]
-    permissions:
-      contents: read
+    permissions: {}
     steps:
       - name: Checkout
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
