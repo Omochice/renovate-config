@@ -2,8 +2,7 @@ name: Check GitHub Actions
 
 on: workflow_call
 
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   check-actions:

@@ -2,8 +2,7 @@ name: Test the sharable configure
 
 on: workflow_call
 
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   basic:
