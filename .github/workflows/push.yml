@@ -1,0 +1,31 @@
+name: Checks for push
+
+on: push
+
+jobs:
+  path-filter:
+    outputs:
+      actions: ${{steps.changes.outputs.actions}}
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+        id: changes
+        with:
+          filters: |
+            actions:
+              - .github/workflows/*.yml
+              - .github/workflows/*.yaml
+              - aqua.yaml
+  check-actions:
+    needs: path-filter
+    if: needs.path-filter.outputs.actions == 'true'
+    uses: ./.github/workflows/_check-actions.yml
+    permissions:
+      contents: read
+  test-code:
+    needs: path-filter
+    uses: ./.github/workflows/_test.yml
+    permissions:
+      contents: read
