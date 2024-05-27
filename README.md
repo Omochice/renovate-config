@@ -1,6 +1,7 @@
 # @Omochice/renovate-config
 
-[![basic ci](https://github.com/Omochice/renovate-config/actions/workflows/ci.yml/badge.svg)](https://github.com/Omochice/renovate-config/actions/workflows/ci.yml)
+[![Checks for push](https://github.com/Omochice/renovate-config/actions/workflows/push.yml/badge.svg)](https://github.com/Omochice/renovate-config/actions/workflows/push.yml)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Omochice/renovate-config/badge)](https://scorecard.dev/viewer/?uri=github.com/Omochice/renovate-config)
 
 A configuration for Renovate.
 
