@@ -34,6 +34,16 @@ describe("jsr for import map", () => {
       currentValue: "1.0.1",
       depName: "@luca/flag",
     },
+    {
+      title: "should accept https://jsr.io",
+      input: `{
+        "imports": {
+          "@luca/flag": "https://jsr.io/@luca/flag/1.0.1/main.ts"
+        }
+      }`,
+      currentValue: "1.0.1",
+      depName: "@luca/flag",
+    },
   ] as const;
 
   it.each(testCases)("$title", ({ input, currentValue, depName }) => {
@@ -53,6 +63,12 @@ describe("jsr for js file", () => {
     {
       title: "should accept jsr specifier",
       input: `import { printProgress } from "jsr:@luca/flag@1.0.1";`,
+      currentValue: "1.0.1",
+      depName: "@luca/flag",
+    },
+    {
+      title: "should accept https://jsr.io",
+      input: `import { printProgress } from "https://jsr.io/@luca/flag/1.0.1/main.ts";`,
       currentValue: "1.0.1",
       depName: "@luca/flag",
     },

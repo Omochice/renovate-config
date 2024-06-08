@@ -5,7 +5,8 @@
       "customType": "regex",
       "fileMatch": ["(?:^|/)import_map.json$", "(?:^|/)deno.jsonc?$"],
       "matchStrings": [
-        "['\"].+?['\"]\\s*:\\s*['\"]jsr:(?<depName>@(?<namespace>.+?)/(?<package>.+?))@[\\^~]?(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/\"']"
+        "['\"].+?['\"]\\s*:\\s*['\"]jsr:(?<depName>@(?<namespace>.+?)/(?<package>.+?))@[\\^~]?(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/\"']",
+        "['\"].+?['\"]\\s*:\\s*['\"]https://jsr.io/(?<depName>@(?<namespace>.+?)/(?<package>.+?))/(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/\"']"
       ],
       "datasourceTemplate": "npm",
       "packageNameTemplate": "@jsr/{{namespace}}__{{package}}"
@@ -14,7 +15,8 @@
       "customType": "regex",
       "fileMatch": ["\\.[jt]sx?$"],
       "matchStrings": [
-        "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=)['\"]jsr:(?<depName>@(?<namespace>.+?)/(?<package>.+?))@[\\^~]?(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]"
+        "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=)['\"]jsr:(?<depName>@(?<namespace>.+?)/(?<package>.+?))@[\\^~]?(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]",
+        "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=)['\"]https://jsr.io/(?<depName>@(?<namespace>.+?)/(?<package>.+?))/(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]"
       ],
       "datasourceTemplate": "npm",
       "packageNameTemplate": "@jsr/{{namespace}}__{{package}}"
