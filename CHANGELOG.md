@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.1](https://github.com/Omochice/renovate-config/compare/v3.1.0...v3.1.1) (2024-06-10)
+
+
+### Bug Fixes
+
+* use `registryUrlTemplate` instead ([#92](https://github.com/Omochice/renovate-config/issues/92)) ([0b84780](https://github.com/Omochice/renovate-config/commit/0b84780691c03da1863ece7e55a9536a97164a01))
+
 ## [3.1.0](https://github.com/Omochice/renovate-config/compare/v3.0.0...v3.1.0) (2024-06-08)
 
 
