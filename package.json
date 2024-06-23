@@ -3,9 +3,7 @@
   "version": "3.1.1",
   "private": true,
   "description": "renovate configuration for me",
-  "keywords": [
-    "renovate"
-  ],
+  "keywords": ["renovate"],
   "license": "zlib",
   "author": "Omochice",
   "scripts": {
@@ -19,6 +17,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.2.2",
     "npm-run-all2": "^6.0.0",
+    "re2": "^1.21.3",
     "renovate": "^37.27.0",
     "sort-package-json": "^2.6.0",
     "vitest": "^1.0.0"
