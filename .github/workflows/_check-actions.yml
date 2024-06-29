@@ -6,6 +6,7 @@ permissions: {}
 
 jobs:
   check-actions:
+    timeout-minutes: 30
     name: Check GitHub Actions
     runs-on: ubuntu-latest
     permissions: {}
