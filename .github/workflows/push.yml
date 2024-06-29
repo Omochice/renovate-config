@@ -7,6 +7,7 @@ permissions:
 
 jobs:
   path-filter:
+    timeout-minutes: 30
     outputs:
       actions: ${{steps.changes.outputs.actions}}
     runs-on: ubuntu-latest

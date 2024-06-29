@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   release-please:
+    timeout-minutes: 30
     runs-on: ubuntu-latest
     permissions:
       contents: write
