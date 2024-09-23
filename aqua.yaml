@@ -10,5 +10,5 @@ registries:
 - type: standard
   ref: v4.223.1 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: rhysd/actionlint@v1.7.1
+- name: rhysd/actionlint@v1.7.2
 - name: suzuki-shunsuke/ghalint@v0.2.12
