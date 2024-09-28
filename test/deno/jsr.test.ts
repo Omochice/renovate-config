@@ -1,6 +1,7 @@
 import { expect, expectTypeOf, describe, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import dedent from "dedent";
 import RE2 from "re2";
 
 const repositoryRoot = dirname(dirname(__dirname));
@@ -120,6 +121,23 @@ describe("jsr for js file", () => {
       input: `// @deno-types="jsr:@luca/flag@1";`,
       currentValue: "1",
       depName: "@luca/flag",
+    },
+    {
+      title: "shoud update in jsdoc",
+      input: dedent`
+      /**
+      * \`\`\`ts
+      * import { assertEquals } from "jsr:@std/assert@1.0.6/equals";
+      *
+      * assertEquals(add(1, 2), 3);
+      * \`\`\`
+      */
+      export function add(a: number, b: number) {
+        return a + b;
+      }
+      `,
+      currentValue: "1.0.6",
+      depName: "@std/assert",
     },
   ] as const;
 
