@@ -123,7 +123,7 @@ describe("jsr for js file", () => {
       depName: "@luca/flag",
     },
     {
-      title: "shoud update in jsdoc",
+      title: "should update in jsdoc",
       input: dedent`
       /**
       * \`\`\`ts
