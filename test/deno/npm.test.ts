@@ -247,6 +247,12 @@ describe("npm for js file", () => {
       currentValue: "10.5.5",
       depName: "@scope/package",
     },
+    {
+      title: "should accept npm specifier in //@ts-types",
+      input: `// @ts-types="npm:some@0.1.0";`,
+      currentValue: "0.1.0",
+      depName: "some",
+    },
   ] as const;
 
   it.each(testCases)("$title", ({ input, currentValue, depName }) => {

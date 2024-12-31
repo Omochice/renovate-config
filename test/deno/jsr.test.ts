@@ -99,12 +99,6 @@ describe("jsr for js file", () => {
       depName: "@luca/flag",
     },
     {
-      title: "should accept jsr specifier in //@deno-types",
-      input: `// @deno-types="jsr:@luca/flag@1.0.1";`,
-      currentValue: "1.0.1",
-      depName: "@luca/flag",
-    },
-    {
       title: "version pinning(^) with //@deno-types",
       input: `// @deno-types="jsr:@luca/flag@^1.0.1";`,
       currentValue: "1.0.1",
@@ -138,6 +132,12 @@ describe("jsr for js file", () => {
       `,
       currentValue: "1.0.6",
       depName: "@std/assert",
+    },
+    {
+      title: "should accept jsr specifier in //@ts-types",
+      input: `// @ts-types="jsr:@some/package@0.1.0";`,
+      currentValue: "0.1.0",
+      depName: "@some/package",
     },
   ] as const;
 

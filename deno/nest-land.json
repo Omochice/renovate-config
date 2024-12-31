@@ -13,7 +13,7 @@
       "customType": "regex",
       "fileMatch": ["\\.[jt]sx?$"],
       "matchStrings": [
-        "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=)['\"]https://x.nest.land/(?<depName>.+?)@(?<currentValue>v?(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]"
+        "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=|//\\s*@ts-types=)['\"]https://x.nest.land/(?<depName>.+?)@(?<currentValue>v?(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]"
       ],
       "datasourceTemplate": "custom.nest-land"
     }
