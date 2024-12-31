@@ -1,9 +1,11 @@
 {
   "name": "@Omochice/renovate-config",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "private": true,
   "description": "Shareable configuration for Renovate within Deno project",
-  "keywords": ["renovate"],
+  "keywords": [
+    "renovate"
+  ],
   "license": "zlib",
   "author": "Omochice",
   "scripts": {
