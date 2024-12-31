@@ -88,7 +88,7 @@ describe("x.nest.land for js file", () => {
       depName: "sample",
     },
     {
-      title: "should accept x.nest.land in //@deno-types",
+      title: "should accept x.nest.land in //@ts-types",
       input: `// @ts-types="https://x.nest.land/sample@0.0.1/mod.ts";`,
       currentValue: "0.0.1",
       depName: "sample",
