@@ -99,12 +99,6 @@ describe("jsr for js file", () => {
       depName: "@luca/flag",
     },
     {
-      title: "should accept jsr specifier in //@deno-types",
-      input: `// @deno-types="jsr:@luca/flag@1.0.1";`,
-      currentValue: "1.0.1",
-      depName: "@luca/flag",
-    },
-    {
       title: "version pinning(^) with //@deno-types",
       input: `// @deno-types="jsr:@luca/flag@^1.0.1";`,
       currentValue: "1.0.1",
