@@ -115,6 +115,12 @@ describe("deno.land for import map", () => {
       currentValue: "0.1.0",
       depName: "https://deno.land/x/some_module",
     },
+    {
+      title: "should accept deno.land/x in //@ts-types",
+      input: `// @ts-types="https://deno.land/x/some_module@1.0.0/some/mod.ts";`,
+      currentValue: "1.0.0",
+      depName: "https://deno.land/x/some_module",
+    },
   ] as const;
 
   it.each(testCases)("$title", ({ input, currentValue, depName }) => {

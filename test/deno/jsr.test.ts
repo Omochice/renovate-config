@@ -133,6 +133,12 @@ describe("jsr for js file", () => {
       currentValue: "1.0.6",
       depName: "@std/assert",
     },
+    {
+      title: "should accept jsr specifier in //@ts-types",
+      input: `// @ts-types="jsr:@some/package@0.1.0";`,
+      currentValue: "0.1.0",
+      depName: "@some/package",
+    },
   ] as const;
 
   it.each(testCases)("$title", ({ input, currentValue, depName }) => {

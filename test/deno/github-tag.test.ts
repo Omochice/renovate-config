@@ -154,6 +154,12 @@ describe("github tag for js file", () => {
       currentValue: "sampleversion",
       depName: "user/repo",
     },
+    {
+      title: "should accept un-semver version in //@ts-types",
+      input: `// @ts-types="https://raw.githubusercontent.com/user/repo/sampleversion/mod.ts"`,
+      currentValue: "sampleversion",
+      depName: "user/repo",
+    },
   ];
 
   it.each(testCases)("$title", ({ input, currentValue, depName }) => {

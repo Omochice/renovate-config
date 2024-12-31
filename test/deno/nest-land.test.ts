@@ -87,6 +87,12 @@ describe("x.nest.land for js file", () => {
       currentValue: "v0.0.1",
       depName: "sample",
     },
+    {
+      title: "should accept x.nest.land in //@deno-types",
+      input: `// @ts-types="https://x.nest.land/sample@0.0.1/mod.ts";`,
+      currentValue: "0.0.1",
+      depName: "sample",
+    },
   ];
 
   it.each(testCases)("$title", ({ input, currentValue, depName }) => {
