@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.91.2(@aws-sdk/client-sso-oidc@3.716.0(@aws-sdk/client-sts@3.716.0))(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.91.3(@aws-sdk/client-sso-oidc@3.716.0(@aws-sdk/client-sts@3.716.0))(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^2.6.0
         version: 2.12.0
@@ -218,9 +218,9 @@ packages:
     resolution: {integrity: sha512-PA/ES6BeKmYzFOsZ3az/8MqSLf6uzXAS7GsYONZMF6YASn4ewd/AspuvQMp6+x9VreAPCq7PecF+XL9KXejtPg==}
     engines: {node: '>=16.0.0'}
 
-  '@aws-sdk/util-locate-window@3.693.0':
-    resolution: {integrity: sha512-ttrag6haJLWABhLqtg1Uf+4LgHWIMOVSYL+VYZmAp2v4PUGOwWmWQH0Zk8RM7YuQcLfH/EoR72/Yxz6A4FKcuw==}
-    engines: {node: '>=16.0.0'}
+  '@aws-sdk/util-locate-window@3.723.0':
+    resolution: {integrity: sha512-Yf2CS10BqK688DRsrKI/EO6B8ff5J86NXe4C+VCysK7UOgN0l1zOTeTukZ3H8Q9tYYX3oaF1961o8vRkFm7Nmw==}
+    engines: {node: '>=18.0.0'}
 
   '@aws-sdk/util-user-agent-browser@3.714.0':
     resolution: {integrity: sha512-OdJJ03cP9/MgIVToPJPCPUImbpZzTcwdIgbXC0tUQPJhbD7b7cB4LdnkhNHko+MptpOrCq4CPY/33EpOjRdofw==}
@@ -1621,8 +1621,8 @@ packages:
     resolution: {integrity: sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==}
     engines: {node: '>= 4'}
 
-  domutils@3.2.1:
-    resolution: {integrity: sha512-xWXmuRnN9OMP6ptPd2+H0cCbcYBULa5YDTbMm/2lvkWvNA3O4wcW+GvzooqBuNM8yy6pl3VIAeJTUUWUbfI5Fw==}
+  domutils@3.2.2:
+    resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
   dotenv@16.4.7:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
@@ -2806,8 +2806,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.91.2:
-    resolution: {integrity: sha512-AneLAV02B7b1wiZ670rNh/brOWlfXTN1+D69r45WaJYSAhAXHTKEek/yyIfEwymtkBI5UqOa1LYRtVjVQfV3Zg==}
+  renovate@39.91.3:
+    resolution: {integrity: sha512-rv4B+OTHhQ8n2bG790h7uQQabPvjSNnY/4KzotVTbfjzn5QXeKxrfh7Lx9zRttVIZHxHM9uoaVmQ8X7qNMGDdQ==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^9.0.0}
     hasBin: true
 
@@ -3470,7 +3470,7 @@ snapshots:
       '@aws-crypto/supports-web-crypto': 5.2.0
       '@aws-crypto/util': 5.2.0
       '@aws-sdk/types': 3.714.0
-      '@aws-sdk/util-locate-window': 3.693.0
+      '@aws-sdk/util-locate-window': 3.723.0
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
@@ -3480,7 +3480,7 @@ snapshots:
       '@aws-crypto/supports-web-crypto': 5.2.0
       '@aws-crypto/util': 5.2.0
       '@aws-sdk/types': 3.714.0
-      '@aws-sdk/util-locate-window': 3.693.0
+      '@aws-sdk/util-locate-window': 3.723.0
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
@@ -4236,7 +4236,7 @@ snapshots:
       '@smithy/types': 3.7.2
       tslib: 2.8.1
 
-  '@aws-sdk/util-locate-window@3.693.0':
+  '@aws-sdk/util-locate-window@3.723.0':
     dependencies:
       tslib: 2.8.1
 
@@ -5650,7 +5650,7 @@ snapshots:
       boolbase: 1.0.0
       css-what: 6.1.0
       domhandler: 5.0.3
-      domutils: 3.2.1
+      domutils: 3.2.2
       nth-check: 2.1.1
 
   css-what@6.1.0: {}
@@ -5731,7 +5731,7 @@ snapshots:
     dependencies:
       domelementtype: 2.3.0
 
-  domutils@3.2.1:
+  domutils@3.2.2:
     dependencies:
       dom-serializer: 2.0.0
       domelementtype: 2.3.0
@@ -7040,7 +7040,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.91.2(@aws-sdk/client-sso-oidc@3.716.0(@aws-sdk/client-sts@3.716.0))(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.91.3(@aws-sdk/client-sso-oidc@3.716.0(@aws-sdk/client-sts@3.716.0))(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.716.0
       '@aws-sdk/client-ec2': 3.716.0
