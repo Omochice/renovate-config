@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.140.1(@aws-sdk/client-sso-oidc@3.726.0(@aws-sdk/client-sts@3.726.1))(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.140.3(@aws-sdk/client-sso-oidc@3.726.0(@aws-sdk/client-sts@3.726.1))(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^2.6.0
         version: 2.14.0
@@ -1961,8 +1961,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  graph-data-structure@4.3.0:
-    resolution: {integrity: sha512-rj0SZL3BLXHGZ/K6+Mw0PNrPu+x0uvHukr5dN/10u4Z77ROz5D+D66R+a3X9yZqJKVDcg/fN1FM5NfMX18ErAQ==}
+  graph-data-structure@4.3.1:
+    resolution: {integrity: sha512-S+Qp6xtMb4AAWsixMHShDx/X/RYaWQMvs+IksTW6jPyamRzx7xILfOdJ+qPfcbcteZeKa7KDRqeEQv+jHlrBmw==}
 
   grapheme-splitter@1.0.4:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
@@ -2851,8 +2851,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.140.1:
-    resolution: {integrity: sha512-x3QdUyQGn6YOseGRqVhRm8emb4xrcHnA42CM28q3X2zOcPkAbUx5Dv7Gq62PpTPdsOCT1TSlY+nDddRBV9VtXQ==}
+  renovate@39.140.3:
+    resolution: {integrity: sha512-Lw5aEgYEY0x//QYBZ0mkvOp4e4Oi8VpvyoImV/zD9pNsq2vLE4TWGBHmMqzuM//wLb3H1OSzEtY4vPFgVqBS3A==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^9.0.0}
     hasBin: true
 
@@ -6183,7 +6183,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  graph-data-structure@4.3.0: {}
+  graph-data-structure@4.3.1: {}
 
   grapheme-splitter@1.0.4: {}
 
@@ -7125,7 +7125,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.140.1(@aws-sdk/client-sso-oidc@3.726.0(@aws-sdk/client-sts@3.726.1))(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.140.3(@aws-sdk/client-sso-oidc@3.726.0(@aws-sdk/client-sts@3.726.1))(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.726.1
       '@aws-sdk/client-ec2': 3.726.1
@@ -7190,7 +7190,7 @@ snapshots:
       good-enough-parser: 1.1.23
       google-auth-library: 9.15.0(encoding@0.1.13)
       got: 11.8.6
-      graph-data-structure: 4.3.0
+      graph-data-structure: 4.3.1
       handlebars: 4.7.8
       ignore: 7.0.3
       ini: 5.0.0
