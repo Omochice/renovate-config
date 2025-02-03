@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.156.2(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.158.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^2.6.0
         version: 2.14.0
@@ -2843,8 +2843,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.156.2:
-    resolution: {integrity: sha512-SQafVJvGrLEWLvRElJsmhcf8Uhc96C8YEvj9oqk5QB6KpTh5xXPH9Sr457XKmIgCnuLeNO4aQYLTpkh7qRbGKQ==}
+  renovate@39.158.1:
+    resolution: {integrity: sha512-msMb5OBYRf31xUEqUohw357JE+uXJviPIMWgKNd3QAvE2iCS9aGSSFQKlC/+hQ+ZA6b54S8cQmrqeQySpnmZUA==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^9.0.0}
     hasBin: true
 
@@ -2939,6 +2939,11 @@ packages:
 
   semver@7.6.3:
     resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.7.0:
+    resolution: {integrity: sha512-DrfFnPzblFmNrIZzg5RzHegbiRWg7KMR7btwi2yjHwx06zsUbO5g613sVwEV7FTwmzJu+Io0lJe2GJ3LxqpvBQ==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4413,7 +4418,7 @@ snapshots:
 
   '@npmcli/fs@3.1.1':
     dependencies:
-      semver: 7.6.3
+      semver: 7.7.0
 
   '@npmcli/fs@4.0.0':
     dependencies:
@@ -6713,7 +6718,7 @@ snapshots:
       make-fetch-happen: 13.0.1
       nopt: 7.2.1
       proc-log: 4.2.0
-      semver: 7.6.3
+      semver: 7.7.0
       tar: 6.2.1
       which: 4.0.0
     transitivePeerDependencies:
@@ -7060,7 +7065,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.156.2(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.158.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
@@ -7288,6 +7293,8 @@ snapshots:
   semver@6.3.1: {}
 
   semver@7.6.3: {}
+
+  semver@7.7.0: {}
 
   serialize-error@7.0.1:
     dependencies:
