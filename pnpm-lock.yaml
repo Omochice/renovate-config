@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.182.3(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.182.4(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^2.6.0
         version: 2.15.0
@@ -2802,8 +2802,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.182.3:
-    resolution: {integrity: sha512-uu19iFtbse7iiwzYWKHKYDlQSxGSFl45JnNnuRHm4umpjvStoHJ7AJM8EzcwrnDXQ8r72FM7Ni+eb3fapYly5A==}
+  renovate@39.182.4:
+    resolution: {integrity: sha512-WJ8TKb0Do6A7K1reICuemb1ePkpYiwLJWZgpbKHtu2IW9NjMi8QKfa4+XUuC7p1TrtRTIEy3u+dtI4w/8/x/zw==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3072,8 +3072,8 @@ packages:
     resolution: {integrity: sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==}
     engines: {node: '>=0.10.0'}
 
-  strnum@1.1.1:
-    resolution: {integrity: sha512-O7aCHfYCamLCctjAiaucmE+fHf2DYHkus2OKCn4Wv03sykfFtgeECn505X6K4mPl8CRNd/qurC9guq+ynoN4pw==}
+  strnum@1.1.2:
+    resolution: {integrity: sha512-vrN+B7DBIoTTZjnPNewwhx6cBA/H+IS7rfW68n7XxC1y7uoiGQBxaKzqucGUgavX15dJgiGztLJ8vxuEzwqBdA==}
 
   supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
@@ -5791,7 +5791,7 @@ snapshots:
 
   fast-xml-parser@4.4.1:
     dependencies:
-      strnum: 1.1.1
+      strnum: 1.1.2
 
   fastq@1.19.1:
     dependencies:
@@ -6969,7 +6969,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.182.3(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.182.4(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
@@ -7391,7 +7391,7 @@ snapshots:
   strip-json-comments@2.0.1:
     optional: true
 
-  strnum@1.1.1: {}
+  strnum@1.1.2: {}
 
   supports-color@7.2.0:
     dependencies:
