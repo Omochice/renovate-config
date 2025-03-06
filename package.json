@@ -23,7 +23,7 @@
     "sort-package-json": "^2.6.0",
     "vitest": "^3.0.0"
   },
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.6.0",
   "pnpm": {
     "onlyBuiltDependencies": ["re2", "@biomejs/biome"]
   }
