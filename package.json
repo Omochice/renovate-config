@@ -20,7 +20,7 @@
     "npm-run-all2": "^7.0.0",
     "re2": "^1.21.3",
     "renovate": "^39.0.0",
-    "sort-package-json": "^2.6.0",
+    "sort-package-json": "^3.0.0",
     "vitest": "^3.0.0"
   },
   "packageManager": "pnpm@10.6.1",
