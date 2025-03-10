@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.191.4(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.192.0(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2698,8 +2698,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  prettier@3.5.2:
-    resolution: {integrity: sha512-lc6npv5PH7hVqozBR7lkBNOGXV9vMwROAPlumdBkX0wTbbzPu/U1hk5yL8p2pt4Xoc+2mkT8t/sow2YrV/M5qg==}
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2807,8 +2807,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.191.4:
-    resolution: {integrity: sha512-AXfqmSUcvP+PJXXxIyX4DAzBEmrLU0w4iu2kz9Cs0jMKms0g9i5SAxu4QtPXP8fgx+ez/kCBGtnGgIZJ+tMHng==}
+  renovate@39.192.0:
+    resolution: {integrity: sha512-pqfl9TtsNGSU5bbDmaJM8ikFoO4B9Iq9a+uJJtXbyUgqIg5G6NsegiwGABkxKRv5HhpIlx0eBl+/hQkWPUMXvg==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6830,7 +6830,7 @@ snapshots:
       tunnel-agent: 0.6.0
     optional: true
 
-  prettier@3.5.2: {}
+  prettier@3.5.3: {}
 
   proc-log@4.2.0: {}
 
@@ -6976,7 +6976,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.191.4(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.192.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
@@ -7065,7 +7065,7 @@ snapshots:
       p-queue: 6.6.2
       p-throttle: 4.1.1
       parse-link-header: 2.0.0
-      prettier: 3.5.2
+      prettier: 3.5.3
       protobufjs: 7.4.0
       punycode: 2.3.1
       redis: 4.7.0
