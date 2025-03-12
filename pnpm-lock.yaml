@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.198.1(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.199.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1913,8 +1913,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  graph-data-structure@4.4.0:
-    resolution: {integrity: sha512-eQ/BL0WiwDQKADavJ2e72/5PFAaXoQa2nQ3YQa5v25FgwJOp13DhXoYQP0Q4QlepPEKZfJyab/xMrmJaKYdj/A==}
+  graph-data-structure@4.5.0:
+    resolution: {integrity: sha512-OCeIzpK9JnV5js4gtDJgwebRbcOsZpoN9CNIwEooHkV/FNol+OykWPOugSTXBH/QICEW2N6U+6L2d9DcK4YBcw==}
 
   grapheme-splitter@1.0.4:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
@@ -2807,8 +2807,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.198.1:
-    resolution: {integrity: sha512-fz/bV6fDrw35zK0Xp7HkHm0IiG516WNzsSoe+cD9qd+l/zyMWq8ZRZ9o6FhjfjIHNrA3FJH9uwdBh/OBjRyWBA==}
+  renovate@39.199.1:
+    resolution: {integrity: sha512-JEv9+Yk0Fu4kXzakPd2OtUEIgkvzi361XMcLl9RkfphFHt+GlPTHVLl8E2uUjSBpJ2RzXTZlFDSQLXPCRyGnSg==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6033,7 +6033,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  graph-data-structure@4.4.0: {}
+  graph-data-structure@4.5.0: {}
 
   grapheme-splitter@1.0.4: {}
 
@@ -6976,7 +6976,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.198.1(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.199.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
@@ -7041,7 +7041,7 @@ snapshots:
       good-enough-parser: 1.1.23
       google-auth-library: 9.15.1(encoding@0.1.13)
       got: 11.8.6
-      graph-data-structure: 4.4.0
+      graph-data-structure: 4.5.0
       handlebars: 4.7.8
       ignore: 7.0.3
       ini: 5.0.0
