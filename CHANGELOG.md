@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.3.0](https://github.com/Omochice/renovate-config/compare/renovate-config-v3.2.0...renovate-config-v3.3.0) (2025-03-15)
+
+
+### Features
+
+* add support for `ts-types` ([#313](https://github.com/Omochice/renovate-config/issues/313)) ([20eeca9](https://github.com/Omochice/renovate-config/commit/20eeca9fd1dccc5e78da2b331566fdf16bef484a))
+* support `https://jsr.io` ([#85](https://github.com/Omochice/renovate-config/issues/85)) ([d181a7a](https://github.com/Omochice/renovate-config/commit/d181a7ae5df0189171d70e3cbcf5e82c6e2b64e7))
+
+
+### Bug Fixes
+
+* fix package description ([#316](https://github.com/Omochice/renovate-config/issues/316)) ([e6867ce](https://github.com/Omochice/renovate-config/commit/e6867ceb6e01c646425700bc74982d5500608912))
+* use `registryUrlTemplate` instead ([#92](https://github.com/Omochice/renovate-config/issues/92)) ([0b84780](https://github.com/Omochice/renovate-config/commit/0b84780691c03da1863ece7e55a9536a97164a01))
+
 ## [3.2.0](https://github.com/Omochice/renovate-config/compare/v3.1.1...v3.2.0) (2024-12-31)
 
 
