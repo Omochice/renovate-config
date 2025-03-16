@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.202.0(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.203.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2461,6 +2461,11 @@ packages:
   nan@2.22.2:
     resolution: {integrity: sha512-DANghxFkS1plDdRsX0X9pm0Z6SJNN6gBdtXfanwoZ8hooC5gosGFSBGRYHUVPz1asKA/kMRqDRdHrluZ61SpBQ==}
 
+  nanoid@3.3.10:
+    resolution: {integrity: sha512-vSJJTG+t/dIKAUhUDw/dLdZ9s//5OxcHqLaDWWrW4Cdq7o6tdLIczUkMXt2MBNmk6sJRZBZRXVixs7URY1CmIg==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   nanoid@3.3.9:
     resolution: {integrity: sha512-SppoicMGpZvbF1l3z4x7No3OlIjP7QJvC9XR7AhZr1kL133KHnKPztkKDc+Ir4aJ/1VhTySrtKhrsycmrMQfvg==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -2802,8 +2807,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.202.0:
-    resolution: {integrity: sha512-K8J8YRdVQJqEQ2+bRvLnoGq6Z2Khsq2iid7VVnIv0F1mPGo0/dcqRMQQMl1yng9WfzJEF0npMkHZ6vwUeO4EUA==}
+  renovate@39.203.1:
+    resolution: {integrity: sha512-jJiF2s8lf5RNTLsKBlxcWIg3Cfe0mWFM0fGsv7VKv9Gy6KxVmd7GUB33wd9tEG5ScQektJ/VqrkkDiu3OEmAcA==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6588,6 +6593,8 @@ snapshots:
   nan@2.22.2:
     optional: true
 
+  nanoid@3.3.10: {}
+
   nanoid@3.3.9: {}
 
   napi-build-utils@2.0.0:
@@ -6803,7 +6810,7 @@ snapshots:
 
   postcss@8.5.3:
     dependencies:
-      nanoid: 3.3.9
+      nanoid: 3.3.10
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -6969,7 +6976,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.202.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.203.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
