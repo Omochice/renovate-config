@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.219.0(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.219.2(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.0.0
@@ -303,8 +303,8 @@ packages:
     resolution: {integrity: sha512-UWjX6t+v+0ckwZ50Y5ShZLnlk95pP5MyW/pon9tiYzl3+18pkTHTFNTKr7rQbfRXPkowt2QAn30o1b6oswszew==}
     engines: {node: '>=6.9.0'}
 
-  '@baszalmstra/rattler@0.2.0':
-    resolution: {integrity: sha512-Dkcy5TXmlNvU8LAvagfBHYOFnBHlKYeBiMljG8Iln6ZmQSkeHgO3yo69A4Rs3Lv6DSH3pSrun7LHdaxv99l4tg==}
+  '@baszalmstra/rattler@0.2.1':
+    resolution: {integrity: sha512-HZ2xu6Nk+XzAeateyzDKYM47ySkjkuKtTNpKRAy+Y+YcRH1qHM2le4iLlG32wDddaHCLUsBsyBxirClOj1TLjw==}
 
   '@biomejs/biome@1.9.4':
     resolution: {integrity: sha512-1rkd7G70+o9KkTn5KLmDYXihGoTaIGO9PIIN2ZB7UJxFrWw04CZHPYiMRjYsaDvVV7hP1dYNRLxSANLaBFGpog==}
@@ -2850,8 +2850,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.219.0:
-    resolution: {integrity: sha512-y2LgZFh0sSEkLWsRGvFwIra4m/ernO4ZYdZgv0OVkySSLGVw5t3K7KpYcSJ0cWqVz4TngZ503VLkAVARGwY+cA==}
+  renovate@39.219.2:
+    resolution: {integrity: sha512-rq652g7cGfm3admuY6a+yEKcqwT4arZfMsk2E/6XNwX7+xa+xvFjCLna2sBPesi8EB1S/8XsS/bLf1M32YZ+5A==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4542,7 +4542,7 @@ snapshots:
       core-js-pure: 3.41.0
       regenerator-runtime: 0.14.1
 
-  '@baszalmstra/rattler@0.2.0': {}
+  '@baszalmstra/rattler@0.2.1': {}
 
   '@biomejs/biome@1.9.4':
     optionalDependencies:
@@ -7269,7 +7269,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.219.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.219.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
@@ -7278,7 +7278,7 @@ snapshots:
       '@aws-sdk/client-rds': 3.740.0
       '@aws-sdk/client-s3': 3.740.0
       '@aws-sdk/credential-providers': 3.738.0
-      '@baszalmstra/rattler': 0.2.0
+      '@baszalmstra/rattler': 0.2.1
       '@breejs/later': 4.2.0
       '@cdktf/hcl2json': 0.20.11
       '@opentelemetry/api': 1.9.0
