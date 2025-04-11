@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.238.1(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.238.2(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1604,8 +1604,8 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
-  dotenv@16.4.7:
-    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
+  dotenv@16.5.0:
+    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
     engines: {node: '>=12'}
 
   dtrace-provider@0.8.8:
@@ -1845,8 +1845,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  git-up@8.1.0:
-    resolution: {integrity: sha512-cT2f5ERrhFDMPS5wLHURcjRiacC8HonX0zIAWBTwHv1fS6HheP902l6pefOX/H9lNmvCHDwomw0VeN7nhg5bxg==}
+  git-up@8.1.1:
+    resolution: {integrity: sha512-FDenSF3fVqBYSaJoYy1KSc2wosx0gCvKP+c+PRBht7cAaiCeQlBtfBDX9vgnNOHmdePlSFITVcn4pFfcgNvx3g==}
 
   git-url-parse@16.0.1:
     resolution: {integrity: sha512-mcD36GrhAzX5JVOsIO52qNpgRyFzYWRbU1VSRFCvJt1IJvqfvH427wWw/CFqkWvjVPtdG5VTx4MKUeC5GeFPDQ==}
@@ -2613,8 +2613,8 @@ packages:
   parse-link-header@2.0.0:
     resolution: {integrity: sha512-xjU87V0VyHZybn2RrCX5TIFGxTVZE6zqqZWMPlIKiSKuWh/X5WZdt+w1Ki1nXB+8L/KtL+nZ4iq+sfI6MrhhMw==}
 
-  parse-path@7.0.1:
-    resolution: {integrity: sha512-6ReLMptznuuOEzLoGEa+I1oWRSj2Zna5jLWC+l6zlfAI4dbbSaIES29ThzuPkbhNahT65dWzfoZEO6cfJw2Ksg==}
+  parse-path@7.0.2:
+    resolution: {integrity: sha512-env5u88RpqhTX1OGbWCkZuueRhmK8qFXwyGyTWuC/Vz4a+eUIHM/CCq5L1YtmdQeKBVh+CtZdH0WiY4axuySfg==}
 
   parse-url@9.2.0:
     resolution: {integrity: sha512-bCgsFI+GeGWPAvAiUv63ZorMeif3/U0zaXABGJbOWt5OH2KCaPHF6S+0ok4aqM9RuIPGyZdx9tR9l13PsW4AYQ==}
@@ -2794,8 +2794,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.238.1:
-    resolution: {integrity: sha512-kSPYj2XISpArIZJjFZqSEmWeSBnLbloLoXmiGyC24lj3jghvZL9zK72D5cmNrcbY9+7YMlThoAVOsua9/hmhKQ==}
+  renovate@39.238.2:
+    resolution: {integrity: sha512-cmdetIfSWEdJz/TBUrkXmSKlIo8HHtDJWxzX7DwVWNZaWvgXDCCTOxuDzHLap1/htNeGoj11drWSjNhOAqb2wQ==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5255,7 +5255,7 @@ snapshots:
       clipanion: 4.0.0-rc.4(typanion@3.14.0)
       cross-spawn: 7.0.6
       diff: 5.2.0
-      dotenv: 16.4.7
+      dotenv: 16.5.0
       fast-glob: 3.3.3
       got: 11.8.6
       lodash: 4.17.21
@@ -5676,7 +5676,7 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  dotenv@16.4.7: {}
+  dotenv@16.5.0: {}
 
   dtrace-provider@0.8.8:
     dependencies:
@@ -5950,14 +5950,14 @@ snapshots:
       split2: 3.2.2
       through2: 4.0.2
 
-  git-up@8.1.0:
+  git-up@8.1.1:
     dependencies:
       is-ssh: 1.4.1
       parse-url: 9.2.0
 
   git-url-parse@16.0.1:
     dependencies:
-      git-up: 8.1.0
+      git-up: 8.1.1
 
   github-from-package@0.0.0:
     optional: true
@@ -6771,14 +6771,14 @@ snapshots:
     dependencies:
       xtend: 4.0.2
 
-  parse-path@7.0.1:
+  parse-path@7.0.2:
     dependencies:
       protocols: 2.0.2
 
   parse-url@9.2.0:
     dependencies:
       '@types/parse-path': 7.0.3
-      parse-path: 7.0.1
+      parse-path: 7.0.2
 
   path-exists@4.0.0: {}
 
@@ -6988,7 +6988,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.238.1(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.238.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.777.0
       '@aws-sdk/client-ec2': 3.779.0
