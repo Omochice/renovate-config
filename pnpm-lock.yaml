@@ -22,7 +22,7 @@ importers:
         version: 1.21.4
       renovate:
         specifier: ^39.0.0
-        version: 39.251.0(encoding@0.1.13)(typanion@3.14.0)
+        version: 39.251.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1320,8 +1320,8 @@ packages:
   better-sqlite3@11.9.1:
     resolution: {integrity: sha512-Ba0KR+Fzxh2jDRhdg6TSH0SJGzb8C0aBY4hR8w8madIdIzzC6Y1+kx5qR6eS1Z+Gy20h6ZU28aeyg0z1VIrShQ==}
 
-  bignumber.js@9.2.1:
-    resolution: {integrity: sha512-+NzaKgOUvInq9TIUZ1+DRspzf/HApkCwD4btfuasFTdrfnOxqx853TgDpMolp+uv4RpRp7bPcEU2zKr9+fRmyw==}
+  bignumber.js@9.3.0:
+    resolution: {integrity: sha512-EM7aMFTXbptt/wZdMlBv2t8IViwQL+h6SLHosp8Yf0dqJMTnY6iL32opnAB6kAdL0SZPuvcAzFr31o0c/R3/RA==}
 
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
@@ -2818,8 +2818,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.251.0:
-    resolution: {integrity: sha512-asGsgBQlvK1Q3DBbzdrez28azpcynlNIRXUGggBKmH4/3tTgxX18UKv8mj5iu8BdYtd1Z3y53j4KmnE4376xMw==}
+  renovate@39.251.1:
+    resolution: {integrity: sha512-ETsNLMD5MeHlwvGPGNJ14vDRCAIQOi7zD1I7aOY8ypk7KU7h8AsYL2dUoqWjxXYSl/nixRBUFp27hK6Wov7Cog==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5425,7 +5425,7 @@ snapshots:
       prebuild-install: 7.1.3
     optional: true
 
-  bignumber.js@9.2.1: {}
+  bignumber.js@9.3.0: {}
 
   bindings@1.5.0:
     dependencies:
@@ -6336,7 +6336,7 @@ snapshots:
 
   json-bigint@1.0.0:
     dependencies:
-      bignumber.js: 9.2.1
+      bignumber.js: 9.3.0
 
   json-buffer@3.0.1: {}
 
@@ -7042,7 +7042,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.251.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.251.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.777.0
       '@aws-sdk/client-ec2': 3.779.0
