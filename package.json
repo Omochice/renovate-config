@@ -19,7 +19,7 @@
     "dedent": "^1.5.3",
     "npm-run-all2": "^7.0.0",
     "re2": "^1.21.3",
-    "renovate": "^39.0.0",
+    "renovate": "^40.0.0",
     "sort-package-json": "^3.0.0",
     "vitest": "^3.0.0"
   },
