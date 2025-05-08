@@ -1,9 +1,11 @@
 {
   "name": "@Omochice/renovate-config",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "private": true,
   "description": "Shareable configuration for Renovate within Deno project",
-  "keywords": ["renovate"],
+  "keywords": [
+    "renovate"
+  ],
   "license": "zlib",
   "author": "Omochice",
   "scripts": {
@@ -25,6 +27,9 @@
   },
   "packageManager": "pnpm@10.10.0",
   "pnpm": {
-    "onlyBuiltDependencies": ["re2", "@biomejs/biome"]
+    "onlyBuiltDependencies": [
+      "re2",
+      "@biomejs/biome"
+    ]
   }
 }
