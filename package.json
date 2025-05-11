@@ -20,7 +20,7 @@
     "@biomejs/biome": "^1.2.2",
     "dedent": "^1.5.3",
     "npm-run-all2": "^8.0.0",
-    "re2": "^1.21.3",
+    "re2": "^1.21.5",
     "renovate": "^40.0.0",
     "sort-package-json": "^3.0.0",
     "vitest": "^3.0.0"
