@@ -38,13 +38,13 @@ jobs:
     uses: ./.github/workflows/_test.yml
     permissions: {}
     with:
-      node: [ "20", "lts/*" ]
+      node: '[ "20", "lts/*" ]'
   test-code-with-canary:
     needs: path-filter
     uses: ./.github/workflows/_test.yml
     permissions: {}
     with:
-      node: [ "canary" ]
+      node: '[ "canary" ]'
       allow-failure: true
   status-check:
     timeout-minutes: 30
