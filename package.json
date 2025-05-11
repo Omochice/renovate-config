@@ -3,9 +3,7 @@
   "version": "3.2.0",
   "private": true,
   "description": "Shareable configuration for Renovate within Deno project",
-  "keywords": [
-    "renovate"
-  ],
+  "keywords": ["renovate"],
   "license": "zlib",
   "author": "Omochice",
   "scripts": {
@@ -27,14 +25,6 @@
   },
   "packageManager": "pnpm@10.10.0",
   "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "better-sqlite3",
-      "core-js-pure",
-      "dtrace-provider",
-      "esbuild",
-      "protobufjs",
-      "re2"
-    ]
+    "onlyBuiltDependencies": ["re2", "@biomejs/biome"]
   }
 }
