@@ -44,7 +44,7 @@ jobs:
     uses: ./.github/workflows/_test.yml
     permissions: {}
     with:
-      node: '[ "current" ]'
+      node: '[ "canary" ]'
       allow-failure: true
   status-check:
     timeout-minutes: 30
