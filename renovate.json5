@@ -1,22 +1,22 @@
 {
-  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: [
-    'github>Omochice/personal-renovate-config',
-    'github>aquaproj/aqua-renovate-config#2.7.5',
-    'customManagers:biomeVersions',
+    "github>Omochice/personal-renovate-config",
+    "github>aquaproj/aqua-renovate-config#2.7.5",
+    "customManagers:biomeVersions",
   ],
   customManagers: [
     {
-      customType: 'jsonata',
-      fileFormat: 'yaml',
+      customType: "jsonata",
+      fileFormat: "yaml",
       managerFilePatterns: [
-        '/.github/workflows/_test.yml$/',
+        "/.github/workflows/_test.yml$/",
       ],
       matchStrings: [
         "{ 'currentValue': jobs.basic.strategy.matrix.node[0] }",
       ],
-      datasourceTemplate: 'node-version',
-      depNameTemplate: 'node',
+      datasourceTemplate: "node-version",
+      depNameTemplate: "node",
     },
   ],
 }
