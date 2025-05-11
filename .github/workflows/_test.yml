@@ -1,14 +1,6 @@
 name: Test the sharable configure
 
-on:
-  workflow_call:
-    inputs:
-      node:
-        required: true
-        type: string
-      allow-failure:
-        type: boolean
-        default: false
+on: workflow_call
 
 permissions: {}
 
@@ -19,9 +11,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: ${{ fromJSON(inputs.node) }}
+        node: ["20", "lts/*", "current"]
     permissions: {}
-    continue-on-error: ${{ inputs.allow-failure }}
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["20", "lts/*", "current"]
+    continue-on-error: ${{ matrix.node != 'current' }}
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
