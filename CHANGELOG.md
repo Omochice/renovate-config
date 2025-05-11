@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.3.0](https://github.com/Omochice/renovate-config/compare/v3.2.0...v3.3.0) (2025-05-11)
+
+
+### Features
+
+* **config:** migrate renovate config ([#782](https://github.com/Omochice/renovate-config/issues/782)) ([ac519d0](https://github.com/Omochice/renovate-config/commit/ac519d05806476a5e78e3de486cd39c9fe2e369c))
+
 ## [3.2.0](https://github.com/Omochice/renovate-config/compare/v3.1.1...v3.2.0) (2024-12-31)
 
 
