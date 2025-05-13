@@ -22,7 +22,7 @@ importers:
         version: 1.21.5
       renovate:
         specifier: ^40.0.0
-        version: 40.11.9(encoding@0.1.13)(typanion@3.14.0)
+        version: 40.11.13(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.2.1
@@ -2026,8 +2026,8 @@ packages:
   immediate@3.0.6:
     resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
 
-  import-in-the-middle@1.13.1:
-    resolution: {integrity: sha512-k2V9wNm9B+ysuelDTHjI9d5KPc4l8zAZTGqj+pcynvWkypZd857ryzN8jNC7Pg2YZXNMJcHRPpaDyCBbNyVRpA==}
+  import-in-the-middle@1.13.2:
+    resolution: {integrity: sha512-Yjp9X7s2eHSXvZYQ0aye6UvwYPrVB5C2k47fuXjFKnYinAByaDZjh4t9MT2wEga9775n6WaIqyHnQhBxYtX2mg==}
 
   imurmurhash@0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
@@ -2855,8 +2855,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.11.9:
-    resolution: {integrity: sha512-Bk4tcj7SU8dpB9pmD9I6ThEWSkAAI/ESx661QWD/eGkUzVKrWJ4SUaltj3r9YCDtYv6wbErgzsgG1OSEhFFWrg==}
+  renovate@40.11.13:
+    resolution: {integrity: sha512-WAdBqIS36VkqpPY43lb+gKCchP+NMDzZq6b02E2ylhFIu0C/WpQcYlhkGLXzd9QJT2eiVvmLqyEe5DoNJ3ga9Q==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4559,7 +4559,7 @@ snapshots:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/api-logs': 0.200.0
       '@types/shimmer': 1.2.0
-      import-in-the-middle: 1.13.1
+      import-in-the-middle: 1.13.2
       require-in-the-middle: 7.5.2
       shimmer: 1.2.1
     transitivePeerDependencies:
@@ -6253,7 +6253,7 @@ snapshots:
 
   immediate@3.0.6: {}
 
-  import-in-the-middle@1.13.1:
+  import-in-the-middle@1.13.2:
     dependencies:
       acorn: 8.14.1
       acorn-import-attributes: 1.9.5(acorn@8.14.1)
@@ -7158,7 +7158,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.11.9(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.11.13(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.799.0
       '@aws-sdk/client-ec2': 3.800.0
