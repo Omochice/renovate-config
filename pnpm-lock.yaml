@@ -16,13 +16,13 @@ importers:
         version: 1.6.0
       npm-run-all2:
         specifier: ^8.0.0
-        version: 8.0.2
+        version: 8.0.3
       re2:
         specifier: ^1.21.5
         version: 1.21.5
       renovate:
         specifier: ^40.0.0
-        version: 40.19.2(encoding@0.1.13)(typanion@3.14.0)
+        version: 40.21.0(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.2.1
@@ -2531,8 +2531,8 @@ packages:
     resolution: {integrity: sha512-TZKxPvItzai9kN9H/TkmCtx/ZN/hvr3vUycjlfmH0ootY9yFBzNOpiXAdIn1Iteqsvk4lQn6B5PTrt+n6h8k/w==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  npm-run-all2@8.0.2:
-    resolution: {integrity: sha512-yU70kTcohhAETxUjJQxTdQbaDJWCyv+DlKHEWdOifxZ0hZUKRh26mY2mfzlPxfGbsTRbgBuEHeakB6wx0CvVaQ==}
+  npm-run-all2@8.0.3:
+    resolution: {integrity: sha512-0mAycidMUMThrLt8AT3LGtOMgfLaMg6/4oUKHTKMU0jDSIsdKBsKp98H8zBFcJylQC4CtOB140UUFbOlFyE9gA==}
     engines: {node: ^20.5.0 || >=22.0.0, npm: '>= 10'}
     hasBin: true
 
@@ -2809,8 +2809,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.19.2:
-    resolution: {integrity: sha512-rxHnUbHoDADoZUSX0gLzv7WZc+ArK0Lu8vaTHlXkO/nXHJbnCfcj10xi/mUbeyskjldyBqK1Xh0o47KWfTnLhQ==}
+  renovate@40.21.0:
+    resolution: {integrity: sha512-tYG5+F2PCNzE0Gcle91lnUy4ziPYp4NhpL33Zcg6P6XTI0kmw7HKZftASG0c+wxZj3h7GeAfVnyNkyy+isPPzA==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6687,12 +6687,12 @@ snapshots:
 
   npm-normalize-package-bin@4.0.0: {}
 
-  npm-run-all2@8.0.2:
+  npm-run-all2@8.0.3:
     dependencies:
       ansi-styles: 6.2.1
       cross-spawn: 7.0.6
       memorystream: 0.3.1
-      picomatch: 4.0.2
+      minimatch: 10.0.1
       pidtree: 0.6.0
       read-package-json-fast: 4.0.0
       shell-quote: 1.8.2
@@ -7001,7 +7001,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.19.2(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.21.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.799.0
       '@aws-sdk/client-ec2': 3.800.0
