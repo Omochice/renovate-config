@@ -19,10 +19,10 @@ importers:
         version: 8.0.3
       re2:
         specifier: ^1.21.5
-        version: 1.21.5
+        version: 1.22.1
       renovate:
         specifier: ^40.0.0
-        version: 40.29.1(encoding@0.1.13)(typanion@3.14.0)
+        version: 40.30.0(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.2.1
@@ -2039,8 +2039,8 @@ packages:
     resolution: {integrity: sha512-+N0ngpO3e7cRUWOJAS7qw0IZIVc6XPrW4MlFBdD066F2L4k1L6ker3hLqSq7iXxU5tgS4WGkIUElWn5vogAEnw==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  install-artifact-from-github@1.3.5:
-    resolution: {integrity: sha512-gZHC7f/cJgXz7MXlHFBxPVMsvIbev1OQN1uKQYKVJDydGNm9oYf9JstbU4Atnh/eSvk41WtEovoRm+8IF686xg==}
+  install-artifact-from-github@1.4.0:
+    resolution: {integrity: sha512-+y6WywKZREw5rq7U2jvr2nmZpT7cbWbQQ0N/qfcseYnzHFz2cZz1Et52oY+XttYuYeTkI8Y+R2JNWj68MpQFSg==}
     hasBin: true
 
   ip-address@9.0.5:
@@ -2765,6 +2765,9 @@ packages:
   re2@1.21.5:
     resolution: {integrity: sha512-ud7gX1bO6K4+l2YVUxZjOPCiyCBZvmi7XUnGArSk3rGIvsZW35jX3pjGs8zQiTumOpgbxHCZI1ivB1VO7i4MFw==}
 
+  re2@1.22.1:
+    resolution: {integrity: sha512-E4J0EtgyNLdIr0wTg0dQPefuiqNY29KaLacytiUAYYRzxCG+zOkWoUygt1rI+TA1LrhN49/njrfSO1DHtVC5Vw==}
+
   read-package-json-fast@4.0.0:
     resolution: {integrity: sha512-qpt8EwugBWDw2cgE2W+/3oxC+KTez2uSVR8JU9Q36TXPAGCaozfQUs59v4j4GFpWTaw0i6hAZSvOmu1J0uOEUg==}
     engines: {node: ^18.17.0 || >=20.5.0}
@@ -2807,8 +2810,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.29.1:
-    resolution: {integrity: sha512-M0Zuv/jwIvLkIlZYUQsEj7zu6gjW+n921Jsi41S/B+hVIS5+r396Xw03h6F8qhYEgdCby7NbjpYKXMM4zGLQfQ==}
+  renovate@40.30.0:
+    resolution: {integrity: sha512-pyG9GOJH4Hu90snBUaPjiscS/3UfHrWSmnkOStfXl4nC2zacoBlmh6ITM2jxZPksGK/l1UDLu6FgJ+Pb2ii0dw==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6186,7 +6189,7 @@ snapshots:
 
   ini@5.0.0: {}
 
-  install-artifact-from-github@1.3.5: {}
+  install-artifact-from-github@1.4.0: {}
 
   ip-address@9.0.5:
     dependencies:
@@ -6915,7 +6918,16 @@ snapshots:
 
   re2@1.21.5:
     dependencies:
-      install-artifact-from-github: 1.3.5
+      install-artifact-from-github: 1.4.0
+      nan: 2.22.2
+      node-gyp: 11.2.0
+    transitivePeerDependencies:
+      - supports-color
+    optional: true
+
+  re2@1.22.1:
+    dependencies:
+      install-artifact-from-github: 1.4.0
       nan: 2.22.2
       node-gyp: 11.2.0
     transitivePeerDependencies:
@@ -6998,7 +7010,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.29.1(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.30.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.799.0
       '@aws-sdk/client-ec2': 3.800.0
