@@ -22,7 +22,7 @@ importers:
         version: 1.22.1
       renovate:
         specifier: ^40.0.0
-        version: 40.32.0(encoding@0.1.13)(typanion@3.14.0)
+        version: 40.32.2(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: ^3.0.0
         version: 3.2.1
@@ -2806,8 +2806,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.32.0:
-    resolution: {integrity: sha512-eDwl29XB/SFuVmDYIuyFG1MR1lmZlnCNl/x/Hc6uZ4olPsIOPEoWgSj9pvjRUeP7ZdpMeRqgaRvFesrr1mktQA==}
+  renovate@40.32.2:
+    resolution: {integrity: sha512-CeFhP+wob60UbqdwlGSbt4UxvqKYLIdt+UWdiJo+WbfrriKx0E8YoEBFWnqq1qRGO5NmitVLUyDCjwi64ZGkDA==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3443,8 +3443,8 @@ packages:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
-  zod@3.24.4:
-    resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
+  zod@3.25.3:
+    resolution: {integrity: sha512-VGZqnyYNrl8JpEJRZaFPqeVNIuqgXNu4cXZ5cOb6zEUO1OxKbRnWB4UdDIXMmiERWncs0yDQukssHov8JUxykQ==}
 
   zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
@@ -4699,7 +4699,7 @@ snapshots:
       fs-extra: 11.3.0
       toml-eslint-parser: 0.10.0
       upath: 2.0.1
-      zod: 3.24.4
+      zod: 3.25.3
 
   '@renovatebot/kbpgp@4.0.1':
     dependencies:
@@ -7002,7 +7002,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.32.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.32.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.799.0
       '@aws-sdk/client-ec2': 3.800.0
@@ -7119,7 +7119,7 @@ snapshots:
       vuln-vects: 1.1.0
       xmldoc: 1.3.0
       yaml: 2.8.0
-      zod: 3.24.4
+      zod: 3.25.3
     optionalDependencies:
       better-sqlite3: 11.10.0
       openpgp: 6.1.1
@@ -7809,6 +7809,6 @@ snapshots:
 
   yocto-queue@1.2.1: {}
 
-  zod@3.24.4: {}
+  zod@3.25.3: {}
 
   zwitch@1.0.5: {}
