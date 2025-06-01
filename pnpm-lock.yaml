@@ -9,25 +9,25 @@ importers:
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^1.2.2
+        specifier: 1.9.4
         version: 1.9.4
       dedent:
-        specifier: ^1.5.3
+        specifier: 1.6.0
         version: 1.6.0
       npm-run-all2:
-        specifier: ^8.0.0
+        specifier: 8.0.4
         version: 8.0.4
       re2:
-        specifier: ^1.21.5
+        specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: ^40.0.0
+        specifier: 40.37.1
         version: 40.37.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
-        specifier: ^3.0.0
+        specifier: 3.2.1
         version: 3.2.1
       vitest:
-        specifier: ^3.0.0
+        specifier: 3.1.4
         version: 3.1.4(@types/node@22.15.29)(yaml@2.8.0)
 
 packages:
@@ -2891,11 +2891,6 @@ packages:
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
-    hasBin: true
-
-  semver@7.7.1:
-    resolution: {integrity: sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==}
-    engines: {node: '>=10'}
     hasBin: true
 
   semver@7.7.2:
@@ -7222,8 +7217,6 @@ snapshots:
 
   semver@6.3.1: {}
 
-  semver@7.7.1: {}
-
   semver@7.7.2: {}
 
   serialize-error@7.0.1:
@@ -7332,7 +7325,7 @@ snapshots:
       detect-newline: 4.0.1
       git-hooks-list: 4.1.1
       is-plain-obj: 4.1.0
-      semver: 7.7.1
+      semver: 7.7.2
       sort-object-keys: 1.1.3
       tinyglobby: 0.2.13
 
