@@ -21,8 +21,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 40.40.3
-        version: 40.40.3(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 40.41.0
+        version: 40.41.0(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.2.1
         version: 3.2.1
@@ -2809,8 +2809,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.40.3:
-    resolution: {integrity: sha512-d40t+d6SAdCyArttLebeHcRmBVKjVRmVDamyBQiexZfRqzx2VENBzkwYv6tVt9eA+xwYZKF1JJ2pbJEbq874cQ==}
+  renovate@40.41.0:
+    resolution: {integrity: sha512-56Et2Wug7YVIL9J8h/og2tJOtzeRBDeaYSHEXJZdNlPk7dqcuGwmoGoTsygmAXUFKT+/kZ9hvqDInBDTOM1G+w==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -7004,7 +7004,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.40.3(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.41.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.821.0
       '@aws-sdk/client-ec2': 3.821.0
