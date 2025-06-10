@@ -21,8 +21,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 40.49.5
-        version: 40.49.5(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 40.49.6
+        version: 40.49.6(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.2.1
         version: 3.2.1
@@ -1209,8 +1209,8 @@ packages:
   '@vitest/utils@3.2.3':
     resolution: {integrity: sha512-4zFBCU5Pf+4Z6v+rwnZ1HU1yzOKKvDkMXZrymE2PBlbjKJRlrOxbvpfPSvJTGRIwGoahaOGvp+kbCoxifhzJ1Q==}
 
-  '@yarnpkg/core@4.4.1':
-    resolution: {integrity: sha512-iWCcc7BVN2SPZahM55FoOL36NvfOnw8j90G5PqOyjBwfCJngj7jTeT16cj27fFfHYlq+gwuu4I/tkHYzZ2mplQ==}
+  '@yarnpkg/core@4.4.2':
+    resolution: {integrity: sha512-Gf2p9WUygkcT8GobVjrQpFGE7A/GWXPXjDSIFTnZKTiq/W8giN3jqhWpIrpVa2XfPMguXzdEvb2brNYeW3IwdQ==}
     engines: {node: '>=18.12.0'}
 
   '@yarnpkg/fslib@3.1.2':
@@ -1227,8 +1227,8 @@ packages:
     resolution: {integrity: sha512-mQZgUSgFurUtA07ceMjxrWkYz8QtDuYkvPlu0ZqncgjopQ0t6CNEo/OSealkmnagSUx8ZD5ewvezUwUuMqutQg==}
     engines: {node: '>=18.12.0'}
 
-  '@yarnpkg/shell@4.1.2':
-    resolution: {integrity: sha512-1ET4cNNd7//2tXHnLiHGzBbry5mlEmoKL8f32E5EKnn8Ke/gAcILeFdbX2G9C9w/7uBmFyWeSs530ib0SofVPQ==}
+  '@yarnpkg/shell@4.1.3':
+    resolution: {integrity: sha512-5igwsHbPtSAlLdmMdKqU3atXjwhtLFQXsYAG0sn1XcPb3yF8WxxtWxN6fycBoUvFyIHFz1G0KeRefnAy8n6gdw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -1414,10 +1414,6 @@ packages:
   chai@5.2.0:
     resolution: {integrity: sha512-mCuXncKXk5iCLhfhwTc0izo0gtEmpz5CtG2y8GiOINBlMVS6v8TMRc5TaLWKS6692m9+dVVfzgeVxR5UxWHTYw==}
     engines: {node: '>=12'}
-
-  chalk@3.0.0:
-    resolution: {integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==}
-    engines: {node: '>=8'}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -1961,6 +1957,10 @@ packages:
   hosted-git-info@4.1.0:
     resolution: {integrity: sha512-kyCuEOWjJqZuDbRHzL8V93NzQhwIB71oFWSyzVo+KPZI+pnQPPxucdkrOZvkLRnrf5URsQM+IJ09Dw29cRALIA==}
     engines: {node: '>=10'}
+
+  hpagent@1.2.0:
+    resolution: {integrity: sha512-A91dYTeIB6NoXG+PxTQpCCDDnfHsW9kc06Lvpu1TEe9gnd6ZFeiBoRO9JvzEv6xK7EX97/dUE8g/vBMTqTS3CA==}
+    engines: {node: '>=14'}
 
   http-cache-semantics@4.2.0:
     resolution: {integrity: sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==}
@@ -2801,8 +2801,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.49.5:
-    resolution: {integrity: sha512-BFjE1ePZrscIau1e11N2NJ6KnfsVKhSJ+ImVstGLc/4Tq77dOXOMF92IpSv/SGwJfwrfuo4+DPvt1Nas8cOZzw==}
+  renovate@40.49.6:
+    resolution: {integrity: sha512-iZdgfuOlmogQ0/zU9GhRFIb1FNnkD4DMSPNVr4jj9a+Rkf+Rv4uQGCZ6TZ92LsnUlMs6+0noxR+86i61kTx8WQ==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5275,7 +5275,7 @@ snapshots:
       loupe: 3.1.3
       tinyrainbow: 2.0.0
 
-  '@yarnpkg/core@4.4.1(typanion@3.14.0)':
+  '@yarnpkg/core@4.4.2(typanion@3.14.0)':
     dependencies:
       '@arcanis/slice-ansi': 1.1.1
       '@types/semver': 7.7.0
@@ -5283,9 +5283,9 @@ snapshots:
       '@yarnpkg/fslib': 3.1.2
       '@yarnpkg/libzip': 3.2.1(@yarnpkg/fslib@3.1.2)
       '@yarnpkg/parsers': 3.0.3
-      '@yarnpkg/shell': 4.1.2(typanion@3.14.0)
+      '@yarnpkg/shell': 4.1.3(typanion@3.14.0)
       camelcase: 5.3.1
-      chalk: 3.0.0
+      chalk: 4.1.2
       ci-info: 4.2.0
       clipanion: 4.0.0-rc.4(typanion@3.14.0)
       cross-spawn: 7.0.6
@@ -5293,6 +5293,7 @@ snapshots:
       dotenv: 16.5.0
       fast-glob: 3.3.3
       got: 11.8.6
+      hpagent: 1.2.0
       lodash: 4.17.21
       micromatch: 4.0.8
       p-limit: 2.3.0
@@ -5302,7 +5303,6 @@ snapshots:
       tinylogic: 2.0.0
       treeify: 1.1.0
       tslib: 2.8.1
-      tunnel: 0.0.6
     transitivePeerDependencies:
       - typanion
 
@@ -5321,11 +5321,11 @@ snapshots:
       js-yaml: 3.14.1
       tslib: 2.8.1
 
-  '@yarnpkg/shell@4.1.2(typanion@3.14.0)':
+  '@yarnpkg/shell@4.1.3(typanion@3.14.0)':
     dependencies:
       '@yarnpkg/fslib': 3.1.2
       '@yarnpkg/parsers': 3.0.3
-      chalk: 3.0.0
+      chalk: 4.1.2
       clipanion: 4.0.0-rc.4(typanion@3.14.0)
       cross-spawn: 7.0.6
       fast-glob: 3.3.3
@@ -5523,11 +5523,6 @@ snapshots:
       deep-eql: 5.0.2
       loupe: 3.1.3
       pathval: 2.0.0
-
-  chalk@3.0.0:
-    dependencies:
-      ansi-styles: 4.3.0
-      supports-color: 7.2.0
 
   chalk@4.1.2:
     dependencies:
@@ -6100,6 +6095,8 @@ snapshots:
   hosted-git-info@4.1.0:
     dependencies:
       lru-cache: 6.0.0
+
+  hpagent@1.2.0: {}
 
   http-cache-semantics@4.2.0: {}
 
@@ -6984,7 +6981,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.49.5(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.49.6(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.821.0
       '@aws-sdk/client-ec2': 3.821.0
@@ -7018,7 +7015,7 @@ snapshots:
       '@renovatebot/pep440': 4.1.0
       '@renovatebot/ruby-semver': 4.0.0
       '@sindresorhus/is': 7.0.1
-      '@yarnpkg/core': 4.4.1(typanion@3.14.0)
+      '@yarnpkg/core': 4.4.2(typanion@3.14.0)
       '@yarnpkg/parsers': 3.0.3
       agentkeepalive: 4.6.0
       async-mutex: 0.5.0
