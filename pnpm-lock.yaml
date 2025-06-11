@@ -21,8 +21,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 40.49.8
-        version: 40.49.8(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 40.49.10
+        version: 40.49.10(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.2.1
         version: 3.2.1
@@ -1419,6 +1419,10 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
+  chalk@5.4.1:
+    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+
   changelog-filename-regex@2.0.1:
     resolution: {integrity: sha512-DZdyJpCprw8V3jp8V2x13nAA05Yy/IN+Prowj+0mrAHNENYkuMtNI4u5m449TTjPqShIslQSEuXee+Jtkn4m+g==}
 
@@ -2801,8 +2805,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.49.8:
-    resolution: {integrity: sha512-6ayKlzND3FNtGvw8AJJD3KMB46w1bSUWP5qU6STxScPpBwydp0d6hGCloBEk5TmwxGGvkqtyWUWEg3kkkD8r7w==}
+  renovate@40.49.10:
+    resolution: {integrity: sha512-eI/gue+qk7HCobcrLKSMv1DZvQk3bpWG1pC9bCOmeUpzW6Du/vbpVK7U7z+7Ch0Xz8uJ0+p2vbzy3czcc1nIiw==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3437,8 +3441,8 @@ packages:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
-  zod@3.25.50:
-    resolution: {integrity: sha512-VstOnRxf4tlSq0raIwbn0n+LA34SxVoZ8r3pkwSUM0jqNiA/HCMQEVjTuS5FZmHsge+9MDGTiAuHyml5T0um6A==}
+  zod@3.25.51:
+    resolution: {integrity: sha512-TQSnBldh+XSGL+opiSIq0575wvDPqu09AqWe1F7JhUMKY+M91/aGlK4MhpVNO7MgYfHcVCB1ffwAUTJzllKJqg==}
 
   zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
@@ -4692,7 +4696,7 @@ snapshots:
       fs-extra: 11.3.0
       toml-eslint-parser: 0.10.0
       upath: 2.0.1
-      zod: 3.25.50
+      zod: 3.25.51
 
   '@renovatebot/kbpgp@4.0.1':
     dependencies:
@@ -5528,6 +5532,8 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  chalk@5.4.1: {}
 
   changelog-filename-regex@2.0.1: {}
 
@@ -6981,7 +6987,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.49.8(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.49.10(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.821.0
       '@aws-sdk/client-ec2': 3.821.0
@@ -7024,7 +7030,7 @@ snapshots:
       azure-devops-node-api: 15.1.0
       bunyan: 1.8.15
       cacache: 19.0.1
-      chalk: 4.1.2
+      chalk: 5.4.1
       changelog-filename-regex: 2.0.1
       clean-git-ref: 2.0.1
       commander: 14.0.0
@@ -7097,7 +7103,7 @@ snapshots:
       vuln-vects: 1.1.0
       xmldoc: 1.3.0
       yaml: 2.8.0
-      zod: 3.25.50
+      zod: 3.25.51
     optionalDependencies:
       better-sqlite3: 11.10.0
       openpgp: 6.1.1
@@ -7794,6 +7800,6 @@ snapshots:
 
   yocto-queue@1.2.1: {}
 
-  zod@3.25.50: {}
+  zod@3.25.51: {}
 
   zwitch@1.0.5: {}
