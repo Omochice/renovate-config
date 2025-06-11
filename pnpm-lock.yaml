@@ -21,8 +21,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 40.49.10
-        version: 40.49.10(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 40.49.11
+        version: 40.49.11(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.2.1
         version: 3.2.1
@@ -872,8 +872,8 @@ packages:
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
     engines: {node: '>=10'}
 
-  '@sindresorhus/is@7.0.1':
-    resolution: {integrity: sha512-QWLl2P+rsCJeofkDNIT3WFmb6NrRud1SUYW8dIhXK/46XFV8Q/g7Bsvib0Askb0reRLe+WYPeeE+l5cH7SlkuQ==}
+  '@sindresorhus/is@7.0.2':
+    resolution: {integrity: sha512-d9xRovfKNz1SKieM0qJdO+PQonjnnIfSNWfHYnBSJ9hkjm0ZPw6HlxscDXYstp3z+7V2GOFHc+J0CYrYTjqCJw==}
     engines: {node: '>=18'}
 
   '@smithy/abort-controller@4.0.4':
@@ -2805,8 +2805,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.49.10:
-    resolution: {integrity: sha512-eI/gue+qk7HCobcrLKSMv1DZvQk3bpWG1pC9bCOmeUpzW6Du/vbpVK7U7z+7Ch0Xz8uJ0+p2vbzy3czcc1nIiw==}
+  renovate@40.49.11:
+    resolution: {integrity: sha512-XTHCntChPrfQRdKrjybphXKg10/PjyZ39H+z+1aHvIUG0XM87S3kfRGsyHtepRLvharN3m4Gc6zGptlNy1GjJQ==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4799,7 +4799,7 @@ snapshots:
 
   '@sindresorhus/is@4.6.0': {}
 
-  '@sindresorhus/is@7.0.1': {}
+  '@sindresorhus/is@7.0.2': {}
 
   '@smithy/abort-controller@4.0.4':
     dependencies:
@@ -6987,7 +6987,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.49.10(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.49.11(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.821.0
       '@aws-sdk/client-ec2': 3.821.0
@@ -7020,7 +7020,7 @@ snapshots:
       '@renovatebot/osv-offline': 1.6.5
       '@renovatebot/pep440': 4.1.0
       '@renovatebot/ruby-semver': 4.0.0
-      '@sindresorhus/is': 7.0.1
+      '@sindresorhus/is': 7.0.2
       '@yarnpkg/core': 4.4.2(typanion@3.14.0)
       '@yarnpkg/parsers': 3.0.3
       agentkeepalive: 4.6.0
