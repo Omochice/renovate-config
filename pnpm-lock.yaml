@@ -21,8 +21,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 40.55.2
-        version: 40.55.2(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 40.56.0
+        version: 40.56.0(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.2.1
         version: 3.2.1
@@ -1176,9 +1176,6 @@ packages:
 
   '@types/treeify@1.0.3':
     resolution: {integrity: sha512-hx0o7zWEUU4R2Amn+pjCBQQt23Khy/Dk56gQU5xi5jtPL1h83ACJCeFaB2M/+WO1AntvWrSoVnnCAfI1AQH4Cg==}
-
-  '@types/unist@2.0.11':
-    resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -2859,8 +2856,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@40.55.2:
-    resolution: {integrity: sha512-icMJkS3XtY6iYpJ0HRCRTipG6rINd+3zJhbs4RMu3QxHlg5BT0ixsI17KeM9Y3CKiJDT6fxh3HoxBAlP9erNfA==}
+  renovate@40.56.0:
+    resolution: {integrity: sha512-h1vuW83bPIfUUUcyHEDlNoaYp4W4K2mkC04c/FN+b86k7MrxBE92j2fBwNzD9BvIQ3gdy5oSLox/bPuj3Vaugw==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5261,7 +5258,7 @@ snapshots:
 
   '@types/mdast@4.0.4':
     dependencies:
-      '@types/unist': 2.0.11
+      '@types/unist': 3.0.3
 
   '@types/minimist@1.2.5': {}
 
@@ -5286,8 +5283,6 @@ snapshots:
   '@types/semver@7.7.0': {}
 
   '@types/treeify@1.0.3': {}
-
-  '@types/unist@2.0.11': {}
 
   '@types/unist@3.0.3': {}
 
@@ -7183,7 +7178,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.55.2(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.56.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.821.0
       '@aws-sdk/client-ec2': 3.821.0
