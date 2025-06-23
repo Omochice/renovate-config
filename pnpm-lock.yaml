@@ -21,8 +21,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.4.0
-        version: 41.4.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.6.1
+        version: 41.6.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.2.2
         version: 3.2.2
@@ -2871,8 +2871,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.4.0:
-    resolution: {integrity: sha512-Z0ExQGG7PgpXz58o1p89Xk3/mYD0xA4HEZbSlSMPsSNyntoyX4o4Ih/IUQSBZHhKH7S6O+1sdKbRGwVXaGwkbQ==}
+  renovate@41.6.1:
+    resolution: {integrity: sha512-2BNvp4sG9gElDMdyupn8IPfl9fD3WHnIdFJ5WRxUc7kLskehGqd+WkFyOp6DF7/SugEYxke7KZzOTpKY5OKQ3A==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3506,8 +3506,8 @@ packages:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
-  zod@3.25.64:
-    resolution: {integrity: sha512-hbP9FpSZf7pkS7hRVUrOjhwKJNyampPgtXKc3AN6DsWtoHsg2Sb4SQaS4Tcay380zSwd2VPo9G9180emBACp5g==}
+  zod@3.25.65:
+    resolution: {integrity: sha512-kMyE2qsXK1p+TAvO7zsf5wMFiCejU3obrUDs9bR1q5CBKykfvp7QhhXrycUylMoOow0iEUSyjLlZZdCsHwSldQ==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -4767,7 +4767,7 @@ snapshots:
       fs-extra: 11.3.0
       toml-eslint-parser: 0.10.0
       upath: 2.0.1
-      zod: 3.25.64
+      zod: 3.25.65
 
   '@renovatebot/kbpgp@4.0.1':
     dependencies:
@@ -7205,7 +7205,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.4.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.6.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.821.0
       '@aws-sdk/client-ec2': 3.821.0
@@ -7322,7 +7322,7 @@ snapshots:
       vuln-vects: 1.1.0
       xmldoc: 1.3.0
       yaml: 2.8.0
-      zod: 3.25.64
+      zod: 3.25.65
     optionalDependencies:
       better-sqlite3: 11.10.0
       openpgp: 6.1.1
@@ -8022,6 +8022,6 @@ snapshots:
 
   yocto-queue@1.2.1: {}
 
-  zod@3.25.64: {}
+  zod@3.25.65: {}
 
   zwitch@2.0.4: {}
