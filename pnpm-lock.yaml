@@ -24,8 +24,8 @@ importers:
         specifier: 41.6.4
         version: 41.6.4(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
-        specifier: 3.2.2
-        version: 3.2.2
+        specifier: 3.3.0
+        version: 3.3.0
       vitest:
         specifier: 3.2.4
         version: 3.2.4(@types/debug@4.1.12)(@types/node@22.15.29)(yaml@2.8.0)
@@ -3043,8 +3043,8 @@ packages:
   sort-object-keys@1.1.3:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
 
-  sort-package-json@3.2.2:
-    resolution: {integrity: sha512-twAMvmzOcEPsN3N9zKPDpl6zproGU0JcBOQFU4T6e5wrStH8iuPiAjFz9g+cMRC52eQBUbZlFCeGt+F4vginkw==}
+  sort-package-json@3.3.0:
+    resolution: {integrity: sha512-r7r8W0b9jrAKySkYbe0dp4nbrvlPh0mV8gJ2dRUt1baXV5cLulsQqsWeuMOy8IQV4O7f3uucbC0K6pZA6ncPyQ==}
     hasBin: true
 
   source-map-js@1.2.1:
@@ -7533,7 +7533,7 @@ snapshots:
 
   sort-object-keys@1.1.3: {}
 
-  sort-package-json@3.2.2:
+  sort-package-json@3.3.0:
     dependencies:
       detect-indent: 7.0.1
       detect-newline: 4.0.1
