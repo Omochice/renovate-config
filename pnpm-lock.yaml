@@ -21,8 +21,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.32.0
-        version: 41.32.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.32.1
+        version: 41.32.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -1654,8 +1654,8 @@ packages:
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
-  editorconfig@3.0.0:
-    resolution: {integrity: sha512-cU9vLVQ1YmDmLL047KkgQ3Yv9jSI6ZlqW4XjEdG0RrFhz7kYQ5lxD7SfhQci8g1TQu9iMA+54rRLe6yvWxXxcA==}
+  editorconfig@3.0.1:
+    resolution: {integrity: sha512-k5NZM2XNIJfH/omUv0SRYaiLae4VRwg1ILW6xLOjuP4AQGAGcvzNij5imJ+m1rbzDIH0ov6EbH53BW96amFXpQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2902,8 +2902,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.32.0:
-    resolution: {integrity: sha512-GDUSFwJKeSWOL05bVEaGsghMq6ICcYkcWvcD0P3UfxgR0GhKYJaJP/TzxnoGvHXcTy3staq/TyHjmKvsyVUyzw==}
+  renovate@41.32.1:
+    resolution: {integrity: sha512-qZf4l9wPGg/5Of+/TuD0oX2tSA+2JHx7OhF4A+Z5zSY0FmRzjwKyOizlpk2UU9aMyRk2chgMTDo9DQT8GS0U7Q==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5837,7 +5837,7 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  editorconfig@3.0.0:
+  editorconfig@3.0.1:
     dependencies:
       '@one-ini/wasm': 0.2.0
       commander: 14.0.0
@@ -7286,7 +7286,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.32.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.32.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.840.0
       '@aws-sdk/client-ec2': 3.840.0
@@ -7340,7 +7340,7 @@ snapshots:
       dequal: 2.0.3
       detect-indent: 7.0.1
       diff: 8.0.2
-      editorconfig: 3.0.0
+      editorconfig: 3.0.1
       email-addresses: 5.0.0
       emoji-regex: 10.4.0
       emojibase: 16.0.0
