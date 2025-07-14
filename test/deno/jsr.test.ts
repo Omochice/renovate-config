@@ -1,8 +1,8 @@
-import { expect, expectTypeOf, describe, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import dedent from "dedent";
 import RE2 from "re2";
+import { describe, expect, expectTypeOf, it } from "vitest";
 
 const repositoryRoot = dirname(dirname(__dirname));
 

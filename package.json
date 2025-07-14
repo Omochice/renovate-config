@@ -9,8 +9,10 @@
   "license": "zlib",
   "author": "Omochice",
   "scripts": {
-    "fmt": "npm-run-all fmt:package fmt:json",
-    "fmt:json": "biome format ./ --write",
+    "fmt": "npm-run-all fmt:package fmt:biome",
+    "fmt:biome": "npm-run-all fmt:biome:*",
+    "fmt:biome:check": "biome check --write --unsafe ./",
+    "fmt:biome:format": "biome format ./ --write",
     "fmt:package": "sort-package-json",
     "test": "npm-run-all test:validate test:regex",
     "test:regex": "vitest run",
