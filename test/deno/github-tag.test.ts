@@ -31,7 +31,7 @@ describe("github tag for import_map", () => {
       title: "should accept raw.githubusercontent.com",
       input: `{
         "imports": {
-          "sample": "https://raw.githubusercontent.com/user/repo/1.0.0/mod.ts",
+          "sample": "https://raw.githubusercontent.com/user/repo/1.0.0/mod.ts"
         }
       }`,
       currentValue: "1.0.0",
@@ -41,7 +41,7 @@ describe("github tag for import_map", () => {
       title: "should accept pax.deno.dev",
       input: `{
         "imports": {
-          "sample": "https://pax.deno.dev/user/repo@1.0.0/mod.ts",
+          "sample": "https://pax.deno.dev/user/repo@1.0.0/mod.ts"
         }
       }`,
       currentValue: "1.0.0",
@@ -51,7 +51,7 @@ describe("github tag for import_map", () => {
       title: "should accept omit 'mod.ts' when specify pax.deno.dev",
       input: `{
         "imports": {
-          "sample": "https://pax.deno.dev/user/repo@1.0.0",
+          "sample": "https://pax.deno.dev/user/repo@1.0.0"
         }
       }`,
       currentValue: "1.0.0",
@@ -61,7 +61,7 @@ describe("github tag for import_map", () => {
       title: "should accept complex semver version",
       input: `{
         "imports": {
-          "sample": "https://raw.githubusercontent.com/user/repo/1.0.0-alpha-a.b-c-somethinglong+build.1-aef.1-its-okay/mod.ts"
+          "sample": "https://raw.githubusercontent.com/user/repo/1.0.0-alpha-a.b-c-somethinglong+build.1-aef.1-its-okay/mod.ts
         }
       }`,
       currentValue: "1.0.0-alpha-a.b-c-somethinglong+build.1-aef.1-its-okay",

@@ -30,8 +30,8 @@ describe("deno.land for import map", () => {
     {
       title: "should be accept deno.land/std",
       input: `{
-        "import_map": {
-          "std": "https://deno.land/std@0.204.0",
+        "imports": {
+          "std": "https://deno.land/std@0.204.0"
         }
       }`,
       currentValue: "0.204.0",
@@ -40,8 +40,8 @@ describe("deno.land for import map", () => {
     {
       title: "should be accept if include 'v' in version",
       input: `{
-        "import_map": {
-          "path": "https://deno.land/std@v0.204.0/path/mod.ts",
+        "imports": {
+          "path": "https://deno.land/std@v0.204.0/path/mod.ts"
         }
       }`,
       currentValue: "v0.204.0",
@@ -50,8 +50,8 @@ describe("deno.land for import map", () => {
     {
       title: "should be accept deno.land/x",
       input: `{
-        "import_map": {
-          "some": "https://deno.land/x/some_module@v0.1.0",
+        "imports": {
+          "some": "https://deno.land/x/some_module@v0.1.0"
         }
       }`,
       currentValue: "v0.1.0",

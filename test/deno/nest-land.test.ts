@@ -31,7 +31,7 @@ describe("x.nest.land for import_map", () => {
       title: "should accept x.nest.land",
       input: `{
         "imports": {
-          "sample": "https://x.nest.land/sample@0.0.1/mod.ts",
+          "sample": "https://x.nest.land/sample@0.0.1/mod.ts"
         }
       }`,
       currentValue: "0.0.1",
@@ -41,7 +41,7 @@ describe("x.nest.land for import_map", () => {
       title: "should accept x.nest.land with `v`",
       input: `{
         "imports": {
-          "sample": "https://x.nest.land/sample@v0.0.1/mod.ts",
+          "sample": "https://x.nest.land/sample@v0.0.1/mod.ts"
         }
       }`,
       currentValue: "v0.0.1",

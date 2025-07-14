@@ -29,7 +29,7 @@ describe("npm for import map", () => {
       title: "should accept npm specifier",
       input: `{
         "imports": {
-          "chalk": "npm:chalk@5.0.1",
+          "chalk": "npm:chalk@5.0.1"
         }
       }`,
       currentValue: "5.0.1",
@@ -39,7 +39,7 @@ describe("npm for import map", () => {
       title: "should accept esm.sh specifier",
       input: `{
         "imports": {
-          "chalk": "https://esm.sh/chalk@5.0.1",
+          "chalk": "https://esm.sh/chalk@5.0.1"
         }
       }`,
       currentValue: "5.0.1",
@@ -49,7 +49,7 @@ describe("npm for import map", () => {
       title: "should accept esm.sh specifier with query",
       input: `{
         "imports": {
-          "tslib": "https://esm.sh/tslib@2.6.2?exports=__await,__rest",
+          "tslib": "https://esm.sh/tslib@2.6.2?exports=__await,__rest"
         }
       }`,
       currentValue: "2.6.2",
@@ -59,7 +59,7 @@ describe("npm for import map", () => {
       title: "should accept only major version",
       input: `{
         "imports": {
-          "chalk": "npm:chalk@5",
+          "chalk": "npm:chalk@5"
         }
       }`,
       currentValue: "5",
@@ -69,7 +69,7 @@ describe("npm for import map", () => {
       title: "should accept unpkg.com specifier",
       input: `{
         "imports": {
-          "foo": "https://unpkg.com/@bar/foo@0.1.0/foo.ts",
+          "foo": "https://unpkg.com/@bar/foo@0.1.0/foo.ts"
         }
       }`,
       currentValue: "0.1.0",
@@ -79,7 +79,7 @@ describe("npm for import map", () => {
       title: "should accept unpkg.com specifier without @scope",
       input: `{
         "imports": {
-          "foo": "https://unpkg.com/foo@0.1.0/umd/foo.production.min.js",
+          "foo": "https://unpkg.com/foo@0.1.0/umd/foo.production.min.js"
         }
       }`,
       currentValue: "0.1.0",
@@ -89,7 +89,7 @@ describe("npm for import map", () => {
       title: "should accept skypack.dev specifier",
       input: `{
         "imports": {
-          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5",
+          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5"
         }
       }`,
       currentValue: "10.5.5",
@@ -99,7 +99,7 @@ describe("npm for import map", () => {
       title: "should accept skypack.dev with query",
       input: `{
         "imports": {
-          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5?min",
+          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5?min"
         }
       }`,
       currentValue: "10.5.5",
