@@ -1,14 +1,15 @@
-import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import dedent from "dedent";
 import RE2 from "re2";
 import { describe, expect, expectTypeOf, it } from "vitest";
+import { parse } from "../util";
 
 const repositoryRoot = dirname(dirname(__dirname));
 
-const file = readFileSync(join(repositoryRoot, "deno", "jsr.json")).toString();
-const config: string[][] = JSON.parse(file)?.customManagers?.map(
-  (manager: { matchStrings?: string[] }) => manager.matchStrings,
+const config: string[][] = parse(
+  join(repositoryRoot, "deno", "jsr.json"),
+).customManagers.map(
+  (manager: { matchStrings: string[] }) => manager.matchStrings,
 );
 
 const regexps: RE2[][] = config.map((matchStrings: string[]) =>
