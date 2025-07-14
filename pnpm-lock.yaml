@@ -15,7 +15,7 @@ importers:
         specifier: 1.6.0
         version: 1.6.0
       jsonata:
-        specifier: ^2.0.6
+        specifier: 2.0.6
         version: 2.0.6
       npm-run-all2:
         specifier: 8.0.4
