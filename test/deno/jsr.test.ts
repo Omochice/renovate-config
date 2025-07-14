@@ -37,6 +37,7 @@ describe("jsr for import map", () => {
       }`,
       currentValue: "1.0.1",
       depName: "@luca/flag",
+      packageName: "@jsr/luca__flag",
     },
     {
       title: "should accept https://jsr.io",
@@ -47,22 +48,27 @@ describe("jsr for import map", () => {
       }`,
       currentValue: "1.0.1",
       depName: "@luca/flag",
+      packageName: "@jsr/luca__flag",
     },
   ] as const;
 
-  it.each(testCases)("$title", async ({ input, currentValue, depName }) => {
-    const data = JSON.parse(input);
-    const matches = (
-      await Promise.all(
-        jsonatas.at(0)?.map(async (j) => await j.evaluate(data)) ?? [],
-      )
-    ).flat();
-    expect(matches).toBeDefined();
-    expect(Array.isArray(matches)).toBe(true);
-    expect(matches.length).toBe(1);
-    expect(matches.at(0).currentValue).toBe(currentValue);
-    expect(matches.at(0).depName).toBe(depName);
-  });
+  it.each(testCases)(
+    "$title",
+    async ({ input, currentValue, depName, packageName }) => {
+      const data = JSON.parse(input);
+      const matches = (
+        await Promise.all(
+          jsonatas.at(0)?.map(async (j) => await j.evaluate(data)) ?? [],
+        )
+      ).flat();
+      expect(matches).toBeDefined();
+      expect(Array.isArray(matches)).toBe(true);
+      expect(matches.length).toBe(1);
+      expect(matches.at(0).currentValue).toBe(currentValue);
+      expect(matches.at(0).depName).toBe(depName);
+      expect(matches.at(0).packageName).toBe(packageName);
+    },
+  );
 });
 
 describe("jsr for js file", () => {
