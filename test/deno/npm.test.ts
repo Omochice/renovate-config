@@ -1,18 +1,20 @@
-import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import jsonata, { type Expression } from "jsonata";
 import RE2 from "re2";
 import { describe, expect, expectTypeOf, it } from "vitest";
+import { parse } from "../util";
 
 const repositoryRoot = dirname(dirname(__dirname));
 
-const file = readFileSync(join(repositoryRoot, "deno", "npm.json")).toString();
-const config: string[][] = JSON.parse(file)?.customManagers?.map(
-  (manager: { matchStrings?: string[] }) => manager.matchStrings,
-);
+const config = parse(join(repositoryRoot, "deno", "npm.json"));
 
-const regexps: RE2[][] = config.map((matchStrings: string[]) =>
-  matchStrings.map((re) => new RE2(re)),
-);
+const regexps: RE2[][] = config.customManagers
+  .filter(({ customType }) => customType === "regex")
+  .map(({ matchStrings }) => matchStrings.map((re) => new RE2(re)));
+
+const jsonatas: Expression[][] = config.customManagers
+  .filter(({ customType }) => customType === "jsonata")
+  .map(({ matchStrings }) => matchStrings.map((re) => jsonata(re)));
 
 describe("check configuration existing", () => {
   it("should be array", () => {
@@ -29,7 +31,7 @@ describe("npm for import map", () => {
       title: "should accept npm specifier",
       input: `{
         "imports": {
-          "chalk": "npm:chalk@5.0.1",
+          "chalk": "npm:chalk@5.0.1"
         }
       }`,
       currentValue: "5.0.1",
@@ -39,7 +41,7 @@ describe("npm for import map", () => {
       title: "should accept esm.sh specifier",
       input: `{
         "imports": {
-          "chalk": "https://esm.sh/chalk@5.0.1",
+          "chalk": "https://esm.sh/chalk@5.0.1"
         }
       }`,
       currentValue: "5.0.1",
@@ -49,7 +51,7 @@ describe("npm for import map", () => {
       title: "should accept esm.sh specifier with query",
       input: `{
         "imports": {
-          "tslib": "https://esm.sh/tslib@2.6.2?exports=__await,__rest",
+          "tslib": "https://esm.sh/tslib@2.6.2?exports=__await,__rest"
         }
       }`,
       currentValue: "2.6.2",
@@ -59,7 +61,7 @@ describe("npm for import map", () => {
       title: "should accept only major version",
       input: `{
         "imports": {
-          "chalk": "npm:chalk@5",
+          "chalk": "npm:chalk@5"
         }
       }`,
       currentValue: "5",
@@ -69,7 +71,7 @@ describe("npm for import map", () => {
       title: "should accept unpkg.com specifier",
       input: `{
         "imports": {
-          "foo": "https://unpkg.com/@bar/foo@0.1.0/foo.ts",
+          "foo": "https://unpkg.com/@bar/foo@0.1.0/foo.ts"
         }
       }`,
       currentValue: "0.1.0",
@@ -79,7 +81,7 @@ describe("npm for import map", () => {
       title: "should accept unpkg.com specifier without @scope",
       input: `{
         "imports": {
-          "foo": "https://unpkg.com/foo@0.1.0/umd/foo.production.min.js",
+          "foo": "https://unpkg.com/foo@0.1.0/umd/foo.production.min.js"
         }
       }`,
       currentValue: "0.1.0",
@@ -89,7 +91,7 @@ describe("npm for import map", () => {
       title: "should accept skypack.dev specifier",
       input: `{
         "imports": {
-          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5",
+          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5"
         }
       }`,
       currentValue: "10.5.5",
@@ -99,7 +101,7 @@ describe("npm for import map", () => {
       title: "should accept skypack.dev with query",
       input: `{
         "imports": {
-          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5?min",
+          "foo": "https://cdn.skypack.dev/@scope/package@10.5.5?min"
         }
       }`,
       currentValue: "10.5.5",
@@ -107,15 +109,18 @@ describe("npm for import map", () => {
     },
   ] as const;
 
-  it.each(testCases)("$title", ({ input, currentValue, depName }) => {
-    const re = regexps[0].map((r) => new RegExp(r, "gm"));
-    const matches = re
-      .map((r) => Array.from(input.matchAll(r)).map((e) => e.groups))
-      .filter((match) => match.length !== 0)
-      .flat();
+  it.each(testCases)("$title", async ({ input, currentValue, depName }) => {
+    const data = JSON.parse(input);
+    const matches = (
+      await Promise.all(
+        jsonatas.at(0)?.map(async (j) => await j.evaluate(data)) ?? [],
+      )
+    ).flat();
+    expect(matches).toBeDefined();
+    expect(Array.isArray(matches)).toBe(true);
     expect(matches.length).toBe(1);
-    expect(matches[0]?.currentValue).toBe(currentValue);
-    expect(matches[0]?.depName).toBe(depName);
+    expect(matches.at(0).currentValue).toBe(currentValue);
+    expect(matches.at(0).depName).toBe(depName);
   });
 });
 
@@ -123,8 +128,8 @@ describe("npm for import map", () => {
 // https://github.com/denoland/deno/pull/22087
 // https://deno.com/blog/v1.40#simpler-imports-in-denojson
 describe("should accept npm specifier with subpath exports in import map", () => {
-  it("should match all exports of preact", () => {
-    const testCase = {
+  it("should match all exports of preact", async () => {
+    const { input, currentValue, depName } = {
       input: `{
         "imports": {
           "preact": "npm:preact@10.5.13",
@@ -135,15 +140,18 @@ describe("should accept npm specifier with subpath exports in import map", () =>
       depName: "preact",
     } as const;
 
-    const re = regexps[0].map((r) => new RegExp(r, "gm"));
-    const matches = re
-      .map((r) => Array.from(testCase.input.matchAll(r)).map((e) => e.groups))
-      .filter((match) => match.length !== 0)
-      .flat();
+    const data = JSON.parse(input);
+    const matches = (
+      await Promise.all(
+        jsonatas.at(0)?.map(async (j) => await j.evaluate(data)) ?? [],
+      )
+    ).flat();
+    expect(matches).toBeDefined();
+    expect(Array.isArray(matches)).toBe(true);
     expect(matches.length).toBe(2);
     for (const match of matches) {
-      expect(match?.currentValue).toBe(testCase.currentValue);
-      expect(match?.depName).toBe(testCase.depName);
+      expect(match?.currentValue).toBe(currentValue);
+      expect(match?.depName).toBe(depName);
     }
   });
 });
@@ -256,7 +264,7 @@ describe("npm for js file", () => {
   ] as const;
 
   it.each(testCases)("$title", ({ input, currentValue, depName }) => {
-    const re = regexps[1].map((r) => new RegExp(r, "gm"));
+    const re = regexps[0].map((r) => new RegExp(r, "gm"));
     const matches = re
       .map((r) => Array.from(input.matchAll(r)).map((e) => e.groups))
       .filter((match) => match.length !== 0)
