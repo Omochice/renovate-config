@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/Omochice/renovate-config/compare/v3.3.0...v4.0.0) (2025-07-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* use jsonata custom manager instead ([#1020](https://github.com/Omochice/renovate-config/issues/1020))
+
+### Features
+
+* use jsonata custom manager instead ([#1020](https://github.com/Omochice/renovate-config/issues/1020)) ([81ba2c4](https://github.com/Omochice/renovate-config/commit/81ba2c4b1ade19b588e523acb58424da083c3bd9))
+
 ## [3.3.0](https://github.com/Omochice/renovate-config/compare/v3.2.0...v3.3.0) (2025-05-11)
 
 
