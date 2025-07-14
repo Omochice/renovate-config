@@ -1,19 +1,19 @@
 import { dirname, join } from "node:path";
+import jsonata, { type Expression } from "jsonata";
 import RE2 from "re2";
 import { describe, expect, expectTypeOf, it } from "vitest";
 import { parse } from "../util";
 
 const repositoryRoot = dirname(dirname(__dirname));
+const config = parse(join(repositoryRoot, "deno", "nest-land.json"));
 
-const config: string[][] = parse(
-  join(repositoryRoot, "deno", "nest-land.json"),
-).customManagers.map(
-  (manager: { matchStrings: string[] }) => manager.matchStrings,
-);
+const regexps: RE2[][] = config.customManagers
+  .filter(({ customType }) => customType === "regex")
+  .map(({ matchStrings }) => matchStrings.map((re) => new RE2(re)));
 
-const regexps: RE2[][] = config.map((matchStrings: string[]) =>
-  matchStrings.map((re) => new RE2(re)),
-);
+const jsonatas: Expression[][] = config.customManagers
+  .filter(({ customType }) => customType === "jsonata")
+  .map(({ matchStrings }) => matchStrings.map((re) => jsonata(re)));
 
 describe("check configuration existing", () => {
   it("should be array", () => {
@@ -48,15 +48,18 @@ describe("x.nest.land for import_map", () => {
     },
   ];
 
-  it.each(testCases)("$title", ({ input, currentValue, depName }) => {
-    const re = regexps[0].map((r) => new RegExp(r, "gm"));
-    const matches = re
-      .map((r) => Array.from(input.matchAll(r)).map((e) => e.groups))
-      .filter((match) => match.length !== 0)
-      .flat();
+  it.each(testCases)("$title", async ({ input, currentValue, depName }) => {
+    const data = JSON.parse(input);
+    const matches = (
+      await Promise.all(
+        jsonatas.at(0)?.map(async (j) => await j.evaluate(data)) ?? [],
+      )
+    ).flat();
+    expect(matches).toBeDefined();
+    expect(Array.isArray(matches)).toBe(true);
     expect(matches.length).toBe(1);
-    expect(matches[0]?.currentValue).toBe(currentValue);
-    expect(matches[0]?.depName).toBe(depName);
+    expect(matches.at(0).currentValue).toBe(currentValue);
+    expect(matches.at(0).depName).toBe(depName);
   });
 });
 
@@ -95,7 +98,7 @@ describe("x.nest.land for js file", () => {
   ];
 
   it.each(testCases)("$title", ({ input, currentValue, depName }) => {
-    const re = regexps[1].map((r) => new RegExp(r, "gm"));
+    const re = regexps[0].map((r) => new RegExp(r, "gm"));
     const matches = re
       .map((r) => Array.from(input.matchAll(r)).map((e) => e.groups))
       .filter((match) => match.length !== 0)

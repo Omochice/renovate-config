@@ -2,13 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "customManagers": [
     {
-      "customType": "regex",
+      "customType": "jsonata",
+      "fileFormat": "json",
       "managerFilePatterns": [
         "/(?:^|/)import_map.json$/",
         "/(?:^|/)deno.jsonc?$/"
       ],
       "matchStrings": [
-        "['\"].+?['\"]\\s*:\\s*['\"](?<depName>https://deno.land/(?:x/.+?|std))@(?<currentValue>v?(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]"
+        "imports.*[$ ~> /^https:\\/\\/deno.land\\/(x\\/|std)/i] ~> $map(function($v) {( $package := $v ~> /^(https:\\/\\/deno.land\\/(x\\/.+?|std))@(v?(0|[1-9]\\d*)(\\.(0|[1-9]\\d*)(\\.(0|[1-9]\\d*)(-((0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(\\.(0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(\\+([0-9a-zA-Z-]+(\\.[0-9a-zA-Z-]+)*))?)?)?)/; { 'currentValue': $package.groups[2], 'depName': $package.groups[0] })})"
       ],
       "datasourceTemplate": "deno"
     },
