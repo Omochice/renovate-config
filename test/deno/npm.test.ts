@@ -107,6 +107,56 @@ describe("npm for import map", () => {
       currentValue: "10.5.5",
       depName: "@scope/package",
     },
+    {
+      title: "should accept npm with ^ range",
+      input: `{
+        "imports": {
+          "foo": "npm:chalk@^5.0.0"
+        }
+      }`,
+      currentValue: "^5.0.0",
+      depName: "chalk",
+    },
+    {
+      title: "should accept npm with ~ range",
+      input: `{
+        "imports": {
+          "foo": "npm:chalk@~5.0.0"
+        }
+      }`,
+      currentValue: "~5.0.0",
+      depName: "chalk",
+    },
+    {
+      title: "should accept npm with > range",
+      input: `{
+        "imports": {
+          "foo": "npm:chalk@>5.0.0"
+        }
+      }`,
+      currentValue: ">5.0.0",
+      depName: "chalk",
+    },
+    {
+      title: "should accept npm with >= range",
+      input: `{
+        "imports": {
+          "foo": "npm:chalk@>=5.0.0"
+        }
+      }`,
+      currentValue: ">=5.0.0",
+      depName: "chalk",
+    },
+    {
+      title: "should accept npm with < range",
+      input: `{
+        "imports": {
+          "foo": "npm:chalk@<5.0.0"
+        }
+      }`,
+      currentValue: "<5.0.0",
+      depName: "chalk",
+    },
   ] as const;
 
   it.each(testCases)("$title", async ({ input, currentValue, depName }) => {
@@ -260,6 +310,36 @@ describe("npm for js file", () => {
       input: `// @ts-types="npm:some@0.1.0";`,
       currentValue: "0.1.0",
       depName: "some",
+    },
+    {
+      title: "should accept npm with ^ range",
+      input: `import chalk from "npm:chalk@^5.0.0";`,
+      currentValue: "^5.0.0",
+      depName: "chalk",
+    },
+    {
+      title: "should accept npm with ~ range",
+      input: `import chalk from "npm:chalk@~5.0.0";`,
+      currentValue: "~5.0.0",
+      depName: "chalk",
+    },
+    {
+      title: "should accept npm with `>` range",
+      input: `import chalk from "npm:chalk@>5.0.0";`,
+      currentValue: ">5.0.0",
+      depName: "chalk",
+    },
+    {
+      title: "should accept npm with `>=` range",
+      input: `import chalk from "npm:chalk@>=5.0.0";`,
+      currentValue: ">=5.0.0",
+      depName: "chalk",
+    },
+    {
+      title: "should accept npm with `<` range",
+      input: `import chalk from "npm:chalk@<5.0.0";`,
+      currentValue: "<5.0.0",
+      depName: "chalk",
     },
   ] as const;
 
