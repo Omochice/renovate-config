@@ -9,7 +9,7 @@
         "/(?:^|/)deno.jsonc?$/"
       ],
       "matchStrings": [
-        "imports.*[$ ~> /^(npm:|https:\\/\\/(esm\\.sh|unpkg\\.com|cdn\\.skypack\\.dev)\\/)/i] ~> $map(function($v) {( $package := $v ~> $replace(/^(npm:\\/?|https:\\/\\/(esm\\.sh|unpkg\\.com|cdn\\.skypack\\.dev)\\/)/i, '') ~> /^(.+?)@v?((0|[1-9]\\d*)(\\.(0|[1-9]\\d*)(\\.(0|[1-9]\\d*)(-((0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(\\.(0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(\\+([0-9a-zA-Z-]+(\\.[0-9a-zA-Z-]+)*))?)?)?)/; { 'depName': $package.groups[0], 'currentValue': $package.groups[1] })})"
+        "imports.*[$ ~> /^(npm:|https:\\/\\/(esm\\.sh|unpkg\\.com|cdn\\.skypack\\.dev)\\/)/i] ~> $map(function($v) {( $package := $v ~> $replace(/^(npm:\\/?|https:\\/\\/(esm\\.sh|unpkg\\.com|cdn\\.skypack\\.dev)\\/)/i, '') ~> /^(.+?)@v?((\\^|~|>|>=|<)?(0|[1-9]\\d*)(\\.(0|[1-9]\\d*)(\\.(0|[1-9]\\d*)(-((0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(\\.(0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(\\+([0-9a-zA-Z-]+(\\.[0-9a-zA-Z-]+)*))?)?)?)/; { 'depName': $package.groups[0], 'currentValue': $package.groups[1] })})"
       ],
       "datasourceTemplate": "npm"
     },
@@ -18,7 +18,7 @@
       "managerFilePatterns": ["/\\.[jt]sx?$/"],
       "matchStrings": [
         "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=|//\\s*@ts-types=)['\"]https://esm.sh/(v\\d{1,3}/)?(?<depName>.+?)@(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[?/'\"]",
-        "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=|//\\s*@ts-types=)['\"]npm:(?<depName>.+?)@(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]",
+        "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=|//\\s*@ts-types=)['\"]npm:(?<depName>.+?)@(?<currentValue>(?:~|\\^|>|>=|<)?(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]",
         "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=|//\\s*@ts-types=)['\"]https?://unpkg.com/(?<depName>(?:@[^/\"']*/)?[^/\"']*?)@(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[/'\"]",
         "((?:im|ex)port(?:.|\\s)+?from\\s*|//\\s*@deno-types=|//\\s*@ts-types=)['\"]https?://cdn.skypack.dev/(?<depName>(?:@[^/\"']*/)?[^/\"']*?)@(?<currentValue>(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:\\.(?:0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?)?)?)[?/'\"]"
       ],
