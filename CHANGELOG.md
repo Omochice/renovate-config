@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.1](https://github.com/Omochice/renovate-config/compare/v4.0.0...v4.0.1) (2025-07-17)
+
+
+### Bug Fixes
+
+* `currentValue` should include version range ([#1040](https://github.com/Omochice/renovate-config/issues/1040)) ([3ccd82c](https://github.com/Omochice/renovate-config/commit/3ccd82c6145e5cb183f4a58d9ba8f9204da46164))
+
 ## [4.0.0](https://github.com/Omochice/renovate-config/compare/v3.3.0...v4.0.0) (2025-07-14)
 
 
