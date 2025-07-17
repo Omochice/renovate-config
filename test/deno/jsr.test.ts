@@ -32,10 +32,65 @@ describe("jsr for import map", () => {
       title: "should accept jsr specifier",
       input: `{
         "imports": {
-          "@luca/flag": "jsr:@luca/flag@^1.0.1"
+          "@luca/flag": "jsr:@luca/flag@1.0.1"
         }
       }`,
       currentValue: "1.0.1",
+      depName: "@luca/flag",
+      packageName: "@jsr/luca__flag",
+    },
+    {
+      title: "should accept jsr specifier with `^` range",
+      input: `{
+        "imports": {
+          "@luca/flag": "jsr:@luca/flag@^1.0.1"
+        }
+      }`,
+      currentValue: "^1.0.1",
+      depName: "@luca/flag",
+      packageName: "@jsr/luca__flag",
+    },
+    {
+      title: "should accept jsr specifier with `~` range",
+      input: `{
+        "imports": {
+          "@luca/flag": "jsr:@luca/flag@~1.0.1"
+        }
+      }`,
+      currentValue: "~1.0.1",
+      depName: "@luca/flag",
+      packageName: "@jsr/luca__flag",
+    },
+    {
+      title: "should accept jsr specifier with `>=` range",
+      input: `{
+        "imports": {
+          "@luca/flag": "jsr:@luca/flag@>=1.0.1"
+        }
+      }`,
+      currentValue: ">=1.0.1",
+      depName: "@luca/flag",
+      packageName: "@jsr/luca__flag",
+    },
+    {
+      title: "should accept jsr specifier with `>` range",
+      input: `{
+        "imports": {
+          "@luca/flag": "jsr:@luca/flag@>1.0.1"
+        }
+      }`,
+      currentValue: ">1.0.1",
+      depName: "@luca/flag",
+      packageName: "@jsr/luca__flag",
+    },
+    {
+      title: "should accept jsr specifier with `<` range",
+      input: `{
+        "imports": {
+          "@luca/flag": "jsr:@luca/flag@<1.0.1"
+        }
+      }`,
+      currentValue: "<1.0.1",
       depName: "@luca/flag",
       packageName: "@jsr/luca__flag",
     },
@@ -88,13 +143,13 @@ describe("jsr for js file", () => {
     {
       title: "should accept version pinning(^)",
       input: `import { printProgress } from "jsr:@luca/flag@^1.0.1";`,
-      currentValue: "1.0.1",
+      currentValue: "^1.0.1",
       depName: "@luca/flag",
     },
     {
       title: "should accept version pinning(~)",
       input: `import { printProgress } from "jsr:@luca/flag@~1.0.1";`,
-      currentValue: "1.0.1",
+      currentValue: "~1.0.1",
       depName: "@luca/flag",
     },
     {
@@ -110,19 +165,37 @@ describe("jsr for js file", () => {
       depName: "@luca/flag",
     },
     {
-      title: "version pinning(^) with //@deno-types",
+      title: "should accept version pinning(^) with //@deno-types",
       input: `// @deno-types="jsr:@luca/flag@^1.0.1";`,
-      currentValue: "1.0.1",
+      currentValue: "^1.0.1",
       depName: "@luca/flag",
     },
     {
-      title: "version pinning(~) with //@deno-types",
+      title: "should accept version pinning(~) with //@deno-types",
       input: `// @deno-types="jsr:@luca/flag@~1.0.1";`,
-      currentValue: "1.0.1",
+      currentValue: "~1.0.1",
       depName: "@luca/flag",
     },
     {
-      title: "only major version with //@deno-types",
+      title: "should accept version pinning(>)",
+      input: `import { printProgress } from "jsr:@luca/flag@>1.0.0";`,
+      currentValue: ">1.0.0",
+      depName: "@luca/flag",
+    },
+    {
+      title: "should accept version pinning(>=)",
+      input: `import { printProgress } from "jsr:@luca/flag@>=1.0.0";`,
+      currentValue: ">=1.0.0",
+      depName: "@luca/flag",
+    },
+    {
+      title: "should accept version pinning(<)",
+      input: `import { printProgress } from "jsr:@luca/flag@<1.0.0";`,
+      currentValue: "<1.0.0",
+      depName: "@luca/flag",
+    },
+    {
+      title: "should accept only major version with //@deno-types",
       input: `// @deno-types="jsr:@luca/flag@1";`,
       currentValue: "1",
       depName: "@luca/flag",
@@ -131,12 +204,12 @@ describe("jsr for js file", () => {
       title: "should update in jsdoc",
       input: dedent`
       /**
-      * \`\`\`ts
-      * import { assertEquals } from "jsr:@std/assert@1.0.6/equals";
-      *
-      * assertEquals(add(1, 2), 3);
-      * \`\`\`
-      */
+       * \`\`\`ts
+       * import { assertEquals } from "jsr:@std/assert@1.0.6/equals";
+       *
+       * assertEquals(add(1, 2), 3);
+       * \`\`\`
+       */
       export function add(a: number, b: number) {
         return a + b;
       }
