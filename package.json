@@ -19,7 +19,7 @@
     "test:validate": "renovate-config-validator --strict deno.json deno/*.json"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.1.1",
+    "@biomejs/biome": "2.1.2",
     "dedent": "1.6.0",
     "jsonata": "2.0.6",
     "npm-run-all2": "8.0.4",
