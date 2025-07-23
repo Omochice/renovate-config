@@ -16,7 +16,7 @@ jobs:
     if: |
       ! failure() && ! cancelled() && github.event.pull_request.user.login == 'renovate[bot]' && contains(github.event.pull_request.body, ' **Automerge**: Enabled.')
     steps:
-      - uses: suzuki-shunsuke/enable-auto-merge-action@092f6565872d1ea5a0b1da1ebc24aed536b5d420 # main
+      - uses: suzuki-shunsuke/enable-auto-merge-action@40ff92c58f505c181294de9417ffadd822667fa5 # main
         with:
           pr_number: ${{github.event.pull_request.number}}
           merge_method: squash
