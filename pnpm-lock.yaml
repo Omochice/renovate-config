@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.51.2
-        version: 41.51.2(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.52.0
+        version: 41.52.0(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -2912,8 +2912,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.51.2:
-    resolution: {integrity: sha512-/+8Rgacdzoj2yqQy/QJreSGtl/Xtull76PYsPzeehvZOIq2eqnVgmEBPmknBe0ao2EESLToBx6GwWpG2j3SdYQ==}
+  renovate@41.52.0:
+    resolution: {integrity: sha512-6ioCswI8X+2ORcNWT+1N20UK7TzYv1lMP6RlYjqRvAwtDWX9KYMiNxE+lnbst1pDM3yF4cUTMjqGoFTwokPohg==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3023,8 +3023,8 @@ packages:
     resolution: {integrity: sha512-AzqKpGKjrj7EM6rKVQEPpB288oCfnrEIuyoT9cyF4nmGa7V8Zk6f7RRqYisX8X9m+Q7bd632aZW4ky7EhbQztA==}
     engines: {node: '>= 0.4'}
 
-  shlex@2.1.2:
-    resolution: {integrity: sha512-Nz6gtibMVgYeMEhUjp2KuwAgqaJA1K155dU/HuDaEJUGgnmYfVtVZah+uerVWdH8UGnyahhDCgABbYTbs254+w==}
+  shlex@3.0.0:
+    resolution: {integrity: sha512-jHPXQQk9d/QXCvJuLPYMOYWez3c43sORAgcIEoV7bFv5AJSJRAOyw5lQO12PMfd385qiLRCaDt7OtEzgrIGZUA==}
 
   side-channel-list@1.0.0:
     resolution: {integrity: sha512-FCLHtRD/gnpCiCHEiJLOwdmFP+wzCmDEkc9y7NsYxeF4u7Btsn1ZuwgwJGxImImHicJArLP4R0yX4c2KCrMrTA==}
@@ -7314,7 +7314,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.51.2(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.52.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.858.0
       '@aws-sdk/client-ec2': 3.858.0
@@ -7419,7 +7419,7 @@ snapshots:
       semver: 7.7.2
       semver-stable: 3.0.0
       semver-utils: 1.1.4
-      shlex: 2.1.2
+      shlex: 3.0.0
       simple-git: 3.28.0
       slugify: 1.6.6
       source-map-support: 0.5.21
@@ -7566,7 +7566,7 @@ snapshots:
 
   shell-quote@1.8.2: {}
 
-  shlex@2.1.2: {}
+  shlex@3.0.0: {}
 
   side-channel-list@1.0.0:
     dependencies:
