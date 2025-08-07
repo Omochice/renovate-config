@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.55.3
-        version: 41.55.3(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.56.1
+        version: 41.56.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -2225,10 +2225,6 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  jsonata@2.0.6:
-    resolution: {integrity: sha512-WhQB5tXQ32qjkx2GYHFw2XbL90u+LLzjofAYwi+86g6SyZeXHz9F1Q0amy3dWRYczshOC3Haok9J4pOCgHtwyQ==}
-    engines: {node: '>= 8'}
-
   jsonata@2.1.0:
     resolution: {integrity: sha512-OCzaRMK8HobtX8fp37uIVmL8CY1IGc/a6gLsDqz3quExFR09/U78HUzWYr7T31UEB6+Eu0/8dkVD5fFDOl9a8w==}
     engines: {node: '>= 8'}
@@ -2912,8 +2908,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.55.3:
-    resolution: {integrity: sha512-nLEbDkNXON0G5fmMnI37xAZ3enCD5xJmvEfB4Ts/vZDG1ASttkgiMt/kJNyiIwYFxvPebV1H2lATrvRnYaDXAg==}
+  renovate@41.56.1:
+    resolution: {integrity: sha512-YVp/4mrRwz8CGyQio7T2hT1fZj2vcFhfGxxttLKX8ZD6pDVENcXAjY1lV3dk/y+LbxPGBNgp+MwYoj0mg/sfLQ==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6478,8 +6474,6 @@ snapshots:
 
   json5@2.2.3: {}
 
-  jsonata@2.0.6: {}
-
   jsonata@2.1.0: {}
 
   jsonc-parser@3.3.1: {}
@@ -7314,7 +7308,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.55.3(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.56.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.858.0
       '@aws-sdk/client-ec2': 3.858.0
@@ -7391,7 +7385,7 @@ snapshots:
       json-dup-key-validator: 1.0.3
       json-stringify-pretty-compact: 4.0.0
       json5: 2.2.3
-      jsonata: 2.0.6
+      jsonata: 2.1.0
       jsonc-parser: 3.3.1
       klona: 2.0.6
       luxon: 3.7.1
