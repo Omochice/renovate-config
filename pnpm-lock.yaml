@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.59.0
-        version: 41.59.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.59.2
+        version: 41.59.2(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -1318,8 +1318,8 @@ packages:
   aws4@1.13.2:
     resolution: {integrity: sha512-lHe62zvbTB5eEABUVi/AwVh0ZKY9rMMDhmm+eeyuuUQbQ3+J+fONVQOZyj+DdrvD4BY33uYniyRJ4UJIaSKAfw==}
 
-  azure-devops-node-api@15.1.0:
-    resolution: {integrity: sha512-zlZ387CISkSKK1vjBv53kzR5fnzA60SxYrejypZawefZWvrjC28zyM/iKSP5b+iYl+Z7OOlm+Rgl6YsMecK6fg==}
+  azure-devops-node-api@15.1.1:
+    resolution: {integrity: sha512-ohL2CY+zRAItKvwkHhefYxjr0Hndu6s8qKwyl0+wL4Ol6c4UrsI3A3G6ZPwwK81c1Ga3dEXjeDg4aKV4hn9loA==}
     engines: {node: '>= 16.0.0'}
 
   backslash@0.2.0:
@@ -2908,8 +2908,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.59.0:
-    resolution: {integrity: sha512-6auXIADNXooZvUfnlFsBzHeys6c5o87VDTFZDU3OU/+1TK8qH9LYDAk/M62LIGL2qS7jVrBnyNr/olRS8aY9og==}
+  renovate@41.59.2:
+    resolution: {integrity: sha512-rrLIta+U2jHu6CTV3R2KH0Vya1g9Q3XWFQYHG/BfNrlJiAS2AWJ9ymTvtycQXdYehr4mb0kH2w+D2f3nX8XqEw==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5517,7 +5517,7 @@ snapshots:
 
   aws4@1.13.2: {}
 
-  azure-devops-node-api@15.1.0:
+  azure-devops-node-api@15.1.1:
     dependencies:
       tunnel: 0.0.6
       typed-rest-client: 2.1.0
@@ -7308,7 +7308,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.59.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.59.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.858.0
       '@aws-sdk/client-ec2': 3.858.0
@@ -7348,7 +7348,7 @@ snapshots:
       async-mutex: 0.5.0
       auth-header: 1.0.0
       aws4: 1.13.2
-      azure-devops-node-api: 15.1.0
+      azure-devops-node-api: 15.1.1
       bunyan: 1.8.15
       cacache: 20.0.0
       chalk: 5.4.1
