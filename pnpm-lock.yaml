@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.61.0
-        version: 41.61.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.61.1
+        version: 41.61.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -1441,8 +1441,8 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
-  chalk@5.4.1:
-    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
+  chalk@5.5.0:
+    resolution: {integrity: sha512-1tm8DTaJhPBG3bIkVeZt1iZM9GfSX2lzOeDVZH9R9ffRHpmHvxZ/QhgQH/aDTkswQVt+YHdXAdS/In/30OjCbg==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   changelog-filename-regex@2.0.1:
@@ -2908,8 +2908,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.61.0:
-    resolution: {integrity: sha512-YzdGNcgP9ZbphicgY9SV5bSui7X8PWSzYzsNAddKU/FrVzW7znxK6C002Z6v+NqOHtvwtdAlsacxqeT2IWb8eA==}
+  renovate@41.61.1:
+    resolution: {integrity: sha512-o02bTmGCWC1aTqZOF1ODa80vjFiThRHLJNJO8PlVqBpanQRVUVviLcerII+wUv9KcT0tafsmNlnr7ge59a9y1A==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5679,7 +5679,7 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
-  chalk@5.4.1: {}
+  chalk@5.5.0: {}
 
   changelog-filename-regex@2.0.1: {}
 
@@ -7308,7 +7308,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.61.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.61.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.858.0
       '@aws-sdk/client-ec2': 3.858.0
@@ -7351,7 +7351,7 @@ snapshots:
       azure-devops-node-api: 15.1.1
       bunyan: 1.8.15
       cacache: 20.0.0
-      chalk: 5.4.1
+      chalk: 5.5.0
       changelog-filename-regex: 2.0.1
       clean-git-ref: 2.0.1
       commander: 14.0.0
