@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.64.2
-        version: 41.64.2(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.64.3
+        version: 41.64.3(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -1839,6 +1839,10 @@ packages:
     resolution: {integrity: sha512-Z4XaCL6dUDHfP/jT25jJKMmtxvuwbkrD1vNSMFlo9lNLY2c5FHYSQgHPRZUjAB26TpDEoW9HCOgplrdbaPV/ew==}
     engines: {node: '>=14.14'}
 
+  fs-extra@11.3.1:
+    resolution: {integrity: sha512-eXvGGwZ5CL17ZSwHWd3bbgk7UUpF6IFHtP57NYYakPvHOs8GDgDe5KJI36jIJzDkJ6eJjuzRA8eBQb6SkKue0g==}
+    engines: {node: '>=14.14'}
+
   fs-minipass@2.1.0:
     resolution: {integrity: sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==}
     engines: {node: '>= 8'}
@@ -2908,8 +2912,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.64.2:
-    resolution: {integrity: sha512-j1Wdda15+/AoTNRvRnLsw0GIRYrhYctWYXnavEPZk/45cSPeazFyOAXZt95i/au4rifCeIlYKyLRBFEbi0lp7Q==}
+  renovate@41.64.3:
+    resolution: {integrity: sha512-xo6x36Up/8Q0WvFuV/BprpcQcGdFuq+ZTYOkae06zeQP0wnRb20rqsyAY69aPFBhig6UYdLD8lgnxx3+RgTz4g==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4818,7 +4822,7 @@ snapshots:
 
   '@renovatebot/detect-tools@1.1.0':
     dependencies:
-      fs-extra: 11.3.0
+      fs-extra: 11.3.1
       toml-eslint-parser: 0.10.0
       upath: 2.0.1
       zod: 3.25.76
@@ -4846,7 +4850,7 @@ snapshots:
     dependencies:
       '@renovatebot/osv-offline-db': 1.7.4
       adm-zip: 0.5.16
-      fs-extra: 11.3.0
+      fs-extra: 11.3.1
       got: 11.8.6
       luxon: 3.7.1
 
@@ -6046,6 +6050,12 @@ snapshots:
     optional: true
 
   fs-extra@11.3.0:
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.1
+
+  fs-extra@11.3.1:
     dependencies:
       graceful-fs: 4.2.11
       jsonfile: 6.1.0
@@ -7308,7 +7318,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.64.2(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.64.3(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.858.0
       '@aws-sdk/client-ec2': 3.858.0
@@ -7370,7 +7380,7 @@ snapshots:
       extract-zip: 2.0.1
       find-packages: 10.0.4
       find-up: 7.0.0
-      fs-extra: 11.3.0
+      fs-extra: 11.3.1
       git-url-parse: 16.1.0
       github-url-from-git: 1.5.0
       glob: 11.0.3
