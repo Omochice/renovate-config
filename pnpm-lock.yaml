@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.82.10
-        version: 41.82.10(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.83.2
+        version: 41.83.2(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -1401,8 +1401,8 @@ packages:
     resolution: {integrity: sha512-hdsUxulXCi5STId78vRVYEtDAjq99ICAUktLTeTYsLoTE6Z8dS0c8pWNCxwdrk9YfJeobDZc2Y186hD/5ZQgFQ==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  cacache@20.0.0:
-    resolution: {integrity: sha512-2Js2sNgHK36Fdu3ItpQqJjwUXAURb0uyo9i83Tr2wUQINU4tPl4AtQYh6mCqwVFV5W8+Vgcna+bSTQeyPLG/sQ==}
+  cacache@20.0.1:
+    resolution: {integrity: sha512-+7LYcYGBYoNqTp1Rv7Ny1YjUo5E0/ftkQtraH3vkfAGgVHc+ouWdC8okAwQgQR7EVIdW6JTzTmhKFwzb+4okAQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   cacheable-lookup@5.0.4:
@@ -2957,8 +2957,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.82.10:
-    resolution: {integrity: sha512-vjhAddgXdsTrAQZA672jss9RiqhX1lo15p/m4PTaJEXw42K5/LoyQlawufCpOBYUzBx+4UvluZx26ZmH2AFbCQ==}
+  renovate@41.83.2:
+    resolution: {integrity: sha512-v5fzs8oc7hLOhkc+D3LSHIlFwLJcBQCa2PiB72/bfzMeva8tUjQbGfxEDXO2RLKEfLg4aZbkAYC0sO6DAAC1CA==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5663,7 +5663,7 @@ snapshots:
       tar: 7.4.3
       unique-filename: 4.0.0
 
-  cacache@20.0.0:
+  cacache@20.0.1:
     dependencies:
       '@npmcli/fs': 4.0.0
       fs-minipass: 3.0.3
@@ -5675,7 +5675,6 @@ snapshots:
       minipass-pipeline: 1.2.4
       p-map: 7.0.3
       ssri: 12.0.0
-      tar: 7.4.3
       unique-filename: 4.0.0
 
   cacheable-lookup@5.0.4: {}
@@ -7491,7 +7490,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.82.10(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.83.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.858.0
       '@aws-sdk/client-ec2': 3.858.0
@@ -7533,7 +7532,7 @@ snapshots:
       aws4: 1.13.2
       azure-devops-node-api: 15.1.1
       bunyan: 1.8.15
-      cacache: 20.0.0
+      cacache: 20.0.1
       chalk: 5.6.0
       changelog-filename-regex: 2.0.1
       clean-git-ref: 2.0.1
