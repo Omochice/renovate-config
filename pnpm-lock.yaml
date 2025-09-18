@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.116.6
-        version: 41.116.6(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.116.7
+        version: 41.116.7(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -578,8 +578,8 @@ packages:
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
 
-  '@opentelemetry/resource-detector-gcp@0.39.0':
-    resolution: {integrity: sha512-TUgYTZ7AUIk1kZYaozXyoLQ3YQjrp/IByo9rlObQXeo+tJ8qcXErq0NYn/43/xwAxNFG3Utv2h0hcL7TzSrjuQ==}
+  '@opentelemetry/resource-detector-gcp@0.40.0':
+    resolution: {integrity: sha512-uAsUV8K4R9OJ3cgPUGYDqQByxOMTz4StmzJyofIv7+W+c1dTSEc1WVjWpTS2PAmywik++JlSmd8O4rMRJZpO8Q==}
     engines: {node: ^18.19.0 || >=20.6.0}
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
@@ -2963,8 +2963,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.116.6:
-    resolution: {integrity: sha512-3msuYtEDhrbZ/zBx8Bt7iri+NRvmN5H8AWBKyKGXf6yLYOlrDh463AlkqbRvdkHXG/svCdCLIyxXYbjw6H4RDw==}
+  renovate@41.116.7:
+    resolution: {integrity: sha512-MprV5lkieKc449ZQvNHC1E9YOGrH1vcr2svL5u1IHlHe70gWmARslVf9zIL5EiOVaWUXG0Anb30aEMc5XJLWpg==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4693,7 +4693,7 @@ snapshots:
       '@opentelemetry/resources': 2.1.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.37.0
 
-  '@opentelemetry/resource-detector-gcp@0.39.0(@opentelemetry/api@1.9.0)(encoding@0.1.13)':
+  '@opentelemetry/resource-detector-gcp@0.40.0(@opentelemetry/api@1.9.0)(encoding@0.1.13)':
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/core': 2.1.0(@opentelemetry/api@1.9.0)
@@ -7500,7 +7500,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.116.6(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.116.7(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.879.0
       '@aws-sdk/client-ec2': 3.879.0
@@ -7520,7 +7520,7 @@ snapshots:
       '@opentelemetry/instrumentation-http': 0.205.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resource-detector-aws': 2.5.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resource-detector-azure': 0.12.0(@opentelemetry/api@1.9.0)
-      '@opentelemetry/resource-detector-gcp': 0.39.0(@opentelemetry/api@1.9.0)(encoding@0.1.13)
+      '@opentelemetry/resource-detector-gcp': 0.40.0(@opentelemetry/api@1.9.0)(encoding@0.1.13)
       '@opentelemetry/resource-detector-github': 0.31.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.1.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-base': 2.1.0(@opentelemetry/api@1.9.0)
