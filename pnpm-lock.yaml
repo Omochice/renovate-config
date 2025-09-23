@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.1
         version: 1.22.1
       renovate:
-        specifier: 41.125.1
-        version: 41.125.1(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.125.2
+        version: 41.125.2(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -1613,6 +1613,10 @@ packages:
     resolution: {integrity: sha512-Mc7QhQ8s+cLrnUfU/Ji94vG/r8M26m8f++vyres4ZoojaRDpZ1eSIh/EpzLNwlWuvzSZ3UbDFspjFvTDXe6e/g==}
     engines: {node: '>=12.20'}
 
+  detect-indent@7.0.2:
+    resolution: {integrity: sha512-y+8xyqdGLL+6sh0tVeHcfP/QDd8gUgbasolJJpY7NgeQGSZ739bDtSiaiDgtoicy+mtYB81dKLxO9xRhCyIB3A==}
+    engines: {node: '>=12.20'}
+
   detect-libc@2.0.4:
     resolution: {integrity: sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==}
     engines: {node: '>=8'}
@@ -2963,8 +2967,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.125.1:
-    resolution: {integrity: sha512-cuuLe7ufdLChRW2/EPgONF8yUTmzEll5t133gym+/5lOcn2pkjJBZeOA5BcWckVsiRctCQMMhJJf8htGWNzqRQ==}
+  renovate@41.125.2:
+    resolution: {integrity: sha512-MQjofh3LfqJLO7b6N/sqBSi2H7Am2KdITMscxCPqhyTGegpv2zkQkRn+4g8C+my/ZlXnJv2yruITsaD50yQkxA==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5865,6 +5869,8 @@ snapshots:
 
   detect-indent@7.0.1: {}
 
+  detect-indent@7.0.2: {}
+
   detect-libc@2.0.4:
     optional: true
 
@@ -7500,7 +7506,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.125.1(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.125.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.879.0
       '@aws-sdk/client-ec2': 3.879.0
@@ -7553,7 +7559,7 @@ snapshots:
       cronstrue: 3.3.0
       deepmerge: 4.3.1
       dequal: 2.0.3
-      detect-indent: 7.0.1
+      detect-indent: 7.0.2
       diff: 8.0.2
       editorconfig: 3.0.1
       email-addresses: 5.0.0
