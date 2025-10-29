@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node: ["22.21.0", "lts/*", "current"]
+        node: ["22.21.1", "lts/*", "current"]
     permissions: {}
     steps:
       - name: Checkout
