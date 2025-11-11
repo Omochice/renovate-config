@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.3
         version: 1.22.3
       renovate:
-        specifier: 42.4.0
-        version: 42.4.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.5.2
+        version: 42.5.2(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -2917,8 +2917,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.4.0:
-    resolution: {integrity: sha512-biDd+uBhcc5c4BvPX3449wOBj9TxX6whnxmQRZWsX1oUNm2vWlSwtfHHCu+QxbGc1Jkseb7Df5Uul5LwCy1l9w==}
+  renovate@42.5.2:
+    resolution: {integrity: sha512-xQ1z1+jWPxJVWnExzU4cdJi6O6yN9gXgTaD6fi1wuAtt/qksiJwhxw0shQAjcEtDQsIOmbTytexBQkWDrngg0A==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -2982,8 +2982,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sax@1.4.1:
-    resolution: {integrity: sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==}
+  sax@1.4.2:
+    resolution: {integrity: sha512-FySGAa0RGcFiN6zfrO9JvK1r7TB59xuzCcTHOBXBNoKgDejlOQCR2KL/FGk3/iDlsqyYg1ELZpOmlg09B01Czw==}
 
   semver-compare@1.0.0:
     resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
@@ -7360,7 +7360,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.4.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.5.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.922.0
       '@aws-sdk/client-ec2': 3.922.0
@@ -7463,7 +7463,7 @@ snapshots:
       remark-gfm: 4.0.1
       remark-github: 12.0.0
       safe-stable-stringify: 2.5.0
-      sax: 1.4.1
+      sax: 1.4.2
       semver: 7.7.2
       semver-stable: 3.0.0
       semver-utils: 1.1.4
@@ -7575,7 +7575,7 @@ snapshots:
   safer-buffer@2.1.2:
     optional: true
 
-  sax@1.4.1: {}
+  sax@1.4.2: {}
 
   semver-compare@1.0.0: {}
 
@@ -8110,7 +8110,7 @@ snapshots:
 
   xmldoc@2.0.2:
     dependencies:
-      sax: 1.4.1
+      sax: 1.4.2
 
   xtend@4.0.2: {}
 
