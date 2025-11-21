@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.3
         version: 1.22.3
       renovate:
-        specifier: 42.13.3
-        version: 42.13.3(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.14.1
+        version: 42.14.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -2713,6 +2713,10 @@ packages:
     resolution: {integrity: sha512-VkndIv2fIB99swvQoA65bm+fsmt6UNdGeIB0oxBs+WhAhdh08QA04JXpI7rbB9r08/nkbysKoya9rtDERYOYMA==}
     engines: {node: '>=18'}
 
+  p-map@7.0.4:
+    resolution: {integrity: sha512-tkAQEw8ysMzmkhgw8k+1U/iPhWNhykKnSk4Rd5zLoPJCuJaGRPo6YposrZgaxHKzDHdDWWZvE/Sk7hsL2X/CpQ==}
+    engines: {node: '>=18'}
+
   p-queue@9.0.0:
     resolution: {integrity: sha512-KO1RyxstL9g1mK76530TExamZC/S2Glm080Nx8PE5sTd7nlduDQsAfEl4uXX+qZjLiwvDauvzXavufy3+rJ9zQ==}
     engines: {node: '>=20'}
@@ -2914,8 +2918,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.13.3:
-    resolution: {integrity: sha512-8rnNoOLGhvdLiBUwkyft/VDBHjD6cL+JuWl1VJ62MiLcyq1yV/PRazdDpr+WmwxlzTrmGzNqgpF+Nsz6w87cGA==}
+  renovate@42.14.1:
+    resolution: {integrity: sha512-vFP5Uoh9YfDy2a9Fifi7U+G3h5kAMvEp4nRy1jW54xbvp5nCOTytu/eDOu8MeGoXdO1c3h+Tp3Fl6cmVILYWfA==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5582,7 +5586,7 @@ snapshots:
       minipass-collect: 2.0.1
       minipass-flush: 1.0.5
       minipass-pipeline: 1.2.4
-      p-map: 7.0.3
+      p-map: 7.0.4
       ssri: 12.0.0
       unique-filename: 4.0.0
 
@@ -7100,6 +7104,8 @@ snapshots:
 
   p-map@7.0.3: {}
 
+  p-map@7.0.4: {}
+
   p-queue@9.0.0:
     dependencies:
       eventemitter3: 5.0.1
@@ -7351,7 +7357,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.13.3(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.14.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.922.0
       '@aws-sdk/client-ec2': 3.922.0
@@ -7442,7 +7448,7 @@ snapshots:
       neotraverse: 0.6.18
       node-html-parser: 7.0.1
       p-all: 5.0.1
-      p-map: 7.0.3
+      p-map: 7.0.4
       p-queue: 9.0.0
       p-throttle: 8.1.0
       parse-link-header: 2.0.0
