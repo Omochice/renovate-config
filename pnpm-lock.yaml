@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.3
         version: 1.22.3
       renovate:
-        specifier: 42.19.7
-        version: 42.19.7(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.19.8
+        version: 42.19.8(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.4.0
         version: 3.4.0
@@ -2723,8 +2723,8 @@ packages:
     resolution: {integrity: sha512-tkAQEw8ysMzmkhgw8k+1U/iPhWNhykKnSk4Rd5zLoPJCuJaGRPo6YposrZgaxHKzDHdDWWZvE/Sk7hsL2X/CpQ==}
     engines: {node: '>=18'}
 
-  p-queue@9.0.0:
-    resolution: {integrity: sha512-KO1RyxstL9g1mK76530TExamZC/S2Glm080Nx8PE5sTd7nlduDQsAfEl4uXX+qZjLiwvDauvzXavufy3+rJ9zQ==}
+  p-queue@9.0.1:
+    resolution: {integrity: sha512-RhBdVhSwJb7Ocn3e8ULk4NMwBEuOxe+1zcgphUy9c2e5aR/xbEsdVXxHJ3lynw6Qiqu7OINEyHlZkiblEpaq7w==}
     engines: {node: '>=20'}
 
   p-throttle@8.1.0:
@@ -2924,8 +2924,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.19.7:
-    resolution: {integrity: sha512-pSxiMnhBbwpiOjxe18dQqrKlhIF3FguqA7dweEgicigQlzeoBov9hTku75gs0XpVMApjfL8H/OQCj8iMDbu/mw==}
+  renovate@42.19.8:
+    resolution: {integrity: sha512-Yni2tnqrDQmdBQcxm8Nra4GgogzUWAqAxczIC9Z5x6n57jGOxLQHj2ogcOJBWN3Wyw98usDVa0g3cNKgD51xUg==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -7128,7 +7128,7 @@ snapshots:
 
   p-map@7.0.4: {}
 
-  p-queue@9.0.0:
+  p-queue@9.0.1:
     dependencies:
       eventemitter3: 5.0.1
       p-timeout: 7.0.1
@@ -7379,7 +7379,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.19.7(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.19.8(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.922.0
       '@aws-sdk/client-ec2': 3.922.0
@@ -7472,7 +7472,7 @@ snapshots:
       node-html-parser: 7.0.1
       p-all: 5.0.1
       p-map: 7.0.4
-      p-queue: 9.0.0
+      p-queue: 9.0.1
       p-throttle: 8.1.0
       parse-link-header: 2.0.0
       prettier: 3.6.2
