@@ -1,7 +1,7 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
   extends: [
-    "github>Omochice/personal-renovate-config#v1.9.0",
+    "github>Omochice/personal-renovate-config#v1.10.0",
     "github>aquaproj/aqua-renovate-config#2.9.0",
     "customManagers:biomeVersions",
   ],
