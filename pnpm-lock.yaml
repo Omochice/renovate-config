@@ -24,8 +24,8 @@ importers:
         specifier: 1.22.3
         version: 1.22.3
       renovate:
-        specifier: 42.64.0
-        version: 42.64.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.64.1
+        version: 42.64.1(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.0
         version: 3.6.0
@@ -2927,8 +2927,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.64.0:
-    resolution: {integrity: sha512-BxKPbWsAmGPNI2MnMsWvnVwrzl5+eS48Kvo+3rQ74vfA60UQJ56HkDw6ctcn8hFTouRhp7BPqdsW4ZNnBjkTsA==}
+  renovate@42.64.1:
+    resolution: {integrity: sha512-5KU+VlbDnVAHjarpr/+Up1mF3JMoyiuo97iCmwJdsLZRqM2PABatg3uAfHlu82m5nufXySW9C6CaaXA1ZKhMDg==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3526,8 +3526,8 @@ packages:
     resolution: {integrity: sha512-LwyucHy0uhWqbrOkh9cBluZBeNVxzHjDaE9mwepZG3n3ZlbM4v3ndrFw51zW/NXYFFqP+QWZ72ihtLWTh05e4Q==}
     engines: {node: '>=10.13'}
 
-  xmldoc@2.0.2:
-    resolution: {integrity: sha512-UiRwoSStEXS3R+YE8OqYv3jebza8cBBAI2y8g3B15XFkn3SbEOyyLnmPHjLBPZANrPJKEzxxB7A3XwcLikQVlQ==}
+  xmldoc@2.0.3:
+    resolution: {integrity: sha512-6gRk4NY/Jvg67xn7OzJuxLRsGgiXBaPUQplVJ/9l99uIugxh4FTOewYz5ic8WScj7Xx/2WvhENiQKwkK9RpE4w==}
     engines: {node: '>=12.0.0'}
 
   xtend@4.0.2:
@@ -7405,7 +7405,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.64.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.64.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.940.0
       '@aws-sdk/client-ec2': 3.940.0
@@ -7523,7 +7523,7 @@ snapshots:
       upath: 2.0.1
       url-join: 5.0.0
       validate-npm-package-name: 7.0.0
-      xmldoc: 2.0.2
+      xmldoc: 2.0.3
       yaml: 2.8.2
       zod: 3.25.76
     optionalDependencies:
@@ -8162,7 +8162,7 @@ snapshots:
       js-yaml: 4.1.0
       write-file-atomic: 3.0.3
 
-  xmldoc@2.0.2:
+  xmldoc@2.0.3:
     dependencies:
       sax: 1.4.3
 
