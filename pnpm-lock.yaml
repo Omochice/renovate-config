@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.0
         version: 1.23.0
       renovate:
-        specifier: 42.81.5
-        version: 42.81.5(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.81.7
+        version: 42.81.7(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.0
         version: 3.6.0
@@ -1626,8 +1626,8 @@ packages:
     resolution: {integrity: sha512-uIFDxqpRZGZ6ThOk84hEfqWoHx2devRFvpTZcTHur85vImfaxUbTW9Ryh4CpCuDnToOP1CEtXKIgytHBPVff5A==}
     engines: {node: '>=0.3.1'}
 
-  diff@8.0.2:
-    resolution: {integrity: sha512-sSuxWU5j5SR9QQji/o2qMvqRNYRDOcBTgsJ/DeCf4iSN4gW+gNMXM7wFIP+fdXZxoNiAnHUTGjCr+TSWXdRDKg==}
+  diff@8.0.3:
+    resolution: {integrity: sha512-qejHi7bcSD4hQAZE0tNAawRK1ZtafHDmMTMkrrIGgSLl7hTnQHmKCeB45xAcbfTqK2zowkM3j3bHt/4b/ARbYQ==}
     engines: {node: '>=0.3.1'}
 
   dom-serializer@2.0.0:
@@ -2935,8 +2935,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.81.5:
-    resolution: {integrity: sha512-pB4cHzcvqpggufVLb0Fr/US91vs6HmfdQlISiXDU6+FaC40ZpKjsvaYu+LQm+Q3Yv7I0UGpW9+ajqSsgXf/F5g==}
+  renovate@42.81.7:
+    resolution: {integrity: sha512-2/euhwjTeBAI3izVbzxwzO8pbQg1X1v5h1Xp6JWqy44g4O5l3u1zioo3v3wWX1M5h+DRD7oLEsNU7tRLqsuuSg==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5810,7 +5810,7 @@ snapshots:
 
   diff@5.2.0: {}
 
-  diff@8.0.2: {}
+  diff@8.0.3: {}
 
   dom-serializer@2.0.0:
     dependencies:
@@ -7402,7 +7402,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.81.5(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.81.7(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.958.0
       '@aws-sdk/client-ec2': 3.958.0
@@ -7457,7 +7457,7 @@ snapshots:
       deepmerge: 4.3.1
       dequal: 2.0.3
       detect-indent: 7.0.2
-      diff: 8.0.2
+      diff: 8.0.3
       editorconfig: 3.0.1
       email-addresses: 5.0.0
       emoji-regex: 10.6.0
