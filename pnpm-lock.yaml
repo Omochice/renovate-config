@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.0
         version: 1.23.0
       renovate:
-        specifier: 42.81.12
-        version: 42.81.12(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.82.2
+        version: 42.82.2(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.0
         version: 3.6.0
@@ -536,12 +536,6 @@ packages:
 
   '@opentelemetry/context-async-hooks@2.3.0':
     resolution: {integrity: sha512-hGcsT0qDP7Il1L+qT3JFpiGl1dCjF794Bb4yCRCYdr7XC0NwHtOF3ngF86Gk6TUnsakbyQsDQ0E/S4CU0F4d4g==}
-    engines: {node: ^18.19.0 || >=20.6.0}
-    peerDependencies:
-      '@opentelemetry/api': '>=1.0.0 <1.10.0'
-
-  '@opentelemetry/core@2.2.0':
-    resolution: {integrity: sha512-FuabnnUm8LflnieVxs6eP7Z383hgQU4W1e3KJS6aOG3RxWxcHyBxH8fDMHNgu/gFx/M2jvTOW/4/PHhLz6bjWw==}
     engines: {node: ^18.19.0 || >=20.6.0}
     peerDependencies:
       '@opentelemetry/api': '>=1.0.0 <1.10.0'
@@ -1465,10 +1459,6 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
-
-  chalk@5.6.2:
-    resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   changelog-filename-regex@2.0.1:
     resolution: {integrity: sha512-DZdyJpCprw8V3jp8V2x13nAA05Yy/IN+Prowj+0mrAHNENYkuMtNI4u5m449TTjPqShIslQSEuXee+Jtkn4m+g==}
@@ -2955,8 +2945,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.81.12:
-    resolution: {integrity: sha512-GZFiA+LhgdLNz+Xl6k4GWdEZsUx1OE5kBSJEU6OH3NHA5wR9x9bv4JluiBqaeGRRzBOCte9rUQm1quzPkUDvFA==}
+  renovate@42.82.2:
+    resolution: {integrity: sha512-eElp6ZJn0j1wX+0zRLXchAAI9VKn44ZhoLxf1loK3Md6AiVhAoRpblP7gKQAavvsFme+DKDrw5av72Xe9JWnnQ==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3020,8 +3010,9 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sax@1.4.3:
-    resolution: {integrity: sha512-yqYn1JhPczigF94DMS+shiDMjDowYO6y9+wB/4WgO0Y19jWYk0lQ4tuG5KI7kj4FTp1wxPj5IFfcrz/s1c3jjQ==}
+  sax@1.4.4:
+    resolution: {integrity: sha512-1n3r/tGXO6b6VXMdFT54SHzT9ytu9yr7TaELowdYpMqY/Ao7EnlQGmAQ1+RatX7Tkkdm6hONI2owqNx2aZj5Sw==}
+    engines: {node: '>=11.0.0'}
 
   semver-compare@1.0.0:
     resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
@@ -3245,10 +3236,12 @@ packages:
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   tar@7.5.2:
     resolution: {integrity: sha512-7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   through2-concurrent@2.0.0:
     resolution: {integrity: sha512-R5/jLkfMvdmDD+seLwN7vB+mhbqzWop5fAjx5IX8/yQq7VhBhzDmhXgaHAOnhnWkCpRMM7gToYHycB0CS/pd+A==}
@@ -4619,11 +4612,6 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
 
-  '@opentelemetry/core@2.2.0(@opentelemetry/api@1.9.0)':
-    dependencies:
-      '@opentelemetry/api': 1.9.0
-      '@opentelemetry/semantic-conventions': 1.38.0
-
   '@opentelemetry/core@2.3.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
@@ -4706,21 +4694,21 @@ snapshots:
   '@opentelemetry/resource-detector-aws@2.9.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.2.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.38.0
 
   '@opentelemetry/resource-detector-azure@0.17.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.2.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.38.0
 
   '@opentelemetry/resource-detector-gcp@0.44.0(@opentelemetry/api@1.9.0)(encoding@0.1.13)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.2.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.3.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.3.0(@opentelemetry/api@1.9.0)
       gcp-metadata: 6.1.1(encoding@0.1.13)
     transitivePeerDependencies:
@@ -5710,8 +5698,6 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-
-  chalk@5.6.2: {}
 
   changelog-filename-regex@2.0.1: {}
 
@@ -7455,7 +7441,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.81.12(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.82.2(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.958.0
       '@aws-sdk/client-ec2': 3.958.0
@@ -7500,7 +7486,6 @@ snapshots:
       azure-devops-node-api: 15.1.2
       bunyan: 1.8.15
       cacache: 20.0.3
-      chalk: 5.6.2
       changelog-filename-regex: 2.0.1
       clean-git-ref: 2.0.1
       commander: 14.0.2
@@ -7560,7 +7545,7 @@ snapshots:
       remark-gfm: 4.0.1
       remark-github: 12.0.0
       safe-stable-stringify: 2.5.0
-      sax: 1.4.3
+      sax: 1.4.4
       semver: 7.7.2
       semver-stable: 3.0.0
       semver-utils: 1.1.4
@@ -7672,7 +7657,7 @@ snapshots:
   safer-buffer@2.1.2:
     optional: true
 
-  sax@1.4.3: {}
+  sax@1.4.4: {}
 
   semver-compare@1.0.0: {}
 
@@ -8208,7 +8193,7 @@ snapshots:
 
   xmldoc@2.0.3:
     dependencies:
-      sax: 1.4.3
+      sax: 1.4.4
 
   xtend@4.0.2: {}
 
