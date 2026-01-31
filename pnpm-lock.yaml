@@ -21,8 +21,8 @@ importers:
         specifier: 8.0.4
         version: 8.0.4
       re2:
-        specifier: 1.23.1
-        version: 1.23.1
+        specifier: 1.23.2
+        version: 1.23.2
       renovate:
         specifier: 42.93.1
         version: 42.93.1(encoding@0.1.13)(typanion@3.14.0)
@@ -2858,8 +2858,8 @@ packages:
   re2@1.23.0:
     resolution: {integrity: sha512-mT7+/Lz+Akjm/C/X6PiaHihcJL92TNNXai/C4c/dfBbhtwMm1uKEEoA2Lz/FF6aBFfQzg5mAyv4BGjM4q44QwQ==}
 
-  re2@1.23.1:
-    resolution: {integrity: sha512-S5UHlgjCp84BGyciTQgSxcQJD4H51l4iNk8drGWQCWAYDr71C4lHEf+DxmAoLoGRwEYzOcV7v4LSXrx0hFc/pQ==}
+  re2@1.23.2:
+    resolution: {integrity: sha512-ds5iwbnfsmyiNDtuljBNAva54O4jhR77jL5bSM73NnsWQHkYoGWuePiZTrt6O3xXAHtrB/fviNQsPGRei6031w==}
 
   read-package-json-fast@4.0.0:
     resolution: {integrity: sha512-qpt8EwugBWDw2cgE2W+/3oxC+KTez2uSVR8JU9Q36TXPAGCaozfQUs59v4j4GFpWTaw0i6hAZSvOmu1J0uOEUg==}
@@ -7230,7 +7230,7 @@ snapshots:
       - supports-color
     optional: true
 
-  re2@1.23.1:
+  re2@1.23.2:
     dependencies:
       install-artifact-from-github: 1.4.0
       nan: 2.24.0
