@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.2
         version: 1.23.2
       renovate:
-        specifier: 42.94.4
-        version: 42.94.4(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.94.6
+        version: 42.94.6(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -536,12 +536,6 @@ packages:
 
   '@opentelemetry/context-async-hooks@2.5.0':
     resolution: {integrity: sha512-uOXpVX0ZjO7heSVjhheW2XEPrhQAWr2BScDPoZ9UDycl5iuHG+Usyc3AIfG6kZeC1GyLpMInpQ6X5+9n69yOFw==}
-    engines: {node: ^18.19.0 || >=20.6.0}
-    peerDependencies:
-      '@opentelemetry/api': '>=1.0.0 <1.10.0'
-
-  '@opentelemetry/core@2.4.0':
-    resolution: {integrity: sha512-KtcyFHssTn5ZgDu6SXmUznS80OFs/wN7y6MyFRRcKU6TOw8hNcGxKvt8hsdaLJfhzUszNSjURetq5Qpkad14Gw==}
     engines: {node: ^18.19.0 || >=20.6.0}
     peerDependencies:
       '@opentelemetry/api': '>=1.0.0 <1.10.0'
@@ -2923,8 +2917,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.94.4:
-    resolution: {integrity: sha512-HtP+Eo4kAzdYhjdvHRR2MeiQmaT67nw9qBeR4ucr2w/C1ySF57jqVzYaDr2tUG5NjneitH3SXotZuUXqxfBEcw==}
+  renovate@42.94.6:
+    resolution: {integrity: sha512-eBBKBwbASpWuyL04MqXdCEePKQ6fHeg2scUuzq4UogI80e/vKuNE5nH1N4x7oYxurRBsGKW5nmobooBUBPWAug==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4561,11 +4555,6 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
 
-  '@opentelemetry/core@2.4.0(@opentelemetry/api@1.9.0)':
-    dependencies:
-      '@opentelemetry/api': 1.9.0
-      '@opentelemetry/semantic-conventions': 1.39.0
-
   '@opentelemetry/core@2.5.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
@@ -4648,21 +4637,21 @@ snapshots:
   '@opentelemetry/resource-detector-aws@2.10.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.4.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.5.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.5.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.39.0
 
   '@opentelemetry/resource-detector-azure@0.18.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.4.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.5.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.5.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.39.0
 
   '@opentelemetry/resource-detector-gcp@0.45.0(@opentelemetry/api@1.9.0)(encoding@0.1.13)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.4.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.5.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/resources': 2.5.0(@opentelemetry/api@1.9.0)
       gcp-metadata: 6.1.1(encoding@0.1.13)
     transitivePeerDependencies:
@@ -7368,7 +7357,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.94.4(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.94.6(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.958.0
       '@aws-sdk/client-ec2': 3.958.0
