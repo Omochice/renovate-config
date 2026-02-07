@@ -1,6 +1,6 @@
 {
   "name": "@Omochice/renovate-config",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "private": true,
   "description": "Shareable configuration for Renovate within Deno project",
   "keywords": [
