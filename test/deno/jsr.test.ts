@@ -37,7 +37,7 @@ describe("jsr for import map", () => {
       }`,
       currentValue: "1.0.1",
       depName: "@luca/flag",
-      packageName: "@jsr/luca__flag",
+      packageName: "@luca/flag",
     },
     {
       title: "should accept jsr specifier with `^` range",
@@ -48,7 +48,7 @@ describe("jsr for import map", () => {
       }`,
       currentValue: "^1.0.1",
       depName: "@luca/flag",
-      packageName: "@jsr/luca__flag",
+      packageName: "@luca/flag",
     },
     {
       title: "should accept jsr specifier with `~` range",
@@ -59,7 +59,7 @@ describe("jsr for import map", () => {
       }`,
       currentValue: "~1.0.1",
       depName: "@luca/flag",
-      packageName: "@jsr/luca__flag",
+      packageName: "@luca/flag",
     },
     {
       title: "should accept jsr specifier with `>=` range",
@@ -70,7 +70,7 @@ describe("jsr for import map", () => {
       }`,
       currentValue: ">=1.0.1",
       depName: "@luca/flag",
-      packageName: "@jsr/luca__flag",
+      packageName: "@luca/flag",
     },
     {
       title: "should accept jsr specifier with `>` range",
@@ -81,7 +81,7 @@ describe("jsr for import map", () => {
       }`,
       currentValue: ">1.0.1",
       depName: "@luca/flag",
-      packageName: "@jsr/luca__flag",
+      packageName: "@luca/flag",
     },
     {
       title: "should accept jsr specifier with `<` range",
@@ -92,7 +92,7 @@ describe("jsr for import map", () => {
       }`,
       currentValue: "<1.0.1",
       depName: "@luca/flag",
-      packageName: "@jsr/luca__flag",
+      packageName: "@luca/flag",
     },
     {
       title: "should accept https://jsr.io",
@@ -103,7 +103,7 @@ describe("jsr for import map", () => {
       }`,
       currentValue: "1.0.1",
       depName: "@luca/flag",
-      packageName: "@jsr/luca__flag",
+      packageName: "@luca/flag",
     },
   ] as const;
 
