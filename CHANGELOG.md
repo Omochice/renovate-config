@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/Omochice/renovate-config/compare/v4.0.1...v4.1.0) (2026-02-07)
+
+
+### Features
+
+* use `jsr` datasource instead ([#1718](https://github.com/Omochice/renovate-config/issues/1718)) ([86546bf](https://github.com/Omochice/renovate-config/commit/86546bf82a4dbf29f75084e3354510286d39bc8f))
+
 ## [4.0.1](https://github.com/Omochice/renovate-config/compare/v4.0.0...v4.0.1) (2025-07-17)
 
 
