@@ -107,23 +107,25 @@ describe("jsr for import map", () => {
     },
   ] as const;
 
-  it.each(testCases)(
-    "$title",
-    async ({ input, currentValue, depName, packageName }) => {
-      const data = JSON.parse(input);
-      const matches = (
-        await Promise.all(
-          jsonatas.at(0)?.map(async (j) => await j.evaluate(data)) ?? [],
-        )
-      ).flat();
-      expect(matches).toBeDefined();
-      expect(Array.isArray(matches)).toBe(true);
-      expect(matches.length).toBe(1);
-      expect(matches.at(0).currentValue).toBe(currentValue);
-      expect(matches.at(0).depName).toBe(depName);
-      expect(matches.at(0).packageName).toBe(packageName);
-    },
-  );
+  it.each(testCases)("$title", async ({
+    input,
+    currentValue,
+    depName,
+    packageName,
+  }) => {
+    const data = JSON.parse(input);
+    const matches = (
+      await Promise.all(
+        jsonatas.at(0)?.map(async (j) => await j.evaluate(data)) ?? [],
+      )
+    ).flat();
+    expect(matches).toBeDefined();
+    expect(Array.isArray(matches)).toBe(true);
+    expect(matches.length).toBe(1);
+    expect(matches.at(0).currentValue).toBe(currentValue);
+    expect(matches.at(0).depName).toBe(depName);
+    expect(matches.at(0).packageName).toBe(packageName);
+  });
 });
 
 describe("jsr for js file", () => {
