@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.2
         version: 1.23.2
       renovate:
-        specifier: 42.95.5
-        version: 42.95.5(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.95.7
+        version: 42.95.7(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -2855,9 +2855,6 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  re2@1.23.1:
-    resolution: {integrity: sha512-S5UHlgjCp84BGyciTQgSxcQJD4H51l4iNk8drGWQCWAYDr71C4lHEf+DxmAoLoGRwEYzOcV7v4LSXrx0hFc/pQ==}
-
   re2@1.23.2:
     resolution: {integrity: sha512-ds5iwbnfsmyiNDtuljBNAva54O4jhR77jL5bSM73NnsWQHkYoGWuePiZTrt6O3xXAHtrB/fviNQsPGRei6031w==}
 
@@ -2907,8 +2904,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.95.5:
-    resolution: {integrity: sha512-1bvftif627cfspW3oKF+lpOxw4ThvHjbrFXU1bzLd+ETasUkECASD74HthwWkaLGUjbmHzdvHDvqIvyfkCwpOg==}
+  renovate@42.95.7:
+    resolution: {integrity: sha512-oBmcs0mAP6DP0QkB1umMFhSZ9MbeVxlIQ76Hwt8T+ETJXkCPxgdBrOJDKjemT0GQ263EiNU/Eqs3pUX8P9i+gg==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -7221,15 +7218,6 @@ snapshots:
       strip-json-comments: 2.0.1
     optional: true
 
-  re2@1.23.1:
-    dependencies:
-      install-artifact-from-github: 1.4.0
-      nan: 2.24.0
-      node-gyp: 12.1.0
-    transitivePeerDependencies:
-      - supports-color
-    optional: true
-
   re2@1.23.2:
     dependencies:
       install-artifact-from-github: 1.4.0
@@ -7334,7 +7322,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.95.5(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.95.7(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.958.0
       '@aws-sdk/client-ec2': 3.958.0
@@ -7457,7 +7445,7 @@ snapshots:
     optionalDependencies:
       better-sqlite3: 12.6.2
       openpgp: 6.3.0
-      re2: 1.23.1
+      re2: 1.23.2
     transitivePeerDependencies:
       - aws-crt
       - encoding
