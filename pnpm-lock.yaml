@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.2
         version: 1.23.2
       renovate:
-        specifier: 43.3.0
-        version: 43.3.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 43.3.6
+        version: 43.3.6(encoding@0.1.13)(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -1537,8 +1537,8 @@ packages:
     resolution: {integrity: sha512-p9nwwR4qyT5W996vBZhdvBCnMhicY5ytZkR4D1Xj0wuTDEiMnjwR57Q3RXYY/s0EpX6Ay3vgIcfaR+ewGHsi+g==}
     engines: {node: '>=18.0'}
 
-  cronstrue@3.9.0:
-    resolution: {integrity: sha512-T3S35zmD0Ai2B4ko6+mEM+k9C6tipe2nB9RLiGT6QL2Wn0Vsn2cCZAC8Oeuf4CaE00GZWVdpYitbpWCNlIWqdA==}
+  cronstrue@3.11.0:
+    resolution: {integrity: sha512-nXST7NEkjPF6loOTJtCwbLHB6cOVR5Ofuq/VZ4UGsZw/0HTvxy6mRCrDHOJ4xoLPcuS3ooruBLyUk3INaidKwg==}
     hasBin: true
 
   cross-spawn@7.0.6:
@@ -1828,9 +1828,9 @@ packages:
     resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==}
     engines: {node: '>=8'}
 
-  find-up@7.0.0:
-    resolution: {integrity: sha512-YyZM99iHrqLKjmt4LJDj58KI+fYyufRLBSYcqycxf//KpBk9FoewoGX0450m9nB44qrZnovzC2oeP5hUibxc/g==}
-    engines: {node: '>=18'}
+  find-up@8.0.0:
+    resolution: {integrity: sha512-JGG8pvDi2C+JxidYdIwQDyS/CgcrIdh18cvgxcBge3wSHRQOrooMD3GlFBcmMJAN9M42SAZjDp5zv1dglJjwww==}
+    engines: {node: '>=20'}
 
   for-each@0.3.5:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
@@ -2253,9 +2253,9 @@ packages:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
     engines: {node: '>=8'}
 
-  locate-path@7.2.0:
-    resolution: {integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+  locate-path@8.0.0:
+    resolution: {integrity: sha512-XT9ewWAC43tiAV7xDAPflMkG0qOPn2QjHqlgX8FOqmWa/rxnyYDulF9T0F7tRy1u+TVTmK/M//6VIOye+2zDXg==}
+    engines: {node: '>=20'}
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -2744,10 +2744,6 @@ packages:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
 
-  path-exists@5.0.0:
-    resolution: {integrity: sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-
   path-is-absolute@1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
@@ -2908,8 +2904,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.3.0:
-    resolution: {integrity: sha512-XUYRFrND6DxZb57CYMfGk4LT9yDUFFZzLvxDQ5esWGSMxw/t4/lC0DeMwugqNyfQdOeS3ng2DIX/YM1mfra5lg==}
+  renovate@43.3.6:
+    resolution: {integrity: sha512-cn62RN7bv6k8MJySeH3m6uCbCj0hIBzE/jPNc38kWZdaZKd8Wf1Yt93M+YxspjqjzFiHkAcXRiH0z8++vY8k3g==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3296,8 +3292,8 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  unicorn-magic@0.1.0:
-    resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
+  unicorn-magic@0.3.0:
+    resolution: {integrity: sha512-+QBBXBCvifc56fsbuxZQ6Sic3wqqc3WWaqxs58gvJrcOuN83HGTCwz3oS5phzU9LthRNE9VrJCFCLUgHeeFnfA==}
     engines: {node: '>=18'}
 
   unified@11.0.5:
@@ -5727,7 +5723,7 @@ snapshots:
 
   croner@9.1.0: {}
 
-  cronstrue@3.9.0: {}
+  cronstrue@3.11.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -6020,11 +6016,10 @@ snapshots:
       locate-path: 5.0.0
       path-exists: 4.0.0
 
-  find-up@7.0.0:
+  find-up@8.0.0:
     dependencies:
-      locate-path: 7.2.0
-      path-exists: 5.0.0
-      unicorn-magic: 0.1.0
+      locate-path: 8.0.0
+      unicorn-magic: 0.3.0
 
   for-each@0.3.5:
     dependencies:
@@ -6478,7 +6473,7 @@ snapshots:
     dependencies:
       p-locate: 4.1.0
 
-  locate-path@7.2.0:
+  locate-path@8.0.0:
     dependencies:
       p-locate: 6.0.0
 
@@ -7149,8 +7144,6 @@ snapshots:
 
   path-exists@4.0.0: {}
 
-  path-exists@5.0.0: {}
-
   path-is-absolute@1.0.1:
     optional: true
 
@@ -7362,7 +7355,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.3.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@43.3.6(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.980.0
       '@aws-sdk/client-ec2': 3.980.0
@@ -7413,7 +7406,7 @@ snapshots:
       commander: 14.0.2
       conventional-commits-detector: 1.0.3
       croner: 9.1.0
-      cronstrue: 3.9.0
+      cronstrue: 3.11.0
       deepmerge: 4.3.1
       dequal: 2.0.3
       detect-indent: 7.0.2
@@ -7426,7 +7419,7 @@ snapshots:
       execa: 8.0.1
       extract-zip: 2.0.1
       find-packages: 10.0.4
-      find-up: 7.0.0
+      find-up: 8.0.0
       fs-extra: 11.3.3
       git-url-parse: 16.1.0
       github-url-from-git: 1.5.0
@@ -7897,7 +7890,7 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  unicorn-magic@0.1.0: {}
+  unicorn-magic@0.3.0: {}
 
   unified@11.0.5:
     dependencies:
