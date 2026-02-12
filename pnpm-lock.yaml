@@ -21,8 +21,8 @@ importers:
         specifier: 8.0.4
         version: 8.0.4
       re2:
-        specifier: 1.23.2
-        version: 1.23.2
+        specifier: 1.23.3
+        version: 1.23.3
       renovate:
         specifier: 43.3.0
         version: 43.3.0(encoding@0.1.13)(typanion@3.14.0)
@@ -2563,6 +2563,9 @@ packages:
   nan@2.24.0:
     resolution: {integrity: sha512-Vpf9qnVW1RaDkoNKFUvfxqAbtI8ncb8OJlqZ9wwpXzWPEsvsB1nvdUi6oYrHIkQ1Y/tMDnr1h4nczS0VB9Xykg==}
 
+  nan@2.25.0:
+    resolution: {integrity: sha512-0M90Ag7Xn5KMLLZ7zliPWP3rT90P6PN+IzVFS0VqmnPktBk3700xUVv8Ikm9EUaUE5SDWdp/BIxdENzVznpm1g==}
+
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -2610,6 +2613,11 @@ packages:
 
   node-gyp@12.1.0:
     resolution: {integrity: sha512-W+RYA8jBnhSr2vrTtlPYPc1K+CSjGpVDRZxcqJcERZ8ND3A1ThWPHRwctTx3qC3oW99jt726jhdz3Y6ky87J4g==}
+    engines: {node: ^20.17.0 || >=22.9.0}
+    hasBin: true
+
+  node-gyp@12.2.0:
+    resolution: {integrity: sha512-q23WdzrQv48KozXlr0U1v9dwO/k59NHeSzn6loGcasyf0UnSrtzs8kRxM+mfwJSf0DkX0s43hcqgnSO4/VNthQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
 
@@ -2861,6 +2869,9 @@ packages:
 
   re2@1.23.2:
     resolution: {integrity: sha512-ds5iwbnfsmyiNDtuljBNAva54O4jhR77jL5bSM73NnsWQHkYoGWuePiZTrt6O3xXAHtrB/fviNQsPGRei6031w==}
+
+  re2@1.23.3:
+    resolution: {integrity: sha512-5jh686rmj/8dYpBo72XYgwzgG8Y9HNDATYZ1x01gqZ6FvXVUP33VZ0+6GLCeavaNywz3OkXBU8iNX7LjiuisPg==}
 
   read-package-json-fast@4.0.0:
     resolution: {integrity: sha512-qpt8EwugBWDw2cgE2W+/3oxC+KTez2uSVR8JU9Q36TXPAGCaozfQUs59v4j4GFpWTaw0i6hAZSvOmu1J0uOEUg==}
@@ -3193,6 +3204,10 @@ packages:
     resolution: {integrity: sha512-7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==}
     engines: {node: '>=18'}
     deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+  tar@7.5.7:
+    resolution: {integrity: sha512-fov56fJiRuThVFXD6o6/Q354S7pnWMJIVlDBYijsTNx6jKSE4pvrDTs6lUnmGvNyfJwFQQwWy3owKz1ucIhveQ==}
+    engines: {node: '>=18'}
 
   through2-concurrent@2.0.0:
     resolution: {integrity: sha512-R5/jLkfMvdmDD+seLwN7vB+mhbqzWop5fAjx5IX8/yQq7VhBhzDmhXgaHAOnhnWkCpRMM7gToYHycB0CS/pd+A==}
@@ -6971,7 +6986,10 @@ snapshots:
       rimraf: 2.4.5
     optional: true
 
-  nan@2.24.0: {}
+  nan@2.24.0:
+    optional: true
+
+  nan@2.25.0: {}
 
   nanoid@3.3.11: {}
 
@@ -7016,6 +7034,22 @@ snapshots:
       proc-log: 6.1.0
       semver: 7.7.3
       tar: 7.5.2
+      tinyglobby: 0.2.15
+      which: 6.0.0
+    transitivePeerDependencies:
+      - supports-color
+    optional: true
+
+  node-gyp@12.2.0:
+    dependencies:
+      env-paths: 2.2.1
+      exponential-backoff: 3.1.2
+      graceful-fs: 4.2.11
+      make-fetch-happen: 15.0.3
+      nopt: 9.0.0
+      proc-log: 6.1.0
+      semver: 7.7.3
+      tar: 7.5.7
       tinyglobby: 0.2.15
       which: 6.0.0
     transitivePeerDependencies:
@@ -7263,6 +7297,15 @@ snapshots:
       install-artifact-from-github: 1.4.0
       nan: 2.24.0
       node-gyp: 12.1.0
+    transitivePeerDependencies:
+      - supports-color
+    optional: true
+
+  re2@1.23.3:
+    dependencies:
+      install-artifact-from-github: 1.4.0
+      nan: 2.25.0
+      node-gyp: 12.2.0
     transitivePeerDependencies:
       - supports-color
 
@@ -7804,6 +7847,15 @@ snapshots:
       yallist: 4.0.0
 
   tar@7.5.2:
+    dependencies:
+      '@isaacs/fs-minipass': 4.0.1
+      chownr: 3.0.0
+      minipass: 7.1.2
+      minizlib: 3.1.0
+      yallist: 5.0.0
+    optional: true
+
+  tar@7.5.7:
     dependencies:
       '@isaacs/fs-minipass': 4.0.1
       chownr: 3.0.0
