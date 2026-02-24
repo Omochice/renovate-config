@@ -23,7 +23,7 @@
     "dedent": "1.7.1",
     "jsonata": "2.1.0",
     "npm-run-all2": "8.0.4",
-    "re2": "1.23.2",
+    "re2": "1.23.3",
     "renovate": "43.3.0",
     "sort-package-json": "3.6.1",
     "vitest": "4.0.18"
