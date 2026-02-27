@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.3
         version: 1.23.3
       renovate:
-        specifier: 43.31.8
-        version: 43.31.8(typanion@3.14.0)
+        specifier: 43.31.9
+        version: 43.31.9(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -1937,8 +1937,8 @@ packages:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
 
-  glob@13.0.3:
-    resolution: {integrity: sha512-/g3B0mC+4x724v1TgtBlBtt2hPi/EWptsIAmXUx9Z2rvBYleQcsrmaOzd5LyL50jf/Soi83ZDJmw2+XqvH/EeA==}
+  glob@13.0.4:
+    resolution: {integrity: sha512-KACie1EOs9BIOMtenFaxwmYODWA3/fTfGSUnLhMJpXRntu1g+uL/Xvub5f8SCTppvo9q62Qy4LeOoUiaL54G5A==}
     engines: {node: 20 || >=22}
 
   glob@6.0.4:
@@ -2926,8 +2926,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.31.8:
-    resolution: {integrity: sha512-CDFYfztfeTl1edgdTONRZDiyp30pAnWYnlrrHrkyOzIabsw0qJz1WhhqwqYQPGdRDCPFUByaRNK4XrnkWPNQOg==}
+  renovate@43.31.9:
+    resolution: {integrity: sha512-AWdDe8Uwxk3kRJSj4PMnEn9R2BcRR22otJWhRcxsJNZtTndupbuCWoA5UJy2JCz43R0zHkux8tPdVSsTA7bMhw==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5640,7 +5640,7 @@ snapshots:
     dependencies:
       '@npmcli/fs': 5.0.0
       fs-minipass: 3.0.3
-      glob: 13.0.3
+      glob: 13.0.4
       lru-cache: 11.2.4
       minipass: 7.1.2
       minipass-collect: 2.0.1
@@ -6176,7 +6176,7 @@ snapshots:
     dependencies:
       is-glob: 4.0.3
 
-  glob@13.0.3:
+  glob@13.0.4:
     dependencies:
       minimatch: 10.2.1
       minipass: 7.1.2
@@ -7400,7 +7400,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.31.8(typanion@3.14.0):
+  renovate@43.31.9(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.992.0
       '@aws-sdk/client-ec2': 3.992.0
@@ -7469,7 +7469,7 @@ snapshots:
       fs-extra: 11.3.3
       git-url-parse: 16.1.0
       github-url-from-git: 1.5.0
-      glob: 13.0.3
+      glob: 13.0.4
       global-agent: 3.0.0
       google-auth-library: 10.5.0
       got: 14.6.6
