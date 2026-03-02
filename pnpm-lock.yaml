@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.3
         version: 1.23.3
       renovate:
-        specifier: 43.39.2
-        version: 43.39.2(typanion@3.14.0)
+        specifier: 43.43.0
+        version: 43.43.0(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -762,12 +762,12 @@ packages:
     resolution: {integrity: sha512-5HrZJqZJzjzhghtJ85nNG8/dE97MQ1LOvo+T4dMGZg1s56HnZEZkm5KENNhQ+dwqC6vk5DdOcZ8J0oQOcn8gng==}
     engines: {node: '>=18.12.0', yarn: ^1.17.0}
 
-  '@renovatebot/osv-offline-db@2.1.0':
-    resolution: {integrity: sha512-aWryf3cEpQVdX0JDC/r9zbKT1S40SBTndYwHZljLj1bGZewv2AXLE38S+y44WgWQi4bIbBH+/q1T1EqUuZUGvw==}
+  '@renovatebot/osv-offline-db@2.1.2':
+    resolution: {integrity: sha512-bSAlZF/P+RmdcvbAjt4lH+zewgQ0CoPsG4GNpoLtOiXiCAqqAwCgWmpTNK/j38/bpur9+ShPFAE2853VwWA+fA==}
     engines: {node: '>=22.12.0'}
 
-  '@renovatebot/osv-offline@2.1.0':
-    resolution: {integrity: sha512-Wxx53+QuqtRyZ9+SULrXrDG8H7XJrNLnrxdMMH54JHNLP5araDUVa+RlJQrFmuNGOSHtMy1Sp1ODAbKA3rApTw==}
+  '@renovatebot/osv-offline@2.1.2':
+    resolution: {integrity: sha512-mIcCgjfsYyMKovVX29FxkZNQLZOj1gLn4tKFp5Xtp3qOLEXJe44CVnl64/67mUZq03PcYtaJ/D8blPx5hPEHqw==}
     engines: {node: '>=22.12.0'}
 
   '@renovatebot/pep440@4.2.2':
@@ -1919,6 +1919,7 @@ packages:
   git-raw-commits@2.0.11:
     resolution: {integrity: sha512-VnctFhw+xfj8Va1xtfEqCUD2XDrbAPSJx+hSrE5K7fGdjZruW7XV+QOrN7LF/RJyvspRiD2I0asWsxFp0ya26A==}
     engines: {node: '>=10'}
+    deprecated: This package is no longer maintained. For the JavaScript API, please use @conventional-changelog/git-client instead.
     hasBin: true
 
   git-up@8.1.1:
@@ -1937,9 +1938,9 @@ packages:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
 
-  glob@13.0.5:
-    resolution: {integrity: sha512-BzXxZg24Ibra1pbQ/zE7Kys4Ua1ks7Bn6pKLkVPZ9FZe4JQS6/Q7ef3LG1H+k7lUf5l4T3PLSyYyYJVYUvfgTw==}
-    engines: {node: 20 || >=22}
+  glob@13.0.6:
+    resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
+    engines: {node: 18 || 20 || >=22}
 
   glob@6.0.4:
     resolution: {integrity: sha512-MKZeRNyYZAVVVG1oZeLaWie1uweH40m9AZwIwxyPbTSX4hHrVYSzLg0Ro5Z5R7XKkIX+Cc6oD1rqeDJnwsB8/A==}
@@ -2504,9 +2505,9 @@ packages:
     resolution: {integrity: sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==}
     engines: {node: 20 || >=22}
 
-  minimatch@10.2.1:
-    resolution: {integrity: sha512-MClCe8IL5nRRmawL6ib/eT4oLyeKMGCghibcDWK+J0hh0Q8kqSdia6BvbRMVk6mPa6WqUa5uR2oxt6C5jd533A==}
-    engines: {node: 20 || >=22}
+  minimatch@10.2.2:
+    resolution: {integrity: sha512-+G4CpNBxa5MprY+04MbgOw1v7So6n5JY166pFi9KfYwT78fxScCeSNQSNzp6dpPSW2rONOps6Ocam1wFhCgoVw==}
+    engines: {node: 18 || 20 || >=22}
 
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
@@ -2548,6 +2549,10 @@ packages:
 
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
+    engines: {node: '>=16 || 14 >=14.17'}
+
+  minipass@7.1.3:
+    resolution: {integrity: sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==}
     engines: {node: '>=16 || 14 >=14.17'}
 
   minizlib@2.1.2:
@@ -2784,9 +2789,9 @@ packages:
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
 
-  path-scurry@2.0.0:
-    resolution: {integrity: sha512-ypGJsmGtdXUOeM5u93TyeIEfEhM6s+ljAhrk5vAvSx8uyY/02OvrZnA0YNGUrPXfpJMgI1ODd3nwz8Npx4O4cg==}
-    engines: {node: 20 || >=22}
+  path-scurry@2.0.2:
+    resolution: {integrity: sha512-3O/iVVsJAPsOnpwWIeD+d6z/7PmqApyQePUtCndjatj/9I5LylHvt5qluFaBT3I5h3r1ejfR056c+FCv+NnNXg==}
+    engines: {node: 18 || 20 || >=22}
 
   pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
@@ -2926,8 +2931,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.39.2:
-    resolution: {integrity: sha512-+E61w6Id9B1H+E274ckzTRcj1hJqNLh3+UhpkMpDfY1Swfr8RWM+2RA9tEvwY8RlAw37tLx/wBLb6EKew2O2Nw==}
+  renovate@43.43.0:
+    resolution: {integrity: sha512-q2OYDjIpWklRXWRWC5r+opaeOP31yFGQy4YxTnnKhi6XaW51jG6lqG/8nKt2m9b8wYeCaYvAsmTEtbqTzajiFg==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4863,20 +4868,20 @@ snapshots:
       klona: 2.0.6
       moo: 0.5.2
 
-  '@renovatebot/osv-offline-db@2.1.0':
+  '@renovatebot/osv-offline-db@2.1.2':
     dependencies:
       '@seald-io/nedb': 4.1.2
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
-  '@renovatebot/osv-offline@2.1.0':
+  '@renovatebot/osv-offline@2.1.2':
     dependencies:
-      '@renovatebot/osv-offline-db': 2.1.0
+      '@renovatebot/osv-offline-db': 2.1.2
       adm-zip: 0.5.16
       debug: 4.4.3
       fs-extra: 11.3.3
-      got: 11.8.6
+      got: 14.6.6
       luxon: 3.7.2
     transitivePeerDependencies:
       - supports-color
@@ -5640,7 +5645,7 @@ snapshots:
     dependencies:
       '@npmcli/fs': 5.0.0
       fs-minipass: 3.0.3
-      glob: 13.0.5
+      glob: 13.0.6
       lru-cache: 11.2.4
       minipass: 7.1.2
       minipass-collect: 2.0.1
@@ -6176,11 +6181,11 @@ snapshots:
     dependencies:
       is-glob: 4.0.3
 
-  glob@13.0.5:
+  glob@13.0.6:
     dependencies:
-      minimatch: 10.2.1
-      minipass: 7.1.2
-      path-scurry: 2.0.0
+      minimatch: 10.2.2
+      minipass: 7.1.3
+      path-scurry: 2.0.2
 
   glob@6.0.4:
     dependencies:
@@ -6937,7 +6942,7 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.1
 
-  minimatch@10.2.1:
+  minimatch@10.2.2:
     dependencies:
       brace-expansion: 5.0.3
 
@@ -6985,6 +6990,8 @@ snapshots:
   minipass@5.0.0: {}
 
   minipass@7.1.2: {}
+
+  minipass@7.1.3: {}
 
   minizlib@2.1.2:
     dependencies:
@@ -7206,10 +7213,10 @@ snapshots:
 
   path-parse@1.0.7: {}
 
-  path-scurry@2.0.0:
+  path-scurry@2.0.2:
     dependencies:
       lru-cache: 11.2.4
-      minipass: 7.1.2
+      minipass: 7.1.3
 
   pathe@2.0.3: {}
 
@@ -7400,7 +7407,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.39.2(typanion@3.14.0):
+  renovate@43.43.0(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.992.0
       '@aws-sdk/client-ec2': 3.992.0
@@ -7432,7 +7439,7 @@ snapshots:
       '@redis/client': 5.11.0
       '@renovatebot/detect-tools': 1.2.8
       '@renovatebot/good-enough-parser': 1.2.0
-      '@renovatebot/osv-offline': 2.1.0
+      '@renovatebot/osv-offline': 2.1.2
       '@renovatebot/pep440': 4.2.2
       '@renovatebot/pgp': 1.3.2
       '@renovatebot/ruby-semver': 4.1.2
@@ -7469,7 +7476,7 @@ snapshots:
       fs-extra: 11.3.3
       git-url-parse: 16.1.0
       github-url-from-git: 1.5.0
-      glob: 13.0.5
+      glob: 13.0.6
       global-agent: 3.0.0
       google-auth-library: 10.5.0
       got: 14.6.6
@@ -7486,7 +7493,7 @@ snapshots:
       luxon: 3.7.2
       markdown-it: 14.1.1
       markdown-table: 3.0.4
-      minimatch: 10.2.1
+      minimatch: 10.2.2
       moo: 0.5.2
       ms: 2.1.3
       neotraverse: 0.6.18
