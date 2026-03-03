@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.3
         version: 1.23.3
       renovate:
-        specifier: 43.46.0
-        version: 43.46.0(typanion@3.14.0)
+        specifier: 43.46.1
+        version: 43.46.1(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -2927,8 +2927,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.46.0:
-    resolution: {integrity: sha512-cyBYJeR/+tnUcUhURCPiHtsBtVulBTmhYcJbqEd3GV+ySronpEcChB+zKvFtELS9h5n0rmmKdZVMJ0weunhjKw==}
+  renovate@43.46.1:
+    resolution: {integrity: sha512-+WiXWO2AgAbJKUkJgK5hP58alNc1YF9S6SgB2I2NVGIyhmH66yVqyUyXNfFqE7/OsSfDgfSL9CZc2Oib9cni9A==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3083,8 +3083,8 @@ packages:
   simple-get@4.0.1:
     resolution: {integrity: sha512-brv7p5WgH0jmQJr1ZDDfKDOSeWWg+OVypG99A/5vYGPqJ6pxiaHLy8nxtFjBA7oMa01ebA9gfh1uMCFqOuXxvA==}
 
-  simple-git@3.31.1:
-    resolution: {integrity: sha512-oiWP4Q9+kO8q9hHqkX35uuHmxiEbZNTrZ5IPxgMGrJwN76pzjm/jabkZO0ItEcqxAincqGAzL3QHSaHt4+knBg==}
+  simple-git@3.32.0:
+    resolution: {integrity: sha512-2z/zhmD2yZKcKj4fim7c/CUffq689WOerDSUhh6gd5fdzVfCrdSbdjNZVjIpCCGEuYtttMehDlyNn8sJsBzZpw==}
 
   slugify@1.6.6:
     resolution: {integrity: sha512-h+z7HKHYXj6wJU+AnS/+IH8Uh9fdcX1Lrhg1/VMdf9PwoBQXFcXiAdsy2tSK0P6gKwJLXp02r90ahUCqHk9rrw==}
@@ -7401,7 +7401,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.46.0(typanion@3.14.0):
+  renovate@43.46.1(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.992.0
       '@aws-sdk/client-ec2': 3.992.0
@@ -7509,7 +7509,7 @@ snapshots:
       semver-stable: 3.0.0
       semver-utils: 1.1.4
       shlex: 3.0.0
-      simple-git: 3.31.1
+      simple-git: 3.32.0
       slugify: 1.6.6
       source-map-support: 0.5.21
       strip-json-comments: 5.0.3
@@ -7705,7 +7705,7 @@ snapshots:
       simple-concat: 1.0.1
     optional: true
 
-  simple-git@3.31.1:
+  simple-git@3.32.0:
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
