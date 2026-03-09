@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.3
         version: 1.23.3
       renovate:
-        specifier: 43.57.0
-        version: 43.57.0(typanion@3.14.0)
+        specifier: 43.58.0
+        version: 43.58.0(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -1286,8 +1286,8 @@ packages:
     resolution: {integrity: sha512-TGw5yVi4saajsSEgz25grObGHEUaDrniwvA2qwSC060KfqGPdglhvPMA2lPIoxs3PQIItj2iag35fONcQqgUaQ==}
     engines: {node: '>=12.0'}
 
-  ae-cvss-calculator@1.0.9:
-    resolution: {integrity: sha512-CTeSR6Cm/cOJQLRNIw3wvRnNUMp9du+qKwH6IAf/DHwgGFsVeoCiuvtH6BWl5gaYVn1RTMBdQmT2D5Ul31Mh5Q==}
+  ae-cvss-calculator@1.0.11:
+    resolution: {integrity: sha512-Rhe/7hJ+9rFmDvcoIg2vNva1Lzm1gHZC5GJzhT6RceoCl9ZCK+fOl1cqKrvQsxSWoUITrt+ew73WPKpoDyilBQ==}
 
   agent-base@7.1.3:
     resolution: {integrity: sha512-jRR5wdylq8CkOe6hei19GGZnxM6rBGwFl3Bg0YItGDimvjGtAvdZk4Pu6Cl4u4Igsws4a1fd1Vq3ezrhn4KmFw==}
@@ -2961,8 +2961,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.57.0:
-    resolution: {integrity: sha512-E6V5qAKpU6ENND5ZQpymOr0/XRIFPFeh+Wtp55GRBo8ohwSxcIyrF2y67ZWKR8ANc5djj2D/8rsWnS/H4aHe+A==}
+  renovate@43.58.0:
+    resolution: {integrity: sha512-+WfAuKS6usuV4eLYu9N6xvPmi3vqN6Ltl/awimPrQbNBIoJAM3Euve+DNO7I/Mpp4bvfSo12l3yofh3U6Hj7pw==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5484,7 +5484,7 @@ snapshots:
 
   adm-zip@0.5.16: {}
 
-  ae-cvss-calculator@1.0.9: {}
+  ae-cvss-calculator@1.0.11: {}
 
   agent-base@7.1.3: {}
 
@@ -7407,7 +7407,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.57.0(typanion@3.14.0):
+  renovate@43.58.0(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1000.0
       '@aws-sdk/client-ec2': 3.1000.0
@@ -7446,7 +7446,7 @@ snapshots:
       '@sindresorhus/is': 7.2.0
       '@yarnpkg/core': 4.5.0(typanion@3.14.0)
       '@yarnpkg/parsers': 3.0.3
-      ae-cvss-calculator: 1.0.9
+      ae-cvss-calculator: 1.0.11
       agentkeepalive: 4.6.0
       async-mutex: 0.5.0
       auth-header: 1.0.0
