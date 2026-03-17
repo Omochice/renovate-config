@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.3
         version: 1.23.3
       renovate:
-        specifier: 43.71.0
-        version: 43.71.0(typanion@3.14.0)
+        specifier: 43.73.1
+        version: 43.73.1(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -2203,8 +2203,11 @@ packages:
     resolution: {integrity: sha512-OCzaRMK8HobtX8fp37uIVmL8CY1IGc/a6gLsDqz3quExFR09/U78HUzWYr7T31UEB6+Eu0/8dkVD5fFDOl9a8w==}
     engines: {node: '>= 8'}
 
-  jsonc-parser@3.3.1:
-    resolution: {integrity: sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ==}
+  jsonc-morph@0.3.1:
+    resolution: {integrity: sha512-bMphxB0fv2g7QX6tQQZDWJ/WGUoyLZNNXAjds9LlnOGCGHMcyy2DGzECwfTxpSM/V9Ru2mrA4Ra+3bNbwrVmRw==}
+
+  jsonc-weaver@0.2.2:
+    resolution: {integrity: sha512-fDO1+8cpEFGlw42kvEqh/HAnXd47Lv19mWQaR30p2k6wOwfL4Dx/B2f8reaQepBc1aupBIOTwWmhThFUgv9zLQ==}
 
   jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
@@ -2907,8 +2910,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.71.0:
-    resolution: {integrity: sha512-dhbq6Ors2v8EXm8HuE+occ7huSe2fI2aZrydFC8ZuNO5CEnRXd1i0NSZMkHH5yUjzPwRzbYr1+QDqYP8lc+QCw==}
+  renovate@43.73.1:
+    resolution: {integrity: sha512-z2l7HEF0DlZEOY6Gk5FuP2JjWyEXQ4Ii3w5T6vyggs054sUyF7aJIyqt6yg9iWSyEplTBZN3UpDnAckclOFK5A==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6344,7 +6347,11 @@ snapshots:
 
   jsonata@2.1.0: {}
 
-  jsonc-parser@3.3.1: {}
+  jsonc-morph@0.3.1: {}
+
+  jsonc-weaver@0.2.2:
+    dependencies:
+      jsonc-morph: 0.3.1
 
   jsonfile@6.1.0:
     dependencies:
@@ -7285,7 +7292,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.71.0(typanion@3.14.0):
+  renovate@43.73.1(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1000.0
       '@aws-sdk/client-ec2': 3.1000.0
@@ -7365,7 +7372,7 @@ snapshots:
       json-stringify-pretty-compact: 4.0.0
       json5: 2.2.3
       jsonata: 2.1.0
-      jsonc-parser: 3.3.1
+      jsonc-weaver: 0.2.2
       klona: 2.0.6
       luxon: 3.7.2
       markdown-it: 14.1.1
