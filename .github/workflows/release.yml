@@ -15,6 +15,9 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+    outputs:
+      prs_created: ${{ steps.release.outputs.prs_created }}
+      pr: ${{ steps.release.outputs.pr }}
     steps:
       - uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2.2.2
         id: app-token
@@ -25,7 +28,48 @@ jobs:
           permission-pull-requests: write
           permission-issues: write
       - uses: googleapis/release-please-action@16a9c90856f42705d54a6fda1823352bdc62cf38 # v4.4.0
+        id: release
         with:
           token: ${{ steps.app-token.outputs.token }}
           config-file: .github/release-please-config.json
           manifest-file: .github/release-please-manifest.json
+  increment-version:
+    needs: release-please
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: ${{ needs.release-please.outputs.prs_created == 'true' }}
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ fromJSON(needs.release-please.outputs.pr).headBranchName }}
+          fetch-depth: 0
+      - uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2.2.2
+        id: app-token
+        with:
+          app-id: ${{ secrets.RELEASE_APP_ID }}
+          private-key: ${{ secrets.RELEASE_PRIVATE_KEY }}
+          permission-contents: write
+      - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.4.0
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+        with:
+          node-version: lts/*
+          cache: pnpm
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y moreutils
+      - run: pnpm install
+      - run: |
+          jq --arg VERSION "v$(jq -r '.["."]' .github/release-please-manifest.json)" '.extends[] |= if test("#") then (split("#") | .[1] = $VERSION | join("#")) else . end' deno.json | sponge deno.json
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${APP_TOKEN}@github.com/${{ github.repository }}"
+          pnpm run fmt
+          git add deno.json
+          git commit -m "chore: bump pinned version"
+          git push
+        env:
+          APP_TOKEN: ${{ steps.app-token.outputs.token }}
