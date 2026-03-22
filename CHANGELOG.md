@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.1](https://github.com/Omochice/renovate-config/compare/v4.1.0...v4.1.1) (2026-03-22)
+
+
+### Bug Fixes
+
+* pin the version of self dependencies ([#1851](https://github.com/Omochice/renovate-config/issues/1851)) ([726cc44](https://github.com/Omochice/renovate-config/commit/726cc44c651f5f19d668ab45d0be6011d2f20fdc))
+
 ## [4.1.0](https://github.com/Omochice/renovate-config/compare/v4.0.1...v4.1.0) (2026-02-07)
 
 
