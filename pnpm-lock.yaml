@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.3
         version: 1.23.3
       renovate:
-        specifier: 43.84.0
-        version: 43.84.0(typanion@3.14.0)
+        specifier: 43.84.1
+        version: 43.84.1(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -2913,8 +2913,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.84.0:
-    resolution: {integrity: sha512-uFl0+cwKfCp7M0g5NSK2ON7JI7arz6qNJmMc5Ej8n0k9N/cbOppQ/gqdVxtAt2oAcgich4F/dzsV+HXjq+zfQg==}
+  renovate@43.84.1:
+    resolution: {integrity: sha512-+jd5YOGdiz0xmYIf2GYje8MeB2z8K9gR8SpA29C2YLe/HqsVE1fiPhYlKHj+vt042ojZldSeH3lCrWu5TrBZ7Q==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3068,8 +3068,8 @@ packages:
   simple-git@3.33.0:
     resolution: {integrity: sha512-D4V/tGC2sjsoNhoMybKyGoE+v8A60hRawKQ1iFRA1zwuDgGZCBJ4ByOzZ5J8joBbi4Oam0qiPH+GhzmSBwbJng==}
 
-  slugify@1.6.6:
-    resolution: {integrity: sha512-h+z7HKHYXj6wJU+AnS/+IH8Uh9fdcX1Lrhg1/VMdf9PwoBQXFcXiAdsy2tSK0P6gKwJLXp02r90ahUCqHk9rrw==}
+  slugify@1.6.8:
+    resolution: {integrity: sha512-HVk9X1E0gz3mSpoi60h/saazLKXKaZThMLU3u/aNwoYn8/xQyX2MGxL0ui2eaokkD7tF+Zo+cKTHUbe1mmmGzA==}
     engines: {node: '>=8.0.0'}
 
   smart-buffer@4.2.0:
@@ -7300,7 +7300,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.84.0(typanion@3.14.0):
+  renovate@43.84.1(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1000.0
       '@aws-sdk/client-ec2': 3.1000.0
@@ -7408,7 +7408,7 @@ snapshots:
       semver-utils: 1.1.4
       shlex: 3.0.0
       simple-git: 3.33.0
-      slugify: 1.6.6
+      slugify: 1.6.8
       source-map-support: 0.5.21
       strip-json-comments: 5.0.3
       toml-eslint-parser: 1.0.3
@@ -7600,7 +7600,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  slugify@1.6.6: {}
+  slugify@1.6.8: {}
 
   smart-buffer@4.2.0: {}
 
