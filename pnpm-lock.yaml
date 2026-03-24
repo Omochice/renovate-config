@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.3
         version: 1.23.3
       renovate:
-        specifier: 43.84.1
-        version: 43.84.1(typanion@3.14.0)
+        specifier: 43.84.2
+        version: 43.84.2(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -1343,8 +1343,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  better-sqlite3@12.6.2:
-    resolution: {integrity: sha512-8VYKM3MjCa9WcaSAI3hzwhmyHVlH8tiGFwf0RlTsZPWJ1I5MkzjiudCo4KC4DxOaL/53A5B1sI/IbldNFDbsKA==}
+  better-sqlite3@12.8.0:
+    resolution: {integrity: sha512-RxD2Vd96sQDjQr20kdP+F+dK/1OUNiVOl200vKBZY8u0vTwysfolF6Hq+3ZK2+h8My9YvZhHsF+RSGZW2VYrPQ==}
     engines: {node: 20.x || 22.x || 23.x || 24.x || 25.x}
 
   bignumber.js@9.3.0:
@@ -2913,8 +2913,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.84.1:
-    resolution: {integrity: sha512-+jd5YOGdiz0xmYIf2GYje8MeB2z8K9gR8SpA29C2YLe/HqsVE1fiPhYlKHj+vt042ojZldSeH3lCrWu5TrBZ7Q==}
+  renovate@43.84.2:
+    resolution: {integrity: sha512-MSBe5n35b/ubhHmF+8xjJcG9Bc+LAbpTjLq8ATeEVboxTnfNf77CSYOosWuFPYYqjhssbTyy+6E9nTemGT3RFg==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5463,7 +5463,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  better-sqlite3@12.6.2:
+  better-sqlite3@12.8.0:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 7.1.3
@@ -7300,7 +7300,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.84.1(typanion@3.14.0):
+  renovate@43.84.2(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1000.0
       '@aws-sdk/client-ec2': 3.1000.0
@@ -7420,7 +7420,7 @@ snapshots:
       yaml: 2.8.2
       zod: 4.3.6
     optionalDependencies:
-      better-sqlite3: 12.6.2
+      better-sqlite3: 12.8.0
       openpgp: 6.3.0
       re2: 1.23.3
     transitivePeerDependencies:
