@@ -24,8 +24,8 @@ importers:
         specifier: 1.23.3
         version: 1.23.3
       renovate:
-        specifier: 43.87.0
-        version: 43.87.0(typanion@3.14.0)
+        specifier: 43.87.1
+        version: 43.87.1(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -2859,8 +2859,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.87.0:
-    resolution: {integrity: sha512-pWivwZxQ+GdM9CQwXyOdiWyQfls0LYoswfBIvnsGYdI2wxsiI4/7uR3vpMn3AYPD655OZrxyPkeueT3B5Dig2w==}
+  renovate@43.87.1:
+    resolution: {integrity: sha512-5wS4huXjSQSULJrdHAkTJwplTLTgVdtZFlCWITmng2dHslw5uO/DOVIwEvqp5IWOG8wHEUub2GEkzpshHMYKWw==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -2924,8 +2924,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sax@1.5.0:
-    resolution: {integrity: sha512-21IYA3Q5cQf089Z6tgaUTr7lDAyzoTPx5HRtbhsME8Udispad8dC/+sziTNugOEx54ilvatQ9YCzl4KQLPcRHA==}
+  sax@1.6.0:
+    resolution: {integrity: sha512-6R3J5M4AcbtLUdZmRv2SygeVaM7IhrLXu9BmnOGmmACak8fiUtOsYNWUS4uK7upbmHIBbLBeFeI//477BKLBzA==}
     engines: {node: '>=11.0.0'}
 
   semver-compare@1.0.0:
@@ -7163,7 +7163,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.87.0(typanion@3.14.0):
+  renovate@43.87.1(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1000.0
       '@aws-sdk/client-ec2': 3.1000.0
@@ -7265,7 +7265,7 @@ snapshots:
       remark-gfm: 4.0.1
       remark-github: 12.0.0
       safe-stable-stringify: 2.5.0
-      sax: 1.5.0
+      sax: 1.6.0
       semver: 7.7.4
       semver-stable: 3.0.0
       semver-utils: 1.1.4
@@ -7375,7 +7375,7 @@ snapshots:
   safer-buffer@2.1.2:
     optional: true
 
-  sax@1.5.0: {}
+  sax@1.6.0: {}
 
   semver-compare@1.0.0: {}
 
@@ -7841,7 +7841,7 @@ snapshots:
 
   xmldoc@2.0.3:
     dependencies:
-      sax: 1.5.0
+      sax: 1.6.0
 
   xtend@4.0.2: {}
 
