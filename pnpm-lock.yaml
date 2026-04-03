@@ -24,8 +24,8 @@ importers:
         specifier: 1.24.0
         version: 1.24.0
       renovate:
-        specifier: 43.101.2
-        version: 43.101.2(typanion@3.14.0)
+        specifier: 43.101.3
+        version: 43.101.3(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -2496,9 +2496,6 @@ packages:
     resolution: {integrity: sha512-at/ZndSy3xEGJ8i0ygALh8ru9qy7gWW1cmkaqBN29JmMlIvM//MEO9y1sk/avxuwnPcfhkejkLsuPxH81BrkSg==}
     engines: {node: '>=0.8.0'}
 
-  nan@2.25.0:
-    resolution: {integrity: sha512-0M90Ag7Xn5KMLLZ7zliPWP3rT90P6PN+IzVFS0VqmnPktBk3700xUVv8Ikm9EUaUE5SDWdp/BIxdENzVznpm1g==}
-
   nan@2.26.2:
     resolution: {integrity: sha512-0tTvBTYkt3tdGw22nrAy50x7gpbGCCFH3AFcyS5WiUu7Eu4vWlri1woE6qHBSfy11vksDqkiwjOnlR7WV8G1Hw==}
 
@@ -2842,8 +2839,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.101.2:
-    resolution: {integrity: sha512-x9koGX/573W3B/iQZSy2f++E+T77zoUHPivrJODyvR/Y3pAvafSkLti090Pz+B1AYIx6ABR9GiNVRp4I3jwOSg==}
+  renovate@43.101.3:
+    resolution: {integrity: sha512-5OD0UtE29eeoRYJRDE3yuWqBwd/1B3G7Y1k685ii8LOjjfOAdkx1dbwoFigCnFZtB3sQjrsZ+pTxdHiO2X0QtA==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5634,7 +5631,7 @@ snapshots:
 
   dtrace-provider@0.8.8:
     dependencies:
-      nan: 2.25.0
+      nan: 2.26.2
     optional: true
 
   dunder-proto@1.0.1:
@@ -6723,9 +6720,6 @@ snapshots:
       rimraf: 2.4.5
     optional: true
 
-  nan@2.25.0:
-    optional: true
-
   nan@2.26.2: {}
 
   nanoid@3.3.11: {}
@@ -7025,7 +7019,7 @@ snapshots:
   re2@1.23.3:
     dependencies:
       install-artifact-from-github: 1.4.0
-      nan: 2.25.0
+      nan: 2.26.2
       node-gyp: 12.2.0
     transitivePeerDependencies:
       - supports-color
@@ -7127,7 +7121,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.101.2(typanion@3.14.0):
+  renovate@43.101.3(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1000.0
       '@aws-sdk/client-ec2': 3.1000.0
