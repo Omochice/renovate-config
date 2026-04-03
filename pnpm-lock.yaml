@@ -24,8 +24,8 @@ importers:
         specifier: 1.24.0
         version: 1.24.0
       renovate:
-        specifier: 43.101.3
-        version: 43.101.3(typanion@3.14.0)
+        specifier: 43.101.6
+        version: 43.101.6(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -657,8 +657,8 @@ packages:
     resolution: {integrity: sha512-L6AiU3OXv9kjKGTJN9j8n1TeJGDcLX9atQlZvAkthlvbXjvKc5SKNWESc/eXhr5nEfuMWhQhiKHDJCpYejmeCQ==}
     engines: {node: '>=14.19'}
 
-  '@pnpm/error@1000.0.5':
-    resolution: {integrity: sha512-GjH0TPjbVNrPnl/BAGoFuBLJ2sFfXNKbS33lll/Ehe9yw0fyc8Kdw7kO9if37yQqn6vaa4dAHKkPllum7f/IPQ==}
+  '@pnpm/error@1000.1.0':
+    resolution: {integrity: sha512-Dqc2IJJPjUatwc9Letw+vG29rnaMrDGi5g6WCx1HiZYm0obXbTmLygeRafMbgf+sLKXrWE1shOeiayQuczBdoA==}
     engines: {node: '>=18.12'}
 
   '@pnpm/error@4.0.0':
@@ -669,8 +669,8 @@ packages:
     resolution: {integrity: sha512-ogUZCGf0/UILZt6d8PsO4gA4pXh7f0BumXeFkcCe4AQ65PXPKfAkHC0C30Lheh2EgFOpLZm3twDP1Eiww18gew==}
     engines: {node: '>=14.19'}
 
-  '@pnpm/parse-overrides@1001.0.3':
-    resolution: {integrity: sha512-Ctu3m3cnGscQM9SQjnBVzrw6C4ZI4DBkotEOYv1dyRF0xc+aktGNDnrx59O/hnWU8PbsQ9PT5LmAO/GkdlrM/Q==}
+  '@pnpm/parse-overrides@1001.0.4':
+    resolution: {integrity: sha512-fk6gFXDKN61vZfb/qbTne/938GPQaYy8U+B2TdBPxPuw2M/U8l1ltlUoJZzR3SW4O+jghzaFKTVVIPiPs3K1AQ==}
     engines: {node: '>=18.12'}
 
   '@pnpm/parse-wanted-dependency@1001.0.0':
@@ -2839,8 +2839,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.101.3:
-    resolution: {integrity: sha512-5OD0UtE29eeoRYJRDE3yuWqBwd/1B3G7Y1k685ii8LOjjfOAdkx1dbwoFigCnFZtB3sQjrsZ+pTxdHiO2X0QtA==}
+  renovate@43.101.6:
+    resolution: {integrity: sha512-si/RxVxXI+96abe570RT/+C7UebFZniuZs++IlvAeAZ3Im+sBbs0T83miEK3fRnVG0U4C7M5anfkNa3VvbRImw==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4539,7 +4539,7 @@ snapshots:
   '@pnpm/catalogs.resolver@1000.0.5':
     dependencies:
       '@pnpm/catalogs.protocol-parser': 1001.0.0
-      '@pnpm/error': 1000.0.5
+      '@pnpm/error': 1000.1.0
 
   '@pnpm/catalogs.types@1000.0.0': {}
 
@@ -4547,7 +4547,7 @@ snapshots:
 
   '@pnpm/constants@6.1.0': {}
 
-  '@pnpm/error@1000.0.5':
+  '@pnpm/error@1000.1.0':
     dependencies:
       '@pnpm/constants': 1001.3.1
 
@@ -4559,11 +4559,11 @@ snapshots:
     dependencies:
       graceful-fs: 4.2.11
 
-  '@pnpm/parse-overrides@1001.0.3':
+  '@pnpm/parse-overrides@1001.0.4':
     dependencies:
       '@pnpm/catalogs.resolver': 1000.0.5
       '@pnpm/catalogs.types': 1000.0.0
-      '@pnpm/error': 1000.0.5
+      '@pnpm/error': 1000.1.0
       '@pnpm/parse-wanted-dependency': 1001.0.0
 
   '@pnpm/parse-wanted-dependency@1001.0.0':
@@ -7121,7 +7121,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.101.3(typanion@3.14.0):
+  renovate@43.101.6(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1000.0
       '@aws-sdk/client-ec2': 3.1000.0
@@ -7148,7 +7148,7 @@ snapshots:
       '@opentelemetry/sdk-trace-base': 2.6.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/sdk-trace-node': 2.6.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.40.0
-      '@pnpm/parse-overrides': 1001.0.3
+      '@pnpm/parse-overrides': 1001.0.4
       '@qnighy/marshal': 0.1.3
       '@redis/client': 5.11.0
       '@renovatebot/detect-tools': 2.0.0
