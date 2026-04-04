@@ -24,8 +24,8 @@ importers:
         specifier: 1.24.0
         version: 1.24.0
       renovate:
-        specifier: 43.102.4
-        version: 43.102.4(typanion@3.14.0)
+        specifier: 43.102.6
+        version: 43.102.6(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -739,8 +739,8 @@ packages:
       '@node-rs/xxhash':
         optional: true
 
-  '@renovatebot/detect-tools@2.0.1':
-    resolution: {integrity: sha512-9cvKD85YA0h8UGeI/hPaHT2xqg/DrWtHhFE7FMIov9+sg67PwqUmr5Gtl6e8FE6ZZTQWeCawJCAqNRoSU8kX8A==}
+  '@renovatebot/detect-tools@3.0.0':
+    resolution: {integrity: sha512-cuUQLbUj97SHKk+IN2fd+oA7y7LOXHTl1GfsYJXAjf3Z6d50tMXKP20Liosl9u5smi0zFIIioxiUhYO2/v07zA==}
     engines: {node: '>=22.12.0'}
 
   '@renovatebot/good-enough-parser@2.0.0':
@@ -2839,8 +2839,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.102.4:
-    resolution: {integrity: sha512-ERlj0kyprQjGCmoSnz7hASR0owrbz9TT+fcgv/mQIkNmkezCBsKZe1CVQOMGUfcldYATe9BxVKHF88ZiaMR4tw==}
+  renovate@43.102.6:
+    resolution: {integrity: sha512-2qqBJ6gXjt2s0xQ2DaaA5IpqRci366KSp/SXB3k0wpqjSYYdoZAt8tRD7wIMgeDxltYjf3EVFyXG2OnSh199ZA==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3423,9 +3423,6 @@ packages:
   yocto-queue@1.2.1:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
-
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
   zod@4.3.6:
     resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
@@ -4635,12 +4632,12 @@ snapshots:
     dependencies:
       cluster-key-slot: 1.1.2
 
-  '@renovatebot/detect-tools@2.0.1':
+  '@renovatebot/detect-tools@3.0.0':
     dependencies:
       fs-extra: 11.3.4
       toml-eslint-parser: 0.12.0
       upath: 2.0.1
-      zod: 3.25.76
+      zod: 4.3.6
 
   '@renovatebot/good-enough-parser@2.0.0':
     dependencies:
@@ -7122,7 +7119,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.102.4(typanion@3.14.0):
+  renovate@43.102.6(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1021.0
       '@aws-sdk/client-ec2': 3.1021.0
@@ -7152,7 +7149,7 @@ snapshots:
       '@pnpm/parse-overrides': 1001.0.4
       '@qnighy/marshal': 0.1.3
       '@redis/client': 5.11.0
-      '@renovatebot/detect-tools': 2.0.1
+      '@renovatebot/detect-tools': 3.0.0
       '@renovatebot/good-enough-parser': 2.0.0
       '@renovatebot/osv-offline': 2.4.0
       '@renovatebot/pep440': 4.2.2
@@ -7806,8 +7803,6 @@ snapshots:
       fd-slicer: 1.1.0
 
   yocto-queue@1.2.1: {}
-
-  zod@3.25.76: {}
 
   zod@4.3.6: {}
 
