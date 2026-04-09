@@ -24,8 +24,8 @@ importers:
         specifier: 1.24.0
         version: 1.24.0
       renovate:
-        specifier: 43.104.7
-        version: 43.104.7(typanion@3.14.0)
+        specifier: 43.104.8
+        version: 43.104.8(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -2252,8 +2252,8 @@ packages:
   minimalistic-assert@1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
 
-  minimatch@10.2.4:
-    resolution: {integrity: sha512-oRjTw/97aTBN0RHbYCdtF1MQfvusSIBQM0IZEgzl6426+8jSC0nF1a/GmnVLpfB9yyr6g6FTqWqiZVbxrtaCIg==}
+  minimatch@10.2.5:
+    resolution: {integrity: sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==}
     engines: {node: 18 || 20 || >=22}
 
   minimatch@3.1.5:
@@ -2616,8 +2616,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.104.7:
-    resolution: {integrity: sha512-+J1mvPMXsVojnhCeyzbv901w2LRrTwb/L3qUDsJ0qBNlleAlRqrK++TAUvkHCZ7DPvxUeQGjqej3JKlKH7G69g==}
+  renovate@43.104.8:
+    resolution: {integrity: sha512-P6iI8yu6Cy1gewPABZ0FlPmTQUENjc5APa7n2PpvW5URXgyfeCnwSFZu4jxKvCVYQSxWe21WTFGrWO0ebaRDGQ==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5261,7 +5261,7 @@ snapshots:
     dependencies:
       '@one-ini/wasm': 0.2.1
       commander: 14.0.3
-      minimatch: 10.2.4
+      minimatch: 10.2.5
       semver: 7.7.4
 
   email-addresses@5.0.0: {}
@@ -5501,7 +5501,7 @@ snapshots:
 
   glob@13.0.6:
     dependencies:
-      minimatch: 10.2.4
+      minimatch: 10.2.5
       minipass: 7.1.3
       path-scurry: 2.0.2
 
@@ -6196,7 +6196,7 @@ snapshots:
 
   minimalistic-assert@1.0.1: {}
 
-  minimatch@10.2.4:
+  minimatch@10.2.5:
     dependencies:
       brace-expansion: 5.0.5
 
@@ -6608,7 +6608,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.104.7(typanion@3.14.0):
+  renovate@43.104.8(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1021.0
       '@aws-sdk/client-ec2': 3.1021.0
@@ -6692,7 +6692,7 @@ snapshots:
       luxon: 3.7.2
       markdown-it: 14.1.1
       markdown-table: 3.0.4
-      minimatch: 10.2.4
+      minimatch: 10.2.5
       moo: 0.5.3
       ms: 2.1.3
       neotraverse: 0.6.18
