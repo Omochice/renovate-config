@@ -24,8 +24,8 @@ importers:
         specifier: 1.24.0
         version: 1.24.0
       renovate:
-        specifier: 43.104.8
-        version: 43.104.8(typanion@3.14.0)
+        specifier: 43.105.0
+        version: 43.105.0(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -1945,11 +1945,11 @@ packages:
     resolution: {integrity: sha512-OCzaRMK8HobtX8fp37uIVmL8CY1IGc/a6gLsDqz3quExFR09/U78HUzWYr7T31UEB6+Eu0/8dkVD5fFDOl9a8w==}
     engines: {node: '>= 8'}
 
-  jsonc-morph@0.3.2:
-    resolution: {integrity: sha512-FmHfnQ3OMs/+HosrGV8RHwerWXjTaco0hvBhn8+hP0gux06Jylynct4H0P+sjsK3QXRvN5zlq+SJxvXgfu8JfQ==}
+  jsonc-morph@0.3.3:
+    resolution: {integrity: sha512-YljoHRXfZacx4utaktqGlz8p9xJJaV12WxciEpf4+g+8jVk0QNmxpxStkXVwjTnJZr9EAK4TT5TzdCO5M2i7rw==}
 
-  jsonc-weaver@0.2.2:
-    resolution: {integrity: sha512-fDO1+8cpEFGlw42kvEqh/HAnXd47Lv19mWQaR30p2k6wOwfL4Dx/B2f8reaQepBc1aupBIOTwWmhThFUgv9zLQ==}
+  jsonc-weaver@0.2.4:
+    resolution: {integrity: sha512-aIKK8SOg+TdBdeML4MB++phUEdS7KWZxuaPPjxUSat8Kc/2A+2AoxmAGhvbVajNjqsgSX4dhjfCJq3QlE/NSCg==}
 
   jsonfile@6.2.0:
     resolution: {integrity: sha512-FGuPw30AdOIUTRMC2OMRtQV+jkVj2cfPqSeWXv1NEAJ1qZ5zb1X6z1mFhbfOB/iy3ssJCD+3KuZ8r8C3uVFlAg==}
@@ -2583,9 +2583,6 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  re2@1.23.3:
-    resolution: {integrity: sha512-5jh686rmj/8dYpBo72XYgwzgG8Y9HNDATYZ1x01gqZ6FvXVUP33VZ0+6GLCeavaNywz3OkXBU8iNX7LjiuisPg==}
-
   re2@1.24.0:
     resolution: {integrity: sha512-pBm6cMaOb0Yb0kg0Sfw/k4LwDMkPScb/NVd7GrEllDwfsPZstsZIo93A6Nn0wZuWJw3h57GdzkrOk81EofKY/g==}
 
@@ -2616,8 +2613,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.104.8:
-    resolution: {integrity: sha512-P6iI8yu6Cy1gewPABZ0FlPmTQUENjc5APa7n2PpvW5URXgyfeCnwSFZu4jxKvCVYQSxWe21WTFGrWO0ebaRDGQ==}
+  renovate@43.105.0:
+    resolution: {integrity: sha512-8+qfhKNNQUnmt6QOmR0qwTWvIWGhojL7Kytd0bHKYBRvur05G8KiPdkhWsAf06NOLUyai8/x0CwcMpivMImbpQ==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5738,11 +5735,11 @@ snapshots:
 
   jsonata@2.1.0: {}
 
-  jsonc-morph@0.3.2: {}
+  jsonc-morph@0.3.3: {}
 
-  jsonc-weaver@0.2.2:
+  jsonc-weaver@0.2.4:
     dependencies:
-      jsonc-morph: 0.3.2
+      jsonc-morph: 0.3.3
 
   jsonfile@6.2.0:
     dependencies:
@@ -6530,15 +6527,6 @@ snapshots:
       strip-json-comments: 2.0.1
     optional: true
 
-  re2@1.23.3:
-    dependencies:
-      install-artifact-from-github: 1.4.0
-      nan: 2.26.2
-      node-gyp: 12.2.0
-    transitivePeerDependencies:
-      - supports-color
-    optional: true
-
   re2@1.24.0:
     dependencies:
       install-artifact-from-github: 1.4.0
@@ -6608,7 +6596,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.104.8(typanion@3.14.0):
+  renovate@43.105.0(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1021.0
       '@aws-sdk/client-ec2': 3.1021.0
@@ -6687,7 +6675,7 @@ snapshots:
       json-stringify-pretty-compact: 4.0.0
       json5: 2.2.3
       jsonata: 2.1.0
-      jsonc-weaver: 0.2.2
+      jsonc-weaver: 0.2.4
       klona: 2.0.6
       luxon: 3.7.2
       markdown-it: 14.1.1
@@ -6729,7 +6717,7 @@ snapshots:
     optionalDependencies:
       better-sqlite3: 12.8.0
       openpgp: 6.3.0
-      re2: 1.23.3
+      re2: 1.24.0
     transitivePeerDependencies:
       - '@node-rs/xxhash'
       - aws-crt
