@@ -24,8 +24,8 @@ importers:
         specifier: 1.24.0
         version: 1.24.0
       renovate:
-        specifier: 43.113.0
-        version: 43.113.0(typanion@3.14.0)
+        specifier: 43.115.1
+        version: 43.115.1(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -743,6 +743,12 @@ packages:
 
   '@sec-ant/readable-stream@0.4.1':
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
+
+  '@simple-git/args-pathspec@1.0.3':
+    resolution: {integrity: sha512-ngJMaHlsWDTfjyq9F3VIQ8b7NXbBLq5j9i5bJ6XLYtD6qlDXT7fdKY2KscWWUF8t18xx052Y/PUO1K1TRc9yKA==}
+
+  '@simple-git/argv-parser@1.1.1':
+    resolution: {integrity: sha512-Q9lBcfQ+VQCpQqGJFHe5yooOS5hGdLFFbJ5R+R5aDsnkPCahtn1hSkMcORX65J2Z5lxSkD0lQorMsncuBQxYUw==}
 
   '@sindresorhus/is@4.6.0':
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
@@ -2455,8 +2461,8 @@ packages:
     resolution: {integrity: sha512-tkAQEw8ysMzmkhgw8k+1U/iPhWNhykKnSk4Rd5zLoPJCuJaGRPo6YposrZgaxHKzDHdDWWZvE/Sk7hsL2X/CpQ==}
     engines: {node: '>=18'}
 
-  p-queue@9.1.1:
-    resolution: {integrity: sha512-yQS1vV2V7Q14MQrgD8jMNY5owPuGgVHVdSK8NqmKpOVajnjbaeMa6uLOzTALPtvJ7Vo4bw0BGsw7qfUT8z24Ig==}
+  p-queue@9.1.2:
+    resolution: {integrity: sha512-ktsDOALzTYTWWF1PbkNVg2rOt+HaOaMWJMUnt7T3qf5tvZ1L8dBW3tObzprBcXNMKkwj+yFSLqHso0x+UFcJXw==}
     engines: {node: '>=20'}
 
   p-throttle@8.1.0:
@@ -2613,8 +2619,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.113.0:
-    resolution: {integrity: sha512-37h3rlk4NZa2WFVIFuBwc9edoGpSGEjVTS3bCMsaZLXqIJ7WBjruhrgh3klFT4rGMDj39Y+pP5YKy4r2WpfHGw==}
+  renovate@43.115.1:
+    resolution: {integrity: sha512-/yVF+u6zKqPgZvQ9zzIpcSydEmQAlrEoeXbJz+jwK/5RHPQ0Bxgtv3Rk5SloUTm6XjspfNsN+fBSfXlxb7XMOA==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -2740,8 +2746,8 @@ packages:
   simple-get@4.0.1:
     resolution: {integrity: sha512-brv7p5WgH0jmQJr1ZDDfKDOSeWWg+OVypG99A/5vYGPqJ6pxiaHLy8nxtFjBA7oMa01ebA9gfh1uMCFqOuXxvA==}
 
-  simple-git@3.33.0:
-    resolution: {integrity: sha512-D4V/tGC2sjsoNhoMybKyGoE+v8A60hRawKQ1iFRA1zwuDgGZCBJ4ByOzZ5J8joBbi4Oam0qiPH+GhzmSBwbJng==}
+  simple-git@3.35.2:
+    resolution: {integrity: sha512-ZMjl06lzTm1EScxEGuM6+mEX+NQd14h/B3x0vWU+YOXAMF8sicyi1K4cjTfj5is+35ChJEHDl1EjypzYFWH2FA==}
 
   slugify@1.6.9:
     resolution: {integrity: sha512-vZ7rfeehZui7wQs438JXBckYLkIIdfHOXsaVEUMyS5fHo1483l1bMdo0EDSWYclY0yZKFOipDy4KHuKs6ssvdg==}
@@ -4376,6 +4382,12 @@ snapshots:
   '@rolldown/pluginutils@1.0.0-rc.12': {}
 
   '@sec-ant/readable-stream@0.4.1': {}
+
+  '@simple-git/args-pathspec@1.0.3': {}
+
+  '@simple-git/argv-parser@1.1.1':
+    dependencies:
+      '@simple-git/args-pathspec': 1.0.3
 
   '@sindresorhus/is@4.6.0': {}
 
@@ -6393,7 +6405,7 @@ snapshots:
 
   p-map@7.0.4: {}
 
-  p-queue@9.1.1:
+  p-queue@9.1.2:
     dependencies:
       eventemitter3: 5.0.4
       p-timeout: 7.0.1
@@ -6602,7 +6614,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.113.0(typanion@3.14.0):
+  renovate@43.115.1(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1021.0
       '@aws-sdk/client-ec2': 3.1021.0
@@ -6693,7 +6705,7 @@ snapshots:
       node-html-parser: 7.1.0
       p-all: 5.0.1
       p-map: 7.0.4
-      p-queue: 9.1.1
+      p-queue: 9.1.2
       p-throttle: 8.1.0
       parse-link-header: 2.0.0
       prettier: 3.8.1
@@ -6708,7 +6720,7 @@ snapshots:
       semver-stable: 3.0.0
       semver-utils: 1.1.4
       shlex: 3.0.0
-      simple-git: 3.33.0
+      simple-git: 3.35.2
       slugify: 1.6.9
       source-map-support: 0.5.21
       strip-json-comments: 5.0.3
@@ -6873,10 +6885,12 @@ snapshots:
       simple-concat: 1.0.1
     optional: true
 
-  simple-git@3.33.0:
+  simple-git@3.35.2:
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
+      '@simple-git/args-pathspec': 1.0.3
+      '@simple-git/argv-parser': 1.1.1
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
