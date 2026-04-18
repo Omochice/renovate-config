@@ -24,8 +24,8 @@ importers:
         specifier: 1.24.0
         version: 1.24.0
       renovate:
-        specifier: 43.119.0
-        version: 43.119.0(typanion@3.14.0)
+        specifier: 43.120.1
+        version: 43.120.1(typanion@3.14.0)
       sort-package-json:
         specifier: 3.6.1
         version: 3.6.1
@@ -2074,10 +2074,6 @@ packages:
     resolution: {integrity: sha512-ozCC6gdQ+glXOQsveKD0YsDy8DSQFjDTz4zyzEHNV5+JP5D62LmfDZ6o1cycFx9ouG940M5dE8C8CTewdj2YWQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  lru-cache@11.3.0:
-    resolution: {integrity: sha512-sr8xPKE25m6vJVcrdn6NxtC0fVfuPowbscLypegRgOm0yXSqr5JNHCAY3hnusdJ7HRBW04j6Ip4khvHU778DuQ==}
-    engines: {node: 20 || >=22}
-
   lru-cache@11.3.5:
     resolution: {integrity: sha512-NxVFwLAnrd9i7KUBxC4DrUhmgjzOs+1Qm50D3oF1/oL+r1NpZ4gA7xvG0/zJ8evR7zIKn4vLf7qTNduWFtCrRw==}
     engines: {node: 20 || >=22}
@@ -2623,8 +2619,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@43.119.0:
-    resolution: {integrity: sha512-KKCJ8vZLfDvqTaC6ADzU1ylgGA4T5Ra3KWT9svBCFAU80yyoyDTk/OqrXqJ8bE/s/I2NYOjhEIrapJMlRhL8ZQ==}
+  renovate@43.120.1:
+    resolution: {integrity: sha512-/nlieWO/XmFo9Jeq0vBHhSOXKymq2hTihyAaaA06oFQoXUL5o7XyrEMWTU8Xgf3DMDz5EVV+JJOpCMMH0uPLCA==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4038,7 +4034,7 @@ snapshots:
       agent-base: 7.1.4
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.6
-      lru-cache: 11.3.0
+      lru-cache: 11.3.5
       socks-proxy-agent: 8.0.5
     transitivePeerDependencies:
       - supports-color
@@ -5857,8 +5853,6 @@ snapshots:
 
   lowercase-keys@3.0.0: {}
 
-  lru-cache@11.3.0: {}
-
   lru-cache@11.3.5: {}
 
   luxon@3.7.2: {}
@@ -6620,7 +6614,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@43.119.0(typanion@3.14.0):
+  renovate@43.120.1(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1021.0
       '@aws-sdk/client-ec2': 3.1021.0
