@@ -24,7 +24,7 @@
     "jsonata": "2.1.0",
     "npm-run-all2": "8.0.4",
     "re2": "1.24.0",
-    "renovate": "43.129.0",
+    "renovate": "43.132.0",
     "sort-package-json": "3.6.1",
     "vitest": "4.1.4"
   },
