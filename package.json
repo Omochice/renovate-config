@@ -28,11 +28,11 @@
     "sort-package-json": "3.6.1",
     "vitest": "4.1.5"
   },
-  "packageManager": "pnpm@10.33.1",
+  "packageManager": "pnpm@10.33.2",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "10.33.1",
+      "version": "10.33.2",
       "onFail": "download"
     }
   },
