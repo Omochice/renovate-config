@@ -35,11 +35,5 @@
       "version": "11.1.1",
       "onFail": "download"
     }
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "re2",
-      "@biomejs/biome"
-    ]
   }
 }
