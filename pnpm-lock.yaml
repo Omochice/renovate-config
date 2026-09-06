@@ -223,8 +223,8 @@ importers:
         specifier: 1.26.1
         version: 1.26.1
       renovate:
-        specifier: 44.59.1
-        version: 44.59.1(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.59.3
+        version: 44.59.3(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.0.0
         version: 4.0.0
@@ -2449,8 +2449,8 @@ packages:
     resolution: {integrity: sha512-dYDWdjSl5RNb7SgPxGQcRU+GtvP7s2fpkrY0r432PcOIaZ0/rBcxEZnQN67iJhFuQiVw754JDoPruPCNdGsbjg==}
     engines: {node: '>=12.0.0'}
 
-  protobufjs@8.7.2:
-    resolution: {integrity: sha512-oTVHV+oelUBtiu5iTuTNNZ0eLYsXSMxry4cgr30mayNkgIZL6qZ0IOQVPuSWGcyAaXKl/XgqwWHIC3a0khYVBA==}
+  protobufjs@8.8.0:
+    resolution: {integrity: sha512-N3xhQ5yyBx3vQq4gubBfASzYhJGNzeDbjqBpu61g7UVylsN/qyffU96TKWD3GbbLOKF82VGNRNvv1+BFgE31Eg==}
     engines: {node: '>=12.0.0'}
 
   protocols@2.0.2:
@@ -2505,8 +2505,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.59.1:
-    resolution: {integrity: sha512-MNgNdIqPHKGrbmk/ZnRB5umCzLRDP7GlVdY5z6e2ZOxxORAtNpunHYFtc+S93GeKxEmnf5v6ANny52TXDYYhlg==}
+  renovate@44.59.3:
+    resolution: {integrity: sha512-MN5xMvgxiErnQ3fbgxRA1qwF+aFIl6UzIfAoBEYWE4rvcmgVLyrZoPcKAz+TiX9Di+D2pliGj62scXkxXA9zdQ==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -5512,7 +5512,7 @@ snapshots:
       '@types/node': 26.4.0
       long: 5.3.2
 
-  protobufjs@8.7.2:
+  protobufjs@8.8.0:
     dependencies:
       long: 5.3.2
 
@@ -5596,7 +5596,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.59.1(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.59.3(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1117.0
       '@aws-sdk/client-ec2': 3.1117.0
@@ -5695,7 +5695,7 @@ snapshots:
       p-throttle: 8.1.0
       parse-link-header: 2.0.0
       prettier: 3.8.1
-      protobufjs: 8.7.2
+      protobufjs: 8.8.0
       punycode: 2.3.1
       remark: 15.0.1(supports-color@7.2.0)
       remark-gfm: 4.0.1(supports-color@7.2.0)
