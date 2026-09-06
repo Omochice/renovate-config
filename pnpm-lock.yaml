@@ -223,8 +223,8 @@ importers:
         specifier: 1.26.1
         version: 1.26.1
       renovate:
-        specifier: 44.61.3
-        version: 44.61.3(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.61.5
+        version: 44.61.5(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.0.0
         version: 4.0.0
@@ -1997,8 +1997,8 @@ packages:
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
-  markdown-it@14.3.0:
-    resolution: {integrity: sha512-RCEsPjR+sr0x+AuYp601tKTkgFG4YEPLCzHST3cQ/fhlJkqAkz1L2/Qbp1j9qw5SBwQHFBoW8+hoN5xssOF0Tw==}
+  markdown-it@14.3.1:
+    resolution: {integrity: sha512-4Ej49aYTDFIQ+uBkfX8GBvJGccoARxxPep+7aWTs55ozbjQJpW9M26Fe53vnGgvLeVzva/amzjQQaQu9w0vMhA==}
     hasBin: true
 
   markdown-table@3.0.4:
@@ -2505,8 +2505,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.61.3:
-    resolution: {integrity: sha512-QTA/fH92ha+MTEmCxTOEiEAf278Mxldvbz/fn60ccNvsI2CNbOALFh9KSpuQYBJUPfXtc5qJxNa36H1rP/LOtg==}
+  renovate@44.61.5:
+    resolution: {integrity: sha512-fapCUAKZNVn61Lgcsg1wclEob79jGLOoIQr3JqeXGryCzXzpMNr32fdAo7jjITHvS/e6jPxm1li5u6mQRYy1RQ==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -4922,7 +4922,7 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  markdown-it@14.3.0:
+  markdown-it@14.3.1:
     dependencies:
       argparse: 2.0.1
       entities: 4.5.0
@@ -5596,7 +5596,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.61.3(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.61.5(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1117.0
       '@aws-sdk/client-ec2': 3.1117.0
@@ -5682,7 +5682,7 @@ snapshots:
       klona: 2.0.6
       lru-cache: 11.5.2
       luxon: 3.7.2
-      markdown-it: 14.3.0
+      markdown-it: 14.3.1
       markdown-table: 3.0.4
       minimatch: 10.2.6
       moo: 0.5.3
