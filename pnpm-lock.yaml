@@ -223,8 +223,8 @@ importers:
         specifier: 1.26.1
         version: 1.26.1
       renovate:
-        specifier: 44.65.5
-        version: 44.65.5(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.68.0
+        version: 44.68.0(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.0.0
         version: 4.0.0
@@ -1725,8 +1725,8 @@ packages:
   humanize-ms@1.2.1:
     resolution: {integrity: sha512-Fl70vYtsAFb/C06PTS9dZBo7ihau+Tu/DNCk/OyHhea07S+aeMWpFFkUaXRa8fI+ScZbEI8dfSxwY7gxZ9SAVQ==}
 
-  ignore@7.0.6:
-    resolution: {integrity: sha512-BAg6QkE8W+TuQLrrw0Ugr7HegXduRuuj8/ti2kSOc+jz1dmx8/WNcjr6XGnq5YpDWxFwwaavqD0+jIUOKelTsw==}
+  ignore@7.0.8:
+    resolution: {integrity: sha512-YYNsSlXBjMk92SKnkwvB5LOVSa6OznlFUGcsvrFgNJbJCd0M1XKeFVRc8ZByeCqz32FivYNHJVooLmdqrmvp/Q==}
     engines: {node: '>= 4'}
 
   import-in-the-middle@3.3.3:
@@ -2505,8 +2505,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.65.5:
-    resolution: {integrity: sha512-vZrrAL/+Rr+v9cGv24hYlLy1HnpUdH6h69KH+VQWtUvtImlYuM2jnzqerUa54gEAu5GDXIiugu5fgT59SXxx3w==}
+  renovate@44.68.0:
+    resolution: {integrity: sha512-mNC3/NzTpW95SXcKAJMtwMS9cVcSdFD5nSBOQpGO6WZu9C0vb+2SdieuAeCGXjFY9MO+Qg0uwyzNmt0eYmap2A==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3019,6 +3019,9 @@ packages:
 
   zod@4.5.2:
     resolution: {integrity: sha512-XkYXCol10+ba/6F/cueWV+TezUeOqXW0hdeJt5CdXjTYeAgAQg5N03RQdJ80mhfFE72+pblvYMW4wy2Qp4Qbrg==}
+
+  zod@4.5.4:
+    resolution: {integrity: sha512-sC95tT5iHHH9gtpj6A81kh+NEaRAUFN+qlUPDUbRfOMvNf5QCBqsb3WgvnpVtK5Y+4UfA6KqufotuTvMGiTlsA==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -4716,7 +4719,7 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  ignore@7.0.6: {}
+  ignore@7.0.8: {}
 
   import-in-the-middle@3.3.3:
     dependencies:
@@ -5596,7 +5599,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.65.5(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.68.0(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1117.0
       '@aws-sdk/client-ec2': 3.1117.0
@@ -5672,7 +5675,7 @@ snapshots:
       got: 14.6.6
       graph-data-structure: 4.5.0
       handlebars: 4.7.9
-      ignore: 7.0.6
+      ignore: 7.0.8
       ini: 6.0.0
       json-dup-key-validator: 1.0.3
       json-stringify-pretty-compact: 4.0.0
@@ -5719,7 +5722,7 @@ snapshots:
       xmldoc: 2.0.3
       yaml: 2.9.0
       yauzl: 3.4.0
-      zod: 4.5.2
+      zod: 4.5.4
     optionalDependencies:
       openpgp: 6.3.1
       re2: 1.26.1
@@ -6193,5 +6196,7 @@ snapshots:
   yocto-queue@1.2.2: {}
 
   zod@4.5.2: {}
+
+  zod@4.5.4: {}
 
   zwitch@2.0.4: {}
