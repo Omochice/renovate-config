@@ -223,8 +223,8 @@ importers:
         specifier: 1.26.1
         version: 1.26.1
       renovate:
-        specifier: 44.79.0
-        version: 44.79.0(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.79.2
+        version: 44.79.2(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.0.0
         version: 4.0.0
@@ -1259,6 +1259,10 @@ packages:
   commander@15.0.0:
     resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
     engines: {node: '>=22.12.0'}
+
+  common-tags@1.8.2:
+    resolution: {integrity: sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==}
+    engines: {node: '>=4.0.0'}
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
@@ -2501,8 +2505,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.79.0:
-    resolution: {integrity: sha512-vkh/NWX+X+c0vuv3+NKeXJ7g7q9u/E6gQRCvHOklyM3cymZ3boaRZyUYJ0GxkOHKXRB6qWQA6K/sVqmKNEe5zA==}
+  renovate@44.79.2:
+    resolution: {integrity: sha512-rIPpHkI2z/VCr9cy6/u3NAa6YqWRo9fogp1XpItZ7NpEiivh3ldD6Ue6JmzTSQhr5m7ngEEb+Pdqve7zLucL4A==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -4195,6 +4199,8 @@ snapshots:
 
   commander@15.0.0: {}
 
+  common-tags@1.8.2: {}
+
   concat-map@0.0.1:
     optional: true
 
@@ -5581,7 +5587,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.79.0(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.79.2(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1117.0
       '@aws-sdk/client-ec2': 3.1117.0
@@ -5634,6 +5640,7 @@ snapshots:
       changelog-filename-regex: 2.0.1
       clean-git-ref: 2.0.1
       commander: 15.0.0
+      common-tags: 1.8.2
       croner: 10.0.1
       cronstrue: 3.24.0
       deepmerge: 4.3.1
