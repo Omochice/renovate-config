@@ -223,8 +223,8 @@ importers:
         specifier: 1.26.1
         version: 1.26.1
       renovate:
-        specifier: 44.83.1
-        version: 44.83.1(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.88.0
+        version: 44.88.0(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.0.0
         version: 4.0.0
@@ -2247,8 +2247,8 @@ packages:
     engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     hasBin: true
 
-  node-html-parser@9.0.3:
-    resolution: {integrity: sha512-iaQ9rokcYNp99IY0h82q04Wtc27SObRT+OEytdJh0bFv2IN0fypnU63KUNVavkPSiwsmIELG1eUenajGhzrvpg==}
+  node-html-parser@9.0.4:
+    resolution: {integrity: sha512-reUSrZkF1rO7hEYe5mJwtbVcQ6mB5QrViCZH6Wv+iz3er/PA9Q50gol15dMLQRDfdli4VzqPMPR24HNRFgVKFw==}
 
   nopt@10.0.1:
     resolution: {integrity: sha512-df3sBr/6ax9hSGuC3CspvLlbnX8cP5L5nZwXF8cGN8l0zSWR6BvzmQ6jPUKjvo6+/xdpkNvEcucBNUdBeeV13g==}
@@ -2488,8 +2488,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.83.1:
-    resolution: {integrity: sha512-3o4vFwnQ4MLtZkn/PqM+HP6crA7hw9pSpKzb+ZYJwQ26DcMWmp3VhHKBBOHB4eS030+8ViZ6SrEiZPKyzOXxmA==}
+  renovate@44.88.0:
+    resolution: {integrity: sha512-vUfI3y4vpVvNYTVdVjYwIsZEh12YPe9vpBfmq6iaodTFzZ+QGn1KhZC5eWe6lMcNkHS78PKpqh65n7iCJXV8IQ==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -5291,7 +5291,7 @@ snapshots:
       undici: 8.10.0
       which: 7.0.0
 
-  node-html-parser@9.0.3:
+  node-html-parser@9.0.4:
     dependencies:
       css-select: 5.2.2
       entities: 8.1.0
@@ -5538,7 +5538,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.83.1(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.88.0(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1117.0
       '@aws-sdk/client-ec2': 3.1117.0
@@ -5631,7 +5631,7 @@ snapshots:
       moo: 0.5.3
       ms: 2.1.3
       neotraverse: 1.0.1
-      node-html-parser: 9.0.3
+      node-html-parser: 9.0.4
       p-all: 5.0.1
       p-map: 7.0.7
       p-queue: 9.3.3
