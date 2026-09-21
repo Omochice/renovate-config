@@ -182,8 +182,8 @@ importers:
         specifier: 1.26.1
         version: 1.26.1
       renovate:
-        specifier: 44.97.6
-        version: 44.97.6(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.101.2
+        version: 44.101.2(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.0.0
         version: 4.0.0
@@ -996,6 +996,10 @@ packages:
 
   adm-zip@0.6.0:
     resolution: {integrity: sha512-XleryMhbuksdKtofnWZ9Sk+4CUTbms4Mb/EU32SZwToAyZ5RgVos/ki8n+yr0LWHOGKuakbXTuuYNHLQjhddgg==}
+    engines: {node: '>=14.0'}
+
+  adm-zip@0.6.1:
+    resolution: {integrity: sha512-Xwrja8nx9e5o2N1my4DsKCeKpdrnACyr1wtbPxBDgGzKzKyE9kRtBFA8mWldI+RVlD7CBZNWY/wQ2+ydwOR6kQ==}
     engines: {node: '>=14.0'}
 
   ae-cvss-calculator@1.0.13:
@@ -2450,8 +2454,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.97.6:
-    resolution: {integrity: sha512-U2OE88jmgXsDB++59Aykr1qJBeuUAXawcP+qOfFZd8L+95ukn14bf22xYKSBbL02Hh8KMgGrcHCMR8qJRZYSMg==}
+  renovate@44.101.2:
+    resolution: {integrity: sha512-SfEMJDcNuU7FqiMW6XlrFbj2NrMszZFN1Ed5q4vkep0VvyzMHpPgvFpq44hqLVn35gIzjmELLTTixI+OQ1Kdkw==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3927,6 +3931,8 @@ snapshots:
   abbrev@5.0.0: {}
 
   adm-zip@0.6.0: {}
+
+  adm-zip@0.6.1: {}
 
   ae-cvss-calculator@1.0.13: {}
 
@@ -5502,7 +5508,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.97.6(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.101.2(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1117.0
       '@aws-sdk/client-ec2': 3.1117.0
@@ -5544,7 +5550,7 @@ snapshots:
       '@sindresorhus/is': 8.1.0
       '@yarnpkg/core': 4.9.1(typanion@3.14.0)
       '@yarnpkg/parsers': 3.1.0
-      adm-zip: 0.6.0
+      adm-zip: 0.6.1
       ae-cvss-calculator: 1.0.13
       agentkeepalive: 4.6.0
       async-mutex: 0.5.0
