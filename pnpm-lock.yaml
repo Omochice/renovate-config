@@ -182,8 +182,8 @@ importers:
         specifier: 1.26.1
         version: 1.26.1
       renovate:
-        specifier: 44.115.0
-        version: 44.115.0(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.115.1
+        version: 44.115.1(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.0.0
         version: 4.0.0
@@ -2381,8 +2381,8 @@ packages:
     resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier@3.9.7:
-    resolution: {integrity: sha512-T3mF5P7HFzZVLDQuCUNtJj6WK1pcpLMweMNUVwGb01bLNkH9AkKxtZvmInw8K6bnn2O3d6/5RHl6zSHiBAD0Og==}
+  prettier@3.9.8:
+    resolution: {integrity: sha512-WRFq3Wn3WId7LLROfMLdH7xaFr2jR62wU8nLO6rQUOLOxNZUviyJQs1M0iIhLexSFy+L+w0ch66wtoO2jRjG0A==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2450,8 +2450,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.115.0:
-    resolution: {integrity: sha512-cmEoc8KLGx6HvRriVpnTq8XkRhmKaExFyFnhQkfNW+ZsbHY9fdJXQVm47L8E7OZ+tCvX8Kn9qPRD1azlDxdVAg==}
+  renovate@44.115.1:
+    resolution: {integrity: sha512-ro3Gg8fY0+45D3d5VQTKVb01Y9wn4nZdGyUaXaCp9JcqkIxkL9uYY8fbLSM/kMLyp/3RyNNPQSKoTDnQ85VP0Q==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -5405,7 +5405,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier@3.9.7: {}
+  prettier@3.9.8: {}
 
   proc-log@7.0.0: {}
 
@@ -5507,7 +5507,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.115.0(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.115.1(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1117.0
       '@aws-sdk/client-ec2': 3.1117.0
@@ -5606,7 +5606,7 @@ snapshots:
       p-queue: 9.3.3
       p-throttle: 8.1.1
       parse-link-header: 2.0.0
-      prettier: 3.9.7
+      prettier: 3.9.8
       protobufjs: 8.8.0
       punycode: 2.3.1
       remark: 15.0.1(supports-color@7.2.0)
