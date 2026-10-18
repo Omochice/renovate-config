@@ -182,8 +182,8 @@ importers:
         specifier: 1.27.0
         version: 1.27.0
       renovate:
-        specifier: 44.160.0
-        version: 44.160.0(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.160.1
+        version: 44.160.1(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.0.0
         version: 4.0.0
@@ -1611,8 +1611,8 @@ packages:
     resolution: {integrity: sha512-DpLKbNU4WylpxJykQujfCcwYWiV/Jhm50Goo0wrVILAv5jOr9d+H+UR3PhSCD2rCCEIg0uc+G+muBTwD54JhDQ==}
     engines: {node: '>= 0.4'}
 
-  google-auth-library@11.1.0:
-    resolution: {integrity: sha512-YIBq5KNoHQrZ9PM4PeodDBqqBGlSTIxh1zibN8u3zNIO9UJg8gvKuCpdKV7fWXhsZ2zRkU6FhGrgKNgLJ2IRgw==}
+  google-auth-library@11.2.0:
+    resolution: {integrity: sha512-R9/Dwc3swSur04RnizQ6EBUmmcno2cC5cAKtrG/C+pY+W7c5l6rSnFWgMkR7NSYj1n6XWmb/KhcjxGslWm4yIA==}
     engines: {node: '>=22'}
 
   google-logging-utils@1.1.3:
@@ -2464,8 +2464,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.160.0:
-    resolution: {integrity: sha512-1gBVB3JWbHJWWebYRRFLV2JTxVf7kEq/yKDXRon7OMLdSFowlsDZVa+i/GaZkltDA8GMV7jpOJ5UPkJz5dEG7g==}
+  renovate@44.160.1:
+    resolution: {integrity: sha512-+xVUAube5LmHxNxATQORbwi0zslNAW5N6fI7VQzIhpFQY2PtybNw5KKCb7HT9KL2MNpXBH5v6vU6Z2YY94WCOw==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -4543,7 +4543,7 @@ snapshots:
       define-properties: 1.2.1
       gopd: 1.2.0
 
-  google-auth-library@11.1.0(supports-color@7.2.0):
+  google-auth-library@11.2.0(supports-color@7.2.0):
     dependencies:
       base64-js: 1.5.1
       ecdsa-sig-formatter: 1.0.11
@@ -5531,7 +5531,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.160.0(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.160.1(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5605,7 +5605,7 @@ snapshots:
       github-url-from-git: 1.5.0
       glob: 13.0.6
       global-agent: 3.0.0
-      google-auth-library: 11.1.0(supports-color@7.2.0)
+      google-auth-library: 11.2.0(supports-color@7.2.0)
       got: 16.0.0
       graph-data-structure: 4.5.0
       handlebars: 4.7.10
