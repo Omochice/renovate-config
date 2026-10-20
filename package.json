@@ -25,7 +25,7 @@
     "npm-run-all2": "9.0.3",
     "re2": "1.27.0",
     "renovate": "44.165.3",
-    "sort-package-json": "4.0.0",
+    "sort-package-json": "4.1.0",
     "vitest": "5.0.5"
   },
   "packageManager": "pnpm@12.13.0",
