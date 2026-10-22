@@ -182,8 +182,8 @@ importers:
         specifier: 1.27.0
         version: 1.27.0
       renovate:
-        specifier: 44.167.1
-        version: 44.167.1(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.167.5
+        version: 44.167.5(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.1.0
         version: 4.1.0
@@ -713,8 +713,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@renovatebot/base-image@13.133.0':
-    resolution: {integrity: sha512-+rdKTOa8k0p22Y/OCGCWCzaTsc6EI/SisCjMUUTvSZRPwl1R3AISmC5df5N9RZAT40YTorE5kCNM1ZLzhdFIFQ==}
+  '@renovatebot/base-image@13.133.1':
+    resolution: {integrity: sha512-LWwR+lXO5QzQUY6cnDT693Nbm7i6cVcP4rNIhJjFioDhx/+0LyPFOIqcxLYQfhTkHK7j4Uwc8sTssSBT4JKMLw==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -722,8 +722,8 @@ packages:
       zod:
         optional: true
 
-  '@renovatebot/detect-tools@4.0.21':
-    resolution: {integrity: sha512-1+yfO/pivwJu1m8180pfxHSVlx9ByZVDUa9xcvRLBraAFTn+ziDeOBoKVqpr4lElYwZ6kBNfE945dCVewz6edQ==}
+  '@renovatebot/detect-tools@4.0.22':
+    resolution: {integrity: sha512-WmTPjbvMvrpv2sGaCyMNlBCt+R1pp372mkyFkNchl6b15/dvtRD99JlQ54hcSU/fXP8xNXbHO+4gFZSZTM3DpQ==}
     engines: {node: '>=22.12.0', pnpm: '>=10.0.0'}
 
   '@renovatebot/good-enough-parser@2.0.1':
@@ -2313,8 +2313,12 @@ packages:
     resolution: {integrity: sha512-HaSJ9hNZOxTUSATfB48Qi7U2+GF1eECjI39nkeLmCWQrSOYr1z4NepR0rpWiZO77pYwUWU2cJ5NIgsmoFCsYDQ==}
     engines: {node: '>=18'}
 
-  p-queue@9.3.4:
-    resolution: {integrity: sha512-bpTeG3CuPiOgPcDqn51QUsRYshkiKiaG+hP49tCGI0+nT92h7rqD4LPKZzP8kwab/OniQf+ntA4ta6yCp1eA0Q==}
+  p-map@7.1.1:
+    resolution: {integrity: sha512-6Lh3jQPLthYujSrlw6ccWXBGZTkoTCz27Hd92g79LH/kjAbgoEu0t442cCCNbegPSJsA0lwDX8z0bcKtkpA32g==}
+    engines: {node: '>=18'}
+
+  p-queue@9.3.5:
+    resolution: {integrity: sha512-Lki/zhXFVmDhesBUn/yHRLW9Bte7mE7xoFHzTR8sIomV7a2z+LxYAPkGvdfidNiu4fKSfjtawixxSHcZci5QcQ==}
     engines: {node: '>=20'}
 
   p-throttle@8.1.1:
@@ -2410,8 +2414,8 @@ packages:
     resolution: {integrity: sha512-dYDWdjSl5RNb7SgPxGQcRU+GtvP7s2fpkrY0r432PcOIaZ0/rBcxEZnQN67iJhFuQiVw754JDoPruPCNdGsbjg==}
     engines: {node: '>=12.0.0'}
 
-  protobufjs@8.8.0:
-    resolution: {integrity: sha512-N3xhQ5yyBx3vQq4gubBfASzYhJGNzeDbjqBpu61g7UVylsN/qyffU96TKWD3GbbLOKF82VGNRNvv1+BFgE31Eg==}
+  protobufjs@8.8.1:
+    resolution: {integrity: sha512-d9e9179bjXSJdpJ3+R9fP8hzXsnKLyxTjHLG1dUzje8a27pPyXCe6PrcRtgx2rjoM3IZzHd2vAs+6J/BsO1k7Q==}
     engines: {node: '>=12.0.0'}
 
   protocols@2.0.2:
@@ -2466,8 +2470,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.167.1:
-    resolution: {integrity: sha512-67NVyBn7vm7EhS+p1Pof3jXYdvsSTq9sVlblJjfEq5E88KorYoi1eHlX+ownRQUNt8AZGb+NvvCy9K1kC2J/lA==}
+  renovate@44.167.5:
+    resolution: {integrity: sha512-wo5aqWZxcFebnVqKjyfymHkpTf+SIMpYEgop9uiUKPFSk5K5Hf+ukPSU6M9GhL2RulH2j34cdCNPhf6s5oLKmg==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -2974,8 +2978,8 @@ packages:
     resolution: {integrity: sha512-xYqdZFUK/VYazNl/oCDYN+3WloWQwMfZxBoiNt6qNyk+xfOdi598muWE42rNZFp1kNOiqW936q5RhUdnpqElSg==}
     engines: {node: '>=18'}
 
-  zod@4.6.5:
-    resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -3308,9 +3312,9 @@ snapshots:
     dependencies:
       fs-extra: 11.3.0
 
-  '@containerbase/base@14.42.0(zod@4.6.5)':
+  '@containerbase/base@14.42.0(zod@4.6.6)':
     optionalDependencies:
-      zod: 4.6.5
+      zod: 4.6.6
 
   '@grpc/grpc-js@1.14.5':
     dependencies:
@@ -3651,18 +3655,18 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
 
-  '@renovatebot/base-image@13.133.0(zod@4.6.5)':
+  '@renovatebot/base-image@13.133.1(zod@4.6.6)':
     dependencies:
-      '@containerbase/base': 14.42.0(zod@4.6.5)
+      '@containerbase/base': 14.42.0(zod@4.6.6)
     optionalDependencies:
-      zod: 4.6.5
+      zod: 4.6.6
 
-  '@renovatebot/detect-tools@4.0.21':
+  '@renovatebot/detect-tools@4.0.22':
     dependencies:
       fs-extra: 11.4.1
       toml-eslint-parser: 1.0.3
       upath: 3.0.8
-      zod: 4.6.5
+      zod: 4.6.6
 
   '@renovatebot/good-enough-parser@2.0.1':
     dependencies:
@@ -5359,7 +5363,9 @@ snapshots:
 
   p-map@7.1.0: {}
 
-  p-queue@9.3.4:
+  p-map@7.1.1: {}
+
+  p-queue@9.3.5:
     dependencies:
       eventemitter3: 5.0.4
       p-timeout: 7.0.2
@@ -5449,7 +5455,7 @@ snapshots:
       '@types/node': 26.6.2
       long: 5.3.2
 
-  protobufjs@8.8.0:
+  protobufjs@8.8.1:
     dependencies:
       long: 5.3.2
 
@@ -5533,7 +5539,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.167.1(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.167.5(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5566,8 +5572,8 @@ snapshots:
       '@pnpm/parse-overrides': 1001.0.4
       '@qnighy/marshal': 0.1.3
       '@redis/client': 6.3.0(@opentelemetry/api@1.9.1)
-      '@renovatebot/base-image': 13.133.0(zod@4.6.5)
-      '@renovatebot/detect-tools': 4.0.21
+      '@renovatebot/base-image': 13.133.1(zod@4.6.6)
+      '@renovatebot/detect-tools': 4.0.22
       '@renovatebot/good-enough-parser': 2.0.1
       '@renovatebot/osv-offline': 3.0.12(supports-color@7.2.0)
       '@renovatebot/pep440': 5.0.1
@@ -5628,12 +5634,12 @@ snapshots:
       neotraverse: 1.0.1
       node-html-parser: 9.0.4
       p-all: 5.0.1
-      p-map: 7.1.0
-      p-queue: 9.3.4
+      p-map: 7.1.1
+      p-queue: 9.3.5
       p-throttle: 8.1.1
       parse-link-header: 2.0.0
       prettier: 3.9.10
-      protobufjs: 8.8.0
+      protobufjs: 8.8.1
       punycode: 2.3.1
       remark: 15.0.1(supports-color@7.2.0)
       remark-gfm: 4.0.1(supports-color@7.2.0)
@@ -5656,7 +5662,7 @@ snapshots:
       xmldoc: 3.0.0
       yaml: 2.9.1
       yauzl: 3.4.0
-      zod: 4.6.5
+      zod: 4.6.6
     optionalDependencies:
       openpgp: 6.3.2
       re2: 1.27.0
@@ -6116,6 +6122,6 @@ snapshots:
 
   yoctocolors@2.2.0: {}
 
-  zod@4.6.5: {}
+  zod@4.6.6: {}
 
   zwitch@2.0.4: {}
