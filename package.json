@@ -22,7 +22,7 @@
     "@biomejs/biome": "2.5.15",
     "dedent": "1.7.2",
     "jsonata": "2.2.2",
-    "npm-run-all2": "9.0.3",
+    "npm-run-all2": "9.0.4",
     "re2": "1.27.0",
     "renovate": "44.175.5",
     "sort-package-json": "4.1.0",
