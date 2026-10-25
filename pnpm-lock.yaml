@@ -182,8 +182,8 @@ importers:
         specifier: 1.27.0
         version: 1.27.0
       renovate:
-        specifier: 44.175.5
-        version: 44.175.5(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.176.2
+        version: 44.176.2(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.1.0
         version: 4.1.0
@@ -395,8 +395,8 @@ packages:
   '@cdktf/hcl2json@0.21.0':
     resolution: {integrity: sha512-cwX3i/mSJI/cRrtqwEPRfawB7pXgNioriSlkvou8LWiCrrcDe9ZtTbAbu8W1tEJQpe1pnX9VEgpzf/BbM7xF8Q==}
 
-  '@containerbase/base@14.46.0':
-    resolution: {integrity: sha512-9EKZSxOxJc351SrMF/MqeLUsvrTsoRqc7McVdg7/OoroOOm3KDbUyMO4EckMh3EJ4AsZ1VW+ylwpfxyO4ZBZ4g==}
+  '@containerbase/base@14.49.0':
+    resolution: {integrity: sha512-4CaFLifAV7EH3eeZDdhN0qPisXm50qQaYu/ueaXU+lTbAQRCN7Ncfg5D3DQVLGQgEXOZ61PgEocbVL172jO6/A==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -725,8 +725,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@renovatebot/base-image@13.138.2':
-    resolution: {integrity: sha512-SnL3n+WXYrveaU86eyRxpLG/nOP7w5N1y6dLzW1xhoLHkyO4Dg/LyCnye36hPACzIytWTdgEwIw40AGqnjKL4w==}
+  '@renovatebot/base-image@13.139.1':
+    resolution: {integrity: sha512-o86Yh6XSBQc8nIwvVMphKfHYo6rUltxRss6QrkVi5C1lYSe+vHFnsyF2VtIax0oEt/WUxBJ4AYt1sPPXAIbTUw==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -1068,8 +1068,8 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
-  argparse@3.0.2:
-    resolution: {integrity: sha512-mFdDM6WqWKraGLsVb+C9CahPnzTXOefAOLq3jYcca2YZ8bEWpr++Tzj+zSaKW9+X9L5uSxcm1AZ3Y6aZJ09OhQ==}
+  argparse@3.0.4:
+    resolution: {integrity: sha512-fwWK3Zq22l4XJJjx5mcBHGikIk+hJqO+32dPm0Jur7+rtG5x1scOjSfdT9ZKeWHPpsya/l0HHK4tDImBkTrtvA==}
 
   assertion-error@2.0.1:
     resolution: {integrity: sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==}
@@ -1980,8 +1980,8 @@ packages:
   magic-string@1.4.3:
     resolution: {integrity: sha512-z12OxmaPGE0F4xlpGdjuAUckipLpQlTAuAmyGhNoD7ODpYUzvDfvtxUbjM/jwznyP178oju/KDdyi220wNJ0RQ==}
 
-  markdown-it@15.0.2:
-    resolution: {integrity: sha512-q4IGxMv56jCqT4OCRCADBoDP3LO4MhmTXjFbphHPXs4g3j9Xg5RDnxqN8IF/3vIWEU+VCnUq+7JUg/cfy2E6Qw==}
+  markdown-it@15.0.3:
+    resolution: {integrity: sha512-+Az7Ojz3iRGu8KYMvJ6xVhvrxP3eE+vEtJX75Ow88XBpcQNV/0lGX5ZynIIBftREo4DC2jsveAMDaeltmm8QvQ==}
     hasBin: true
 
   markdown-table@3.0.4:
@@ -2478,8 +2478,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.175.5:
-    resolution: {integrity: sha512-LUGEctJ/xmEZrwAmLt3iohtFUXIyKX2iNLdU9JiB6DFMBBY9L4Avvv8404VV0o8P279gKgQqqjHzcCJDuhSJZg==}
+  renovate@44.176.2:
+    resolution: {integrity: sha512-vdq/kMWY91UgerWK8YY/G4UCDY5EmoDb1bb+aANd9333K5o/kz+uEJTTDqT26xlxmj8RWsxQUnQVYz3pkHCuyw==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3328,7 +3328,7 @@ snapshots:
     dependencies:
       fs-extra: 11.3.0
 
-  '@containerbase/base@14.46.0(zod@4.6.7)':
+  '@containerbase/base@14.49.0(zod@4.6.7)':
     dependencies:
       semver: 7.8.5
     optionalDependencies:
@@ -3673,9 +3673,9 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
 
-  '@renovatebot/base-image@13.138.2(zod@4.6.7)':
+  '@renovatebot/base-image@13.139.1(zod@4.6.7)':
     dependencies:
-      '@containerbase/base': 14.46.0(zod@4.6.7)
+      '@containerbase/base': 14.49.0(zod@4.6.7)
     optionalDependencies:
       zod: 4.6.7
 
@@ -4001,7 +4001,7 @@ snapshots:
 
   argparse@2.0.1: {}
 
-  argparse@3.0.2: {}
+  argparse@3.0.4: {}
 
   assertion-error@2.0.1: {}
 
@@ -4886,9 +4886,9 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  markdown-it@15.0.2:
+  markdown-it@15.0.3:
     dependencies:
-      argparse: 3.0.2
+      argparse: 3.0.4
       entities: 8.1.0
       linkify-it: 6.1.0
       mdurl: 2.1.0
@@ -5555,7 +5555,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.175.5(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.176.2(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5588,7 +5588,7 @@ snapshots:
       '@pnpm/parse-overrides': 1001.0.4
       '@qnighy/marshal': 0.1.3
       '@redis/client': 6.3.0(@opentelemetry/api@1.9.1)
-      '@renovatebot/base-image': 13.138.2(zod@4.6.7)
+      '@renovatebot/base-image': 13.139.1(zod@4.6.7)
       '@renovatebot/detect-tools': 4.0.23
       '@renovatebot/good-enough-parser': 2.0.1
       '@renovatebot/osv-offline': 3.0.12(supports-color@7.2.0)
@@ -5642,7 +5642,7 @@ snapshots:
       jsonc-weaver: 0.3.1
       klona: 2.0.6
       luxon: 3.7.2
-      markdown-it: 15.0.2
+      markdown-it: 15.0.3
       markdown-table: 3.0.4
       minimatch: 10.2.6
       moo: 0.5.3
