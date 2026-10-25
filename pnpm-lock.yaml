@@ -182,8 +182,8 @@ importers:
         specifier: 1.27.0
         version: 1.27.0
       renovate:
-        specifier: 44.176.2
-        version: 44.176.2(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.176.4
+        version: 44.176.4(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.1.0
         version: 4.1.0
@@ -725,8 +725,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@renovatebot/base-image@13.139.1':
-    resolution: {integrity: sha512-o86Yh6XSBQc8nIwvVMphKfHYo6rUltxRss6QrkVi5C1lYSe+vHFnsyF2VtIax0oEt/WUxBJ4AYt1sPPXAIbTUw==}
+  '@renovatebot/base-image@13.139.3':
+    resolution: {integrity: sha512-abPyrfygtObmHWKVMsMH56VSUkpQa9moRqUwD8LMcVHTCk/3c9JOf8+0dPkWrW+NnTzwRHwlgXUipH+kKPIC9w==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -1649,8 +1649,8 @@ packages:
     resolution: {integrity: sha512-DG+DAAkRtno+oDr/GBsliAkhN9+zczOPM5qXk3efDZY3qvyRnZU+NwQlb/IOY6cSnxxTR9z3aHCcShJyjb0hJA==}
     engines: {node: '>=22'}
 
-  got@16.0.0:
-    resolution: {integrity: sha512-UtzSUebtRHHAUaNB/X37X1LQgHvdSrgXUIWGUBDhLu05CYtUr9svjeN6wmG333nzdJASFUjXMOuRBjZLf8oF1w==}
+  got@16.1.0:
+    resolution: {integrity: sha512-LOvohAoc/3O8+Gi3E5RRvamkyXmJq9ewj/cimmqQYn+Me5OKCVHKQI9ygF0O882l573lrpLbKZpsydYRttpDEg==}
     engines: {node: '>=22'}
 
   graceful-fs@4.2.11:
@@ -2478,8 +2478,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.176.2:
-    resolution: {integrity: sha512-vdq/kMWY91UgerWK8YY/G4UCDY5EmoDb1bb+aANd9333K5o/kz+uEJTTDqT26xlxmj8RWsxQUnQVYz3pkHCuyw==}
+  renovate@44.176.4:
+    resolution: {integrity: sha512-O3oYVCtG+D3PkwHNx6Nxbb+UFQLvN7yBeyEBIoJoO7U5WVKzGGprEADiDTYeGXcv6xZ3vF7Wdb40HrG/+6LjXQ==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -2752,6 +2752,10 @@ packages:
 
   uint8array-extras@1.5.0:
     resolution: {integrity: sha512-rvKSBiC5zqCCiDZ9kAOszZcDvdAHwwIKJG33Ykj43OKcWsnmcBRL09YTU4nOeHZ8Y2a7l1MgTd08SBe9A8Qj6A==}
+    engines: {node: '>=18'}
+
+  uint8array-extras@1.6.0:
+    resolution: {integrity: sha512-8iAasVS4wUx0gPLjH8Xtz2PeDzTSiy8QiLGu2DT3X5GU+egFEQhpnbtkehbAwjvDcxIERmCYcysiODFmE3Ud0Q==}
     engines: {node: '>=18'}
 
   underscore@1.13.8:
@@ -3673,7 +3677,7 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
 
-  '@renovatebot/base-image@13.139.1(zod@4.6.7)':
+  '@renovatebot/base-image@13.139.3(zod@4.6.7)':
     dependencies:
       '@containerbase/base': 14.49.0(zod@4.6.7)
     optionalDependencies:
@@ -4613,7 +4617,7 @@ snapshots:
       type-fest: 5.10.0
       uint8array-extras: 1.5.0
 
-  got@16.0.0:
+  got@16.1.0:
     dependencies:
       '@sindresorhus/is': 8.1.0
       byte-counter: 0.1.0
@@ -4624,7 +4628,7 @@ snapshots:
       lowercase-keys: 4.0.1
       responselike: 4.0.2
       type-fest: 5.10.0
-      uint8array-extras: 1.5.0
+      uint8array-extras: 1.6.0
 
   graceful-fs@4.2.11: {}
 
@@ -5555,7 +5559,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.176.2(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.176.4(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5588,7 +5592,7 @@ snapshots:
       '@pnpm/parse-overrides': 1001.0.4
       '@qnighy/marshal': 0.1.3
       '@redis/client': 6.3.0(@opentelemetry/api@1.9.1)
-      '@renovatebot/base-image': 13.139.1(zod@4.6.7)
+      '@renovatebot/base-image': 13.139.3(zod@4.6.7)
       '@renovatebot/detect-tools': 4.0.23
       '@renovatebot/good-enough-parser': 2.0.1
       '@renovatebot/osv-offline': 3.0.12(supports-color@7.2.0)
@@ -5630,7 +5634,7 @@ snapshots:
       glob: 13.0.6
       global-agent: 3.0.0
       google-auth-library: 11.3.0(supports-color@7.2.0)
-      got: 16.0.0
+      got: 16.1.0
       graph-data-structure: 4.5.0
       handlebars: 4.7.10
       ignore: 7.0.12
@@ -5963,6 +5967,8 @@ snapshots:
     optional: true
 
   uint8array-extras@1.5.0: {}
+
+  uint8array-extras@1.6.0: {}
 
   underscore@1.13.8: {}
 
