@@ -182,8 +182,8 @@ importers:
         specifier: 1.27.0
         version: 1.27.0
       renovate:
-        specifier: 44.190.0
-        version: 44.190.0(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.190.1
+        version: 44.190.1(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.1.0
         version: 4.1.0
@@ -395,8 +395,8 @@ packages:
   '@cdktf/hcl2json@0.21.0':
     resolution: {integrity: sha512-cwX3i/mSJI/cRrtqwEPRfawB7pXgNioriSlkvou8LWiCrrcDe9ZtTbAbu8W1tEJQpe1pnX9VEgpzf/BbM7xF8Q==}
 
-  '@containerbase/base@14.55.1':
-    resolution: {integrity: sha512-hb51SW56AUmOOmKCqk6GYg67AGY11ZnP8w7iJMBdUpANr1SdF3X3OVCBYapxZceYsWrxN+jfF87NOANPlCgh1g==}
+  '@containerbase/base@14.55.2':
+    resolution: {integrity: sha512-9GQ/fHyyx22DDCvx/QUTNF5owBNfLj6BgbKdnjR3S3LHEQhFPbXpmDdpnxhxo0vDWU+0dAelnhuso7m5VM6ZRw==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -725,8 +725,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@renovatebot/base-image@13.145.2':
-    resolution: {integrity: sha512-bG0sHMugpd1GkfLz9utYy8HPyqaFPhNnlK3osaiIwrTe+LTiK9eo2nNofykyoLGHSPDH8Oc4XDs82fyV6C3+gA==}
+  '@renovatebot/base-image@13.145.3':
+    resolution: {integrity: sha512-0oW5oAAMr8Jp/J5ElLPaidzskZhXLnDRm8npctTwZwqFnhE7/SBS15654t1Ew1IjlLAunGufdL/G4cQtLFFvAA==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -885,6 +885,7 @@ packages:
   '@smithy/core@3.37.0':
     resolution: {integrity: sha512-97imTcCyiPd8k0e9+ts/Sp0W65Dn9Ti357J7M09Ov4tI8Q1JDJVFSoAJtjEVKqfHEr3Pdo2jfolqKCaaiszH0g==}
     engines: {node: '>=18.0.0'}
+    deprecated: Deprecated due to a bug in custom logger data redaction. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/credential-provider-imds@4.5.2':
     resolution: {integrity: sha512-A9uSdn72ozbRUSit0eib0TW7nXuNPlaeM0zcGkJ+nE6tFcSDbnmtwoxbTCFBukVQcszDAyvsd7+rTduPTXpygg==}
@@ -2480,8 +2481,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.190.0:
-    resolution: {integrity: sha512-wLQM7aCsd863Cyef3sztwhZ7Yf+g1WPCTfWDmAJLb2t8sk12yEMa8Szevv3o/A2QsJbfQhafmEAtrkVvfYjp4w==}
+  renovate@44.190.1:
+    resolution: {integrity: sha512-/hzRJdktWhZ78+IB1P6r0hwZXrFdL7wnPbfDN69kdpJm63MyXLhzrvKXnhPlLnNr7VIztknqVM7mRS/L2jByiA==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3330,7 +3331,7 @@ snapshots:
     dependencies:
       fs-extra: 11.3.0
 
-  '@containerbase/base@14.55.1(zod@4.6.7)':
+  '@containerbase/base@14.55.2(zod@4.6.7)':
     dependencies:
       semver: 7.8.5
     optionalDependencies:
@@ -3675,9 +3676,9 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
 
-  '@renovatebot/base-image@13.145.2(zod@4.6.7)':
+  '@renovatebot/base-image@13.145.3(zod@4.6.7)':
     dependencies:
-      '@containerbase/base': 14.55.1(zod@4.6.7)
+      '@containerbase/base': 14.55.2(zod@4.6.7)
     optionalDependencies:
       zod: 4.6.7
 
@@ -5564,7 +5565,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.190.0(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.190.1(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5597,7 +5598,7 @@ snapshots:
       '@pnpm/parse-overrides': 1001.0.4
       '@qnighy/marshal': 0.1.3
       '@redis/client': 6.3.0(@opentelemetry/api@1.9.1)
-      '@renovatebot/base-image': 13.145.2(zod@4.6.7)
+      '@renovatebot/base-image': 13.145.3(zod@4.6.7)
       '@renovatebot/detect-tools': 4.0.23
       '@renovatebot/good-enough-parser': 2.0.1
       '@renovatebot/osv-offline': 4.1.2(supports-color@7.2.0)
