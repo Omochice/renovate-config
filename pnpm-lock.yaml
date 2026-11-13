@@ -182,8 +182,8 @@ importers:
         specifier: 1.27.1
         version: 1.27.1
       renovate:
-        specifier: 44.225.1
-        version: 44.225.1(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.226.2
+        version: 44.226.2(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.1.0
         version: 4.1.0
@@ -395,8 +395,8 @@ packages:
   '@cdktf/hcl2json@0.21.0':
     resolution: {integrity: sha512-cwX3i/mSJI/cRrtqwEPRfawB7pXgNioriSlkvou8LWiCrrcDe9ZtTbAbu8W1tEJQpe1pnX9VEgpzf/BbM7xF8Q==}
 
-  '@containerbase/base@14.66.13':
-    resolution: {integrity: sha512-mgPqAAtXlJnd5wtJG+9v+nYsO7m9HNJqiHYx0ZztvyIEeNjw85/Ycvbmgn4UfvLQnaLtDWXV59KmOmM6ZXV4rA==}
+  '@containerbase/base@14.66.14':
+    resolution: {integrity: sha512-ukyoTYn0rNoNBqKS8A70uCJBukfgtkvUqjIT2qs9ncZja9tZThFy6m023YfLJtqU/QzCOd+PrFEPB52DuIkpBw==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -404,8 +404,8 @@ packages:
       zod:
         optional: true
 
-  '@containerbase/base@14.66.14':
-    resolution: {integrity: sha512-ukyoTYn0rNoNBqKS8A70uCJBukfgtkvUqjIT2qs9ncZja9tZThFy6m023YfLJtqU/QzCOd+PrFEPB52DuIkpBw==}
+  '@containerbase/base@14.66.15':
+    resolution: {integrity: sha512-e2Ib0VvpkMOYKhgUItv10BHy2p7QFoW2vZSIi0mo9Y+KrLvXULzjs6mJUmymk9xYienoh4aYn+d9tqCP+B5NQQ==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -716,8 +716,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@renovatebot/base-image@13.163.1':
-    resolution: {integrity: sha512-lZf2+mnCkzDF2vuCnFuNt4BxpbA8womcJpBbXoh5xJLLeXrlxHOgmMPSHYEFi56g25cW91J80Q9Ak52ovEs/Bw==}
+  '@renovatebot/base-image@13.163.3':
+    resolution: {integrity: sha512-Ye26D4GmDjdWbbBlCPv27Tc1aHECtkniuSaa0fwbC1dvcwIN65SdSPVkN6ttV18WtqU6h7pkEi99MSfuaeCqyg==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -2480,8 +2480,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.225.1:
-    resolution: {integrity: sha512-vcN7BZMPVLG7p0LHwakNEnf72WDvuqXXxYK0ZKZJgHsxfMwEhfdBsSYOOBHVjQ8BQdanyS6yd9rLcaADRe73ag==}
+  renovate@44.226.2:
+    resolution: {integrity: sha512-RlfhmYalQ4EuwB6vT5zAKCQ9UE2MwmeYFlIjDLyIC0AqloenUsTdSpWAzVD3S4PYUcSh5j6QITUuIUwzGUnMDA==}
     engines: {node: ^24.11.0 || ^26.13.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3335,13 +3335,13 @@ snapshots:
     dependencies:
       fs-extra: 11.3.0
 
-  '@containerbase/base@14.66.13(zod@4.6.7)':
+  '@containerbase/base@14.66.14(zod@4.6.7)':
     dependencies:
       semver: 7.8.5
     optionalDependencies:
       zod: 4.6.7
 
-  '@containerbase/base@14.66.14(zod@4.6.7)':
+  '@containerbase/base@14.66.15(zod@4.6.7)':
     dependencies:
       semver: 7.8.5
     optionalDependencies:
@@ -3663,9 +3663,9 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.10.0
 
-  '@renovatebot/base-image@13.163.1(zod@4.6.7)':
+  '@renovatebot/base-image@13.163.3(zod@4.6.7)':
     dependencies:
-      '@containerbase/base': 14.66.14(zod@4.6.7)
+      '@containerbase/base': 14.66.15(zod@4.6.7)
     optionalDependencies:
       zod: 4.6.7
 
@@ -3685,7 +3685,7 @@ snapshots:
 
   '@renovatebot/osv-offline-db@4.5.10(supports-color@7.2.0)(zod@4.6.7)':
     dependencies:
-      '@containerbase/base': 14.66.13(zod@4.6.7)
+      '@containerbase/base': 14.66.14(zod@4.6.7)
       debug: 4.4.3(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
@@ -5559,7 +5559,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.225.1(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.226.2(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5592,7 +5592,7 @@ snapshots:
       '@pnpm/parse-overrides': 1001.0.4
       '@qnighy/marshal': 0.1.3
       '@redis/client': 6.3.1(@opentelemetry/api@1.10.0)
-      '@renovatebot/base-image': 13.163.1(zod@4.6.7)
+      '@renovatebot/base-image': 13.163.3(zod@4.6.7)
       '@renovatebot/detect-tools': 5.0.0
       '@renovatebot/good-enough-parser': 4.0.3
       '@renovatebot/osv-offline': 4.5.10(supports-color@7.2.0)(zod@4.6.7)
