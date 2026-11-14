@@ -182,8 +182,8 @@ importers:
         specifier: 1.27.1
         version: 1.27.1
       renovate:
-        specifier: 44.229.0
-        version: 44.229.0(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.232.0
+        version: 44.232.0(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.1.0
         version: 4.1.0
@@ -761,8 +761,8 @@ packages:
     resolution: {integrity: sha512-L/HtOYInkZGLJCe9h/gpsm2Gig0JWzyvWajrEVK+pP6BGfRl1eFzg7jyVcis7tmht7hvpau/+pMzF60geiLq6w==}
     engines: {node: '>=24.10.0', pnpm: '>=10.0.0'}
 
-  '@renovatebot/pgp@2.0.4':
-    resolution: {integrity: sha512-Hp8wjIruBAzc1qIAumCU3dN3AgX60r+Wop6FrFNwjpg8r2TIR9DXHZxv2SY7wIWel8wbEaM2jzb+hVQDfYUwUQ==}
+  '@renovatebot/pgp@2.0.5':
+    resolution: {integrity: sha512-qQJq/24y9P1iGwiRRFX6bh2/mIgQhCNa/A5fyKDfSziJzJFUjNsnwKNO8F1rzsiCSzB1GjKZ6EPVkRQJ2MIgjA==}
     engines: {node: '>=24.10.0', pnpm: '>=10.0.0'}
 
   '@renovatebot/ruby-semver@6.0.0':
@@ -2504,8 +2504,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.229.0:
-    resolution: {integrity: sha512-7PcKD6xIpS4g6dEwwkvTx7Ekjg3ofXCfZJk66cSLAWN4lu2swNUaKOYvUqQh2OxaKVZUilLWXrmGTgSIOz8T1g==}
+  renovate@44.232.0:
+    resolution: {integrity: sha512-4gVsdh8OA0rCP/L/c3v3rxCGtONfWf3EpyBzsdVIcZsQEGRd9+Ors8fRVFBXU1GdSO/Ak3ymnRomvs7oPWGTsA==}
     engines: {node: ^24.11.0 || ^26.13.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3751,7 +3751,7 @@ snapshots:
 
   '@renovatebot/pep440@6.0.0': {}
 
-  '@renovatebot/pgp@2.0.4': {}
+  '@renovatebot/pgp@2.0.5': {}
 
   '@renovatebot/ruby-semver@6.0.0': {}
 
@@ -5617,7 +5617,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.229.0(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.232.0(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5655,7 +5655,7 @@ snapshots:
       '@renovatebot/good-enough-parser': 4.0.3
       '@renovatebot/osv-offline': 4.5.10(supports-color@7.2.0)(zod@4.6.7)
       '@renovatebot/pep440': 6.0.0
-      '@renovatebot/pgp': 2.0.4
+      '@renovatebot/pgp': 2.0.5
       '@renovatebot/ruby-semver': 6.0.0
       '@sindresorhus/is': 8.1.0
       '@yarnpkg/core': 4.9.1(typanion@3.14.0)
