@@ -191,8 +191,8 @@ importers:
         specifier: 1.27.1
         version: 1.27.1
       renovate:
-        specifier: 44.251.0
-        version: 44.251.0(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.252.0
+        version: 44.252.0(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.1.0
         version: 4.1.0
@@ -403,15 +403,6 @@ packages:
 
   '@cdktf/hcl2json@0.21.0':
     resolution: {integrity: sha512-cwX3i/mSJI/cRrtqwEPRfawB7pXgNioriSlkvou8LWiCrrcDe9ZtTbAbu8W1tEJQpe1pnX9VEgpzf/BbM7xF8Q==}
-
-  '@containerbase/base@14.67.1':
-    resolution: {integrity: sha512-2/tCZBeQgL5humCCEmxfXPc9ixK//80BSKl9548J0GH/3X2JTUs8bfzzvxAtCx/oGIHYDSOUyUii3Am64hwXUg==}
-    engines: {node: '>=24.10.0'}
-    peerDependencies:
-      zod: ^4.0.0
-    peerDependenciesMeta:
-      zod:
-        optional: true
 
   '@containerbase/base@14.67.2':
     resolution: {integrity: sha512-5eQQwmIIyp7F7+3ywFD17LL50/jXZ9J1D0f33Vw4/9vypt//QqhFuJ0hZpENiF1sYb+E3c0lYZ7Z3mJBaNUnwA==}
@@ -2509,8 +2500,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.251.0:
-    resolution: {integrity: sha512-CnWmqR3FVPx2u8BPXLGEvK2kUhVSFUPH7tiq9iFVTa+/QAkknE6EiVulUKkzW1ZaddXAJjH2FpQ1+YO95Pb4wA==}
+  renovate@44.252.0:
+    resolution: {integrity: sha512-F1zl8+CVQSgs/lIwK6zWB2MmMRO2GeZzCcqnCZwEu7TClrTytiF9Lzh7aoIck7w67v5QDTsTld2AFQ7JPFayLQ==}
     engines: {node: ^24.11.0 || ^26.13.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3363,12 +3354,6 @@ snapshots:
     dependencies:
       fs-extra: 11.3.0
 
-  '@containerbase/base@14.67.1(zod@4.6.7)':
-    dependencies:
-      semver: 7.8.6
-    optionalDependencies:
-      zod: 4.6.7
-
   '@containerbase/base@14.67.2(zod@4.6.7)':
     dependencies:
       semver: 7.8.6
@@ -3736,7 +3721,7 @@ snapshots:
 
   '@renovatebot/osv-offline-db@4.5.10(supports-color@7.2.0)(zod@4.6.7)':
     dependencies:
-      '@containerbase/base': 14.67.1(zod@4.6.7)
+      '@containerbase/base': 14.67.2(zod@4.6.7)
       debug: 4.4.3(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
@@ -5615,7 +5600,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.251.0(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.252.0(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
