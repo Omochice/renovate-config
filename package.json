@@ -26,7 +26,7 @@
     "re2": "1.27.1",
     "renovate": "44.251.0",
     "sort-package-json": "4.1.0",
-    "vitest": "5.1.0"
+    "vitest": "5.1.1"
   },
   "packageManager": "pnpm@12.21.0",
   "devEngines": {
