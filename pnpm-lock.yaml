@@ -201,8 +201,8 @@ importers:
         specifier: 1.27.2
         version: 1.27.2
       renovate:
-        specifier: 44.262.2
-        version: 44.262.2(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.263.1
+        version: 44.263.1(supports-color@7.2.0)(typanion@3.14.0)
       sort-package-json:
         specifier: 4.1.0
         version: 4.1.0
@@ -416,6 +416,15 @@ packages:
 
   '@containerbase/base@14.69.3':
     resolution: {integrity: sha512-i2z1U2IyUVe/rjU/fX1CH7fjkKyz8LytIs9oMOIjweMHPjWndxw5gdl4T4GL/jJqejoY/Wh5BakdAjYGEAfNtQ==}
+    engines: {node: '>=24.10.0'}
+    peerDependencies:
+      zod: ^4.0.0
+    peerDependenciesMeta:
+      zod:
+        optional: true
+
+  '@containerbase/base@14.70.0':
+    resolution: {integrity: sha512-2jgXI/w0+GRGcpONzxuHgbL2knEnImgNEd5Zflc7QapQY0TvEhaC4DKVv+Y1HNttCTph8eJ+PbU97Gv66r+JYg==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -742,8 +751,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@renovatebot/base-image@13.177.0':
-    resolution: {integrity: sha512-MIffLAGHCZBkbBKmMSFhaA1UuV/b8FtyWoDk4D9GwQGvhApxvLF5Ljzo9FFjxONlnzdph4qOQ4YFNlCYWaCUDw==}
+  '@renovatebot/base-image@13.178.0':
+    resolution: {integrity: sha512-fhm5xt0rW/piMC4pM7jNwVqlEddeGa+v1j7sY+QjHUwE+wBcMkPoP/VtrLIglaFDriwH3CTfNJXN1g9cAx05gQ==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -1282,8 +1291,8 @@ packages:
     resolution: {integrity: sha512-ixNtAJndqh173VQ4KodSdJEI6nuioBWI0V1ITNKhZZsO0pEMoDxz539T4FTTbSZ/xIOSuDnzxLVRqBVSvPNE2g==}
     engines: {node: '>=18.0'}
 
-  cronstrue@3.41.0:
-    resolution: {integrity: sha512-1B5JJP3vsZbP4NOoz9OboFljpcc+aGg6WBQsyGr/Q0LS7ZYoSH9oimGpEglTGMS4ywwY1aYfr1So2GgfdeXj0w==}
+  cronstrue@3.42.0:
+    resolution: {integrity: sha512-uivzTlBRMFMGAfKIAy/yga0kV5TVdzlKR0ZkhAB2jax4VoVVje0WiLh6nzcnZ6GNdoFE3BtuuLiw+3wotq9g2Q==}
     hasBin: true
 
   cross-spawn@7.0.6:
@@ -2510,8 +2519,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.262.2:
-    resolution: {integrity: sha512-bsqL2jqISbOkUMC5pogOZZuIR/bTwNDPfWn06Rzf4c0cDJwVj7/NvVeLNA9PAdohAXGHrvmpuzq40mUrgZax4g==}
+  renovate@44.263.1:
+    resolution: {integrity: sha512-YxKuAIY73OKMZjlA5fZ5IBWLYjg1H8l4ZPTA9UZ8yB8rfZV18CzVe4g4+HzdgfJwyj/Nb0Wude5mByzaeGEN8Q==}
     engines: {node: ^24.11.0 || ^26.13.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3366,6 +3375,12 @@ snapshots:
     optionalDependencies:
       zod: 4.6.7
 
+  '@containerbase/base@14.70.0(zod@4.6.7)':
+    dependencies:
+      semver: 7.8.6
+    optionalDependencies:
+      zod: 4.6.7
+
   '@emnapi/core@2.0.0-beta.2':
     dependencies:
       '@emnapi/wasi-threads': 2.2.0
@@ -3705,9 +3720,9 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.10.0
 
-  '@renovatebot/base-image@13.177.0(zod@4.6.7)':
+  '@renovatebot/base-image@13.178.0(zod@4.6.7)':
     dependencies:
-      '@containerbase/base': 14.69.3(zod@4.6.7)
+      '@containerbase/base': 14.70.0(zod@4.6.7)
     optionalDependencies:
       zod: 4.6.7
 
@@ -4215,7 +4230,7 @@ snapshots:
 
   croner@10.0.1: {}
 
-  cronstrue@3.41.0: {}
+  cronstrue@3.42.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -5610,7 +5625,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.262.2(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.263.1(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5643,7 +5658,7 @@ snapshots:
       '@pnpm/parse-overrides': 1001.0.4
       '@qnighy/marshal': 0.1.3
       '@redis/client': 6.3.1(@opentelemetry/api@1.10.0)
-      '@renovatebot/base-image': 13.177.0(zod@4.6.7)
+      '@renovatebot/base-image': 13.178.0(zod@4.6.7)
       '@renovatebot/detect-tools': 5.0.0
       '@renovatebot/good-enough-parser': 4.0.3
       '@renovatebot/osv-offline': 4.5.10(supports-color@7.2.0)(zod@4.6.7)
@@ -5666,7 +5681,7 @@ snapshots:
       commander: 15.1.0
       common-tags: 1.8.2
       croner: 10.0.1
-      cronstrue: 3.41.0
+      cronstrue: 3.42.0
       deepmerge: 4.3.1
       dequal: 2.0.3
       detect-indent: 7.0.2
